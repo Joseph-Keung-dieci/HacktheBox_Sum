@@ -1,6 +1,6 @@
+# Title: HTB Challenge -- xorxorxor 
 # Author: J0s3ph97K
-# HTB: https://app.hackthebox.com/profile/769525
-
+# HTB link: https://app.hackthebox.com/profile/769525
 
 # Known information from HTB instruction
 raw_flag = list(bytes.fromhex('<Given Flag>'))
