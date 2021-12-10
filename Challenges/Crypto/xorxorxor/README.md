@@ -2,7 +2,10 @@
 HTB challenge -- Crypto[easy] <<xorxorxor>>
 Link: https://app.hackthebox.com/challenges/xorxorxor
 ```
-
+```text
+CHALLENGE DESCRIPTION
+Who needs AES when you have XOR?
+```
 ```python
 #!/usr/bin/python3
 import os
