@@ -45,7 +45,7 @@ flipped_byte = 'x'
 block_size = 32
 
 # get from the server after sending login credential (change here)
-leaked_msg = '1070888625c101dd2de7e6e72a6a56ee0a9ff5abc47febb3102ae411b1d6485b74c03cc4cd5d8a6ea35c85b1ebd18e5c'
+leaked_msg = '<leaked message goes here>'
 
 # get the first block of the cipher text
 cipher_1 = leaked_msg[:block_size]
