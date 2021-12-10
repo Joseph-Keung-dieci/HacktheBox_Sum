@@ -3,6 +3,11 @@ HTB challenge -- Crypto[easy] <<Flippin Bank>>
 Link: https://app.hackthebox.com/challenges/flippin-bank
 ```
 
+```text
+CHALLENGE DESCRIPTION
+The Bank of the World is under attack. Hackers found a way in and locked the admins out. However, the netcat authentication by the intruders is not perfectly secure. Could you help the admins log in?
+```
+
 ```python
 import socketserver 
 import socket, os
