@@ -1,3 +1,7 @@
+# Title: HTB Challenge -- RSAisEasy 
+# Author: J0s3ph97K
+# HTB link: https://app.hackthebox.com/profile/769525
+
 from Crypto.Util.number import inverse, long_to_bytes
 from math import gcd
 
