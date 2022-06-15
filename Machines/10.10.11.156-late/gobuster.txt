@@ -1,0 +1,3 @@
+http://10.10.11.156/assets               (Status: 301) [Size: 194] [--> http://10.10.11.156/assets/]
+http://10.10.11.156/contact.html         (Status: 200) [Size: 6364]                                 
+http://10.10.11.156/index.html           (Status: 200) [Size: 9461]                                 
