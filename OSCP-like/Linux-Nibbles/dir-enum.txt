@@ -1,0 +1,15 @@
+[2K                        [Status: [32m200[0m, Size: 2987, Words: 116, Lines: 61]
+[2Kadmin                   [Status: [34m301[0m, Size: 321, Words: 20, Lines: 10]
+[2Kadmin.php               [Status: [32m200[0m, Size: 1401, Words: 79, Lines: 27]
+[2Kadmin.php               [Status: [32m200[0m, Size: 1401, Words: 79, Lines: 27]
+[2Kcontent                 [Status: [34m301[0m, Size: 323, Words: 20, Lines: 10]
+[2Kfeed.php                [Status: [32m200[0m, Size: 302, Words: 8, Lines: 8]
+[2Kindex.php               [Status: [32m200[0m, Size: 2987, Words: 116, Lines: 61]
+[2Kindex.php               [Status: [32m200[0m, Size: 2987, Words: 116, Lines: 61]
+[2Kinstall.php             [Status: [32m200[0m, Size: 78, Words: 11, Lines: 1]
+[2Klanguages               [Status: [34m301[0m, Size: 325, Words: 20, Lines: 10]
+[2Kplugins                 [Status: [34m301[0m, Size: 323, Words: 20, Lines: 10]
+[2KREADME                  [Status: [32m200[0m, Size: 4628, Words: 589, Lines: 64]
+[2Ksitemap.php             [Status: [32m200[0m, Size: 402, Words: 33, Lines: 11]
+[2Kthemes                  [Status: [34m301[0m, Size: 322, Words: 20, Lines: 10]
+[2Kupdate.php              [Status: [32m200[0m, Size: 1622, Words: 103, Lines: 88]
