@@ -2,7 +2,7 @@
 
 ### nmap
 
-```bash
+```text
 # common scan
 80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
 | http-methods: 
