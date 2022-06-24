@@ -1,0 +1,54 @@
+# Nmap 7.91 scan initiated Thu Jun 23 20:51:19 2022 as: nmap -T4 -sU -sV -v -oN ./port_scan_files/udp_scan.txt 10.10.10.7
+Warning: 10.10.10.7 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.10.10.7 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.7 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.7 from 400 to 800 due to 11 out of 12 dropped probes since last increase.
+Nmap scan report for 10.10.10.7
+Host is up (0.027s latency).
+Not shown: 959 closed ports
+PORT      STATE         SERVICE        VERSION
+21/udp    open|filtered ftp
+69/udp    open|filtered tftp
+111/udp   open          rpcbind        2 (RPC #100000)
+123/udp   open          ntp            NTP v4 (secondary server)
+389/udp   open|filtered ldap
+903/udp   open|filtered ideafarm-panic
+1022/udp  open|filtered exp2
+1036/udp  open|filtered nsstp
+1812/udp  open|filtered radius
+3664/udp  open|filtered ups-engine
+5000/udp  open|filtered upnp
+5050/udp  open|filtered mmcc
+5060/udp  open|filtered sip
+6001/udp  open|filtered X11:1
+8001/udp  open|filtered vcom-tunnel
+9001/udp  open|filtered etlservicemgr
+10000/udp open          webmin         (https on TCP port 10000)
+16498/udp open|filtered unknown
+16947/udp open|filtered unknown
+17585/udp open|filtered unknown
+19193/udp open|filtered unknown
+19663/udp open|filtered unknown
+19728/udp open|filtered unknown
+20217/udp open|filtered unknown
+20678/udp open|filtered unknown
+21649/udp open|filtered unknown
+21948/udp open|filtered unknown
+22055/udp open|filtered unknown
+24279/udp open|filtered unknown
+31195/udp open|filtered unknown
+32818/udp open|filtered unknown
+33872/udp open|filtered unknown
+34038/udp open|filtered unknown
+34758/udp open|filtered unknown
+42557/udp open|filtered unknown
+45685/udp open|filtered unknown
+49178/udp open|filtered unknown
+50612/udp open|filtered unknown
+57958/udp open|filtered unknown
+61370/udp open|filtered unknown
+64080/udp open|filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun 23 21:11:00 2022 -- 1 IP address (1 host up) scanned in 1181.22 seconds
