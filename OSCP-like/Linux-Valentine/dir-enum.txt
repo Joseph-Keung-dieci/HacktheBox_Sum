@@ -1,0 +1,28 @@
+[2K.html                   [Status: [33m403[0m, Size: 284, Words: 21, Lines: 11]
+[2K                        [Status: [32m200[0m, Size: 38, Words: 2, Lines: 2]
+[2K.htpasswd.jsp           [Status: [33m403[0m, Size: 292, Words: 21, Lines: 11]
+[2K.htpasswd.php           [Status: [33m403[0m, Size: 292, Words: 21, Lines: 11]
+[2K.htpasswd               [Status: [33m403[0m, Size: 288, Words: 21, Lines: 11]
+[2K.hta                    [Status: [33m403[0m, Size: 283, Words: 21, Lines: 11]
+[2K.htpasswd.js            [Status: [33m403[0m, Size: 291, Words: 21, Lines: 11]
+[2K.htaccess.jsp           [Status: [33m403[0m, Size: 292, Words: 21, Lines: 11]
+[2K.htpasswd.html          [Status: [33m403[0m, Size: 293, Words: 21, Lines: 11]
+[2K.htaccess.js            [Status: [33m403[0m, Size: 291, Words: 21, Lines: 11]
+[2K.htaccess.html          [Status: [33m403[0m, Size: 293, Words: 21, Lines: 11]
+[2K.htaccess.php           [Status: [33m403[0m, Size: 292, Words: 21, Lines: 11]
+[2K.hta.html               [Status: [33m403[0m, Size: 288, Words: 21, Lines: 11]
+[2K.htaccess               [Status: [33m403[0m, Size: 288, Words: 21, Lines: 11]
+[2K.hta.php                [Status: [33m403[0m, Size: 287, Words: 21, Lines: 11]
+[2K.hta.jsp                [Status: [33m403[0m, Size: 287, Words: 21, Lines: 11]
+[2K.hta.js                 [Status: [33m403[0m, Size: 286, Words: 21, Lines: 11]
+[2Kcgi-bin/.html           [Status: [33m403[0m, Size: 292, Words: 21, Lines: 11]
+[2Kcgi-bin/                [Status: [33m403[0m, Size: 287, Words: 21, Lines: 11]
+[2Kdecode.php              [Status: [32m200[0m, Size: 552, Words: 73, Lines: 26]
+[2Kdecode                  [Status: [32m200[0m, Size: 552, Words: 73, Lines: 26]
+[2Kdev                     [Status: [34m301[0m, Size: 308, Words: 20, Lines: 10]
+[2Kencode                  [Status: [32m200[0m, Size: 554, Words: 73, Lines: 28]
+[2Kencode.php              [Status: [32m200[0m, Size: 554, Words: 73, Lines: 28]
+[2Kindex                   [Status: [32m200[0m, Size: 38, Words: 2, Lines: 2]
+[2Kindex.php               [Status: [32m200[0m, Size: 38, Words: 2, Lines: 2]
+[2Kindex.php               [Status: [32m200[0m, Size: 38, Words: 2, Lines: 2]
+[2Kserver-status           [Status: [33m403[0m, Size: 292, Words: 21, Lines: 11]
