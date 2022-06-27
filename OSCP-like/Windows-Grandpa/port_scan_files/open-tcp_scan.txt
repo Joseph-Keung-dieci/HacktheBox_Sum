@@ -1,0 +1,8 @@
+# Nmap 7.91 scan initiated Sun Jun 26 06:35:54 2022 as: nmap -T4 -p- -oN ./port_scan_files/open-tcp_scan.txt -oG - 10.10.10.14
+Nmap scan report for 10.10.10.14
+Host is up (0.035s latency).
+Not shown: 65534 filtered ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Sun Jun 26 06:37:33 2022 -- 1 IP address (1 host up) scanned in 99.25 seconds

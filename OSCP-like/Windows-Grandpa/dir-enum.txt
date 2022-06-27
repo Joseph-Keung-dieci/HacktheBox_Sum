@@ -1,0 +1,15 @@
+[2K                        [Status: [32m200[0m, Size: 1433, Words: 131, Lines: 40]
+[2K_private                [Status: [33m403[0m, Size: 1529, Words: 173, Lines: 30]
+[2K_vti_cnf                [Status: [33m403[0m, Size: 1529, Words: 173, Lines: 30]
+[2K_vti_bin                [Status: [34m301[0m, Size: 155, Words: 9, Lines: 2]
+[2K_vti_log                [Status: [33m403[0m, Size: 1529, Words: 173, Lines: 30]
+[2K_vti_pvt                [Status: [33m403[0m, Size: 1529, Words: 173, Lines: 30]
+[2K_vti_txt                [Status: [33m403[0m, Size: 1529, Words: 173, Lines: 30]
+[2K_vti_bin/_vti_adm/admin.dll [Status: [32m200[0m, Size: 195, Words: 5, Lines: 13]
+[2K_vti_inf.html           [Status: [32m200[0m, Size: 1754, Words: 198, Lines: 45]
+[2K_vti_bin/_vti_aut/author.dll [Status: [32m200[0m, Size: 195, Words: 5, Lines: 13]
+[2K_vti_bin/shtml.dll      [Status: [32m200[0m, Size: 96, Words: 11, Lines: 1]
+[2Kaspnet_client           [Status: [33m403[0m, Size: 218, Words: 14, Lines: 2]
+[2Kimages                  [Status: [34m301[0m, Size: 149, Words: 9, Lines: 2]
+[2KImages                  [Status: [34m301[0m, Size: 149, Words: 9, Lines: 2]
+[2Kpostinfo.html           [Status: [32m200[0m, Size: 2440, Words: 327, Lines: 58]
