@@ -1,0 +1,23 @@
+[2K.html                   [Status: [33m403[0m, Size: 292, Words: 22, Lines: 12]
+[2K.php                    [Status: [33m403[0m, Size: 291, Words: 22, Lines: 12]
+[2K.hta                    [Status: [33m403[0m, Size: 291, Words: 22, Lines: 12]
+[2K.hta.html               [Status: [33m403[0m, Size: 296, Words: 22, Lines: 12]
+[2K.hta.js                 [Status: [33m403[0m, Size: 294, Words: 22, Lines: 12]
+[2K.hta.php                [Status: [33m403[0m, Size: 295, Words: 22, Lines: 12]
+[2K.htaccess               [Status: [33m403[0m, Size: 296, Words: 22, Lines: 12]
+[2K.htaccess.html          [Status: [33m403[0m, Size: 301, Words: 22, Lines: 12]
+[2K.hta.jsp                [Status: [33m403[0m, Size: 295, Words: 22, Lines: 12]
+[2K.htaccess.js            [Status: [33m403[0m, Size: 299, Words: 22, Lines: 12]
+[2K.htaccess.php           [Status: [33m403[0m, Size: 300, Words: 22, Lines: 12]
+[2K.htpasswd               [Status: [33m403[0m, Size: 296, Words: 22, Lines: 12]
+[2K.htaccess.jsp           [Status: [33m403[0m, Size: 300, Words: 22, Lines: 12]
+[2K.htpasswd.js            [Status: [33m403[0m, Size: 299, Words: 22, Lines: 12]
+[2K.htpasswd.html          [Status: [33m403[0m, Size: 301, Words: 22, Lines: 12]
+[2K.htpasswd.php           [Status: [33m403[0m, Size: 300, Words: 22, Lines: 12]
+[2K.htpasswd.jsp           [Status: [33m403[0m, Size: 300, Words: 22, Lines: 12]
+[2K                        [Status: [32m200[0m, Size: 324, Words: 26, Lines: 13]
+[2Kindex.html              [Status: [32m200[0m, Size: 324, Words: 26, Lines: 13]
+[2Kindex.html              [Status: [32m200[0m, Size: 324, Words: 26, Lines: 13]
+[2Krobots.txt              [Status: [32m200[0m, Size: 13, Words: 2, Lines: 2]
+[2Kserver-status           [Status: [33m403[0m, Size: 300, Words: 22, Lines: 12]
+[2Kwordpress               [Status: [34m301[0m, Size: 316, Words: 20, Lines: 10]

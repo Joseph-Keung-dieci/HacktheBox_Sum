@@ -1,0 +1,14 @@
+Target: http://friendzone.htb/
+Total requests: 114441
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00689:  C=400     12 L	      53 W	    422 Ch	  "gc._msdcs"
+09532:  C=400     12 L	      53 W	    422 Ch	  "#www"
+10581:  C=400     12 L	      53 W	    422 Ch	  "#mail"
+19834:  C=400     12 L	      53 W	    422 Ch	  "_domainkey"
+
+Total time: 0
+Processed Requests: 39265
+Filtered Requests: 39261
+Requests/sec.: 0
