@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Wed Jun 29 02:46:57 2022 as: nmap -T4 -p- -oN ./port_scan_files/open-tcp_scan.txt -oG - 10.10.10.117
+Nmap scan report for 10.10.10.117
+Host is up (0.034s latency).
+Not shown: 65528 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+6697/tcp  open  ircs-u
+8067/tcp  open  infi-async
+58466/tcp open  unknown
+65534/tcp open  unknown
+
+# Nmap done at Wed Jun 29 02:47:16 2022 -- 1 IP address (1 host up) scanned in 18.80 seconds
