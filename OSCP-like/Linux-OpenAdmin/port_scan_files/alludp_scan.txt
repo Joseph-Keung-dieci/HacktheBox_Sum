@@ -1,0 +1,46 @@
+# Nmap 7.92 scan initiated Sat Jul  2 04:08:28 2022 as: nmap -T4 -sU -sV -v -oN port_scan_files/alludp_scan.txt 10.10.10.171
+Warning: 10.10.10.171 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.10.10.171 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.171 from 200 to 400 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.10.171 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.10.171
+Host is up (0.038s latency).
+Not shown: 967 closed udp ports (port-unreach)
+PORT      STATE         SERVICE       VERSION
+3/udp     open|filtered compressnet
+683/udp   open|filtered corba-iiop
+998/udp   open|filtered puparp
+1013/udp  open|filtered unknown
+1033/udp  open|filtered netinfo-local
+1043/udp  open|filtered boinc
+1046/udp  open|filtered wfremotertm
+1080/udp  open|filtered socks
+1100/udp  open|filtered mctp
+2345/udp  open|filtered dbm
+5355/udp  open|filtered llmnr
+11487/udp open|filtered unknown
+16816/udp open|filtered unknown
+16838/udp open|filtered unknown
+17754/udp open|filtered zep
+18004/udp open|filtered unknown
+18319/udp open|filtered unknown
+18807/udp open|filtered unknown
+18869/udp open|filtered unknown
+20326/udp open|filtered unknown
+21405/udp open|filtered unknown
+21742/udp open|filtered unknown
+29810/udp open|filtered unknown
+31337/udp open|filtered BackOrifice
+32768/udp open|filtered omad
+34579/udp open|filtered unknown
+37602/udp open|filtered unknown
+42508/udp open|filtered candp
+44923/udp open|filtered unknown
+49220/udp open|filtered unknown
+52225/udp open|filtered unknown
+54925/udp open|filtered unknown
+64080/udp open|filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul  2 04:27:54 2022 -- 1 IP address (1 host up) scanned in 1165.42 seconds
