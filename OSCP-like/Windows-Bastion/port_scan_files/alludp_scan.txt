@@ -1,0 +1,48 @@
+# Nmap 7.92 scan initiated Sun Jul  3 06:25:48 2022 as: nmap -T4 -sU -sV -v -oN port_scan_files/alludp_scan.txt 10.10.10.134
+Warning: 10.10.10.134 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.10.10.134 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.134 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.134 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.134 from 800 to 1000 due to 11 out of 19 dropped probes since last increase.
+Nmap scan report for 10.10.10.134
+Host is up (0.029s latency).
+Not shown: 966 closed udp ports (port-unreach)
+PORT      STATE         SERVICE        VERSION
+13/udp    filtered      daytime
+17/udp    open|filtered qotd
+123/udp   open|filtered ntp
+137/udp   open|filtered netbios-ns
+138/udp   open|filtered netbios-dgm
+158/udp   open|filtered pcmail-srv
+427/udp   filtered      svrloc
+500/udp   open|filtered isakmp
+829/udp   open|filtered pkix-3-ca-ra
+838/udp   open|filtered unknown
+996/udp   open|filtered vsinet
+1012/udp  open|filtered sometimes-rpc1
+1419/udp  open|filtered timbuktu-srv3
+1434/udp  filtered      ms-sql-m
+3130/udp  filtered      squid-ipc
+4500/udp  open|filtered nat-t-ike
+5050/udp  open|filtered mmcc
+5353/udp  open|filtered zeroconf
+5355/udp  open|filtered llmnr
+6971/udp  filtered      unknown
+18980/udp open|filtered unknown
+19181/udp open|filtered unknown
+19482/udp open|filtered unknown
+21344/udp filtered      unknown
+21525/udp filtered      unknown
+21784/udp filtered      unknown
+40539/udp filtered      unknown
+41446/udp open|filtered unknown
+49169/udp open|filtered unknown
+49209/udp open|filtered unknown
+58002/udp open|filtered unknown
+58797/udp open|filtered unknown
+62287/udp open|filtered unknown
+63420/udp open|filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul  3 06:47:06 2022 -- 1 IP address (1 host up) scanned in 1278.54 seconds
