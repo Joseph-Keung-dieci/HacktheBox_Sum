@@ -1,0 +1,18 @@
+[2K[32m                        [Status: 200, Size: 4388, Words: 654, Lines: 126, Duration: 108ms][0m
+[2K[34mAdmin                   [Status: 301, Size: 337, Words: 22, Lines: 10, Duration: 30ms][0m
+[2K[34madmin                   [Status: 301, Size: 337, Words: 22, Lines: 10, Duration: 34ms][0m
+[2K[34mADMIN                   [Status: 301, Size: 337, Words: 22, Lines: 10, Duration: 32ms][0m
+[2K[34mdist                    [Status: 301, Size: 336, Words: 22, Lines: 10, Duration: 20ms][0m
+[2K[34mHome.php                [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 66ms][0m
+[2K[34mhome.php                [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 73ms][0m
+[2K[34mimages                  [Status: 301, Size: 338, Words: 22, Lines: 10, Duration: 136ms][0m
+[2K[34mImages                  [Status: 301, Size: 338, Words: 22, Lines: 10, Duration: 28ms][0m
+[2K[34mincludes                [Status: 301, Size: 340, Words: 22, Lines: 10, Duration: 28ms][0m
+[2K[32mIndex.php               [Status: 200, Size: 4388, Words: 654, Lines: 126, Duration: 220ms][0m
+[2K[32mindex.php               [Status: 200, Size: 4388, Words: 654, Lines: 126, Duration: 226ms][0m
+[2K[32mindex.php               [Status: 200, Size: 4388, Words: 654, Lines: 126, Duration: 28ms][0m
+[2K[34mlogin.php               [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 53ms][0m
+[2K[34mLogin.php               [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 79ms][0m
+[2K[34mlogout.php              [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 31ms][0m
+[2K[34mplugins                 [Status: 301, Size: 339, Words: 22, Lines: 10, Duration: 32ms][0m
+[2K[34mpreview.php             [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 55ms][0m

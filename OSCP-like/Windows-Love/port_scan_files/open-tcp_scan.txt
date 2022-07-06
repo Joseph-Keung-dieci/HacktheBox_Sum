@@ -1,0 +1,26 @@
+# Nmap 7.92 scan initiated Wed Jul  6 00:09:34 2022 as: nmap -T4 -p- -oN ./port_scan_files/open-tcp_scan.txt -oG - 10.10.10.239
+Nmap scan report for 10.10.10.239
+Host is up (0.021s latency).
+Not shown: 65516 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+3306/tcp  open  mysql
+5000/tcp  open  upnp
+5040/tcp  open  unknown
+5985/tcp  open  wsman
+5986/tcp  open  wsmans
+7680/tcp  open  pando-pub
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+
+# Nmap done at Wed Jul  6 00:16:32 2022 -- 1 IP address (1 host up) scanned in 417.64 seconds
