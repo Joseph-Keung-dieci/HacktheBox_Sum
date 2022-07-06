@@ -1,0 +1,47 @@
+# Nmap 7.92 scan initiated Tue Jul  5 21:01:35 2022 as: nmap -T4 -sU -sV -v -oN port_scan_files/alludp_scan.txt 10.10.10.13
+Warning: 10.10.10.13 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.10.10.13 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.13 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.13 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.10.13
+Host is up (0.022s latency).
+Not shown: 967 closed udp ports (port-unreach)
+PORT      STATE         SERVICE        VERSION
+53/udp    open          domain         ISC BIND 9.10.3-P4 (Ubuntu Linux)
+120/udp   open|filtered cfdptkt
+445/udp   open|filtered microsoft-ds
+814/udp   open|filtered unknown
+1885/udp  open|filtered vrtstrapserver
+3456/udp  open|filtered IISrpc-or-vat
+11487/udp open|filtered unknown
+17494/udp open|filtered unknown
+17533/udp open|filtered unknown
+18081/udp open|filtered unknown
+18134/udp open|filtered unknown
+19632/udp open|filtered unknown
+19695/udp open|filtered unknown
+19707/udp open|filtered unknown
+20003/udp open|filtered commtact-https
+20742/udp open|filtered unknown
+21476/udp open|filtered unknown
+22996/udp open|filtered unknown
+27473/udp open|filtered unknown
+27899/udp open|filtered unknown
+30697/udp open|filtered unknown
+31891/udp open|filtered unknown
+33744/udp open|filtered unknown
+34079/udp open|filtered unknown
+34555/udp open|filtered unknown
+41702/udp open|filtered unknown
+42172/udp open|filtered unknown
+47808/udp open|filtered bacnet
+48489/udp open|filtered unknown
+49214/udp open|filtered unknown
+49306/udp open|filtered unknown
+51905/udp open|filtered unknown
+54711/udp open|filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul  5 21:21:20 2022 -- 1 IP address (1 host up) scanned in 1184.55 seconds

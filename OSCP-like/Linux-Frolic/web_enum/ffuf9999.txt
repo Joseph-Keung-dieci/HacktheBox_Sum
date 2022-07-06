@@ -1,0 +1,5 @@
+[2K[32m                        [Status: 200, Size: 637, Words: 79, Lines: 29, Duration: 66ms][0m
+[2K[34madmin                   [Status: 301, Size: 194, Words: 7, Lines: 8, Duration: 21ms][0m
+[2K[34mbackup                  [Status: 301, Size: 194, Words: 7, Lines: 8, Duration: 28ms][0m
+[2K[34mdev                     [Status: 301, Size: 194, Words: 7, Lines: 8, Duration: 21ms][0m
+[2K[34mtest                    [Status: 301, Size: 194, Words: 7, Lines: 8, Duration: 23ms][0m
