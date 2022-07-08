@@ -1,0 +1,18 @@
+[2K[32m                        [Status: 200, Size: 6693, Words: 1807, Lines: 188, Duration: 44ms][0m
+[2K[32mabout-us                [Status: 200, Size: 5441, Words: 1232, Lines: 162, Duration: 119ms][0m
+[2K[32mblog                    [Status: 200, Size: 5001, Words: 1249, Lines: 138, Duration: 390ms][0m
+[2K[32mBlog                    [Status: 200, Size: 5001, Words: 1249, Lines: 138, Duration: 373ms][0m
+[2K[32mcontact                 [Status: 200, Size: 7880, Words: 828, Lines: 125, Duration: 77ms][0m
+[2K[32mContact                 [Status: 200, Size: 7880, Words: 828, Lines: 125, Duration: 93ms][0m
+[2K[32mHome                    [Status: 200, Size: 6703, Words: 1807, Lines: 188, Duration: 456ms][0m
+[2K[32mhome                    [Status: 200, Size: 6703, Words: 1807, Lines: 188, Duration: 490ms][0m
+[2K[34minstall                 [Status: 302, Size: 126, Words: 6, Lines: 4, Duration: 100ms][0m
+[2K[32mintranet                [Status: 200, Size: 3323, Words: 683, Lines: 117, Duration: 68ms][0m
+[2K[31mmaster                  [Status: 500, Size: 3420, Words: 774, Lines: 81, Duration: 223ms][0m
+[2K[32mpeople                  [Status: 200, Size: 6739, Words: 2109, Lines: 168, Duration: 61ms][0m
+[2K[32mPeople                  [Status: 200, Size: 6739, Words: 2109, Lines: 168, Duration: 355ms][0m
+[2K[32mperson                  [Status: 200, Size: 2741, Words: 503, Lines: 82, Duration: 138ms][0m
+[2K[31mproduct                 [Status: 500, Size: 3420, Words: 774, Lines: 81, Duration: 133ms][0m
+[2K[32mProducts                [Status: 200, Size: 5328, Words: 1307, Lines: 130, Duration: 48ms][0m
+[2K[32mproducts                [Status: 200, Size: 5328, Words: 1307, Lines: 130, Duration: 142ms][0m
+[2K[32mumbraco                 [Status: 200, Size: 4040, Words: 710, Lines: 96, Duration: 99ms][0m
