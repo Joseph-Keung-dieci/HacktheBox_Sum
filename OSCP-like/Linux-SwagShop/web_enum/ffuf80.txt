@@ -1,0 +1,19 @@
+[2K[32m                        [Status: 200, Size: 16593, Words: 3204, Lines: 328, Duration: 2227ms][0m
+[2K[34mapp                     [Status: 301, Size: 310, Words: 20, Lines: 10, Duration: 45ms][0m
+[2K[32mapi.php                 [Status: 200, Size: 37, Words: 4, Lines: 1, Duration: 154ms][0m
+[2K[32mcron.php                [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 72ms][0m
+[2K[34merrors                  [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 34ms][0m
+[2K[32mfavicon.ico             [Status: 200, Size: 1150, Words: 4, Lines: 2, Duration: 38ms][0m
+[2K[34mincludes                [Status: 301, Size: 315, Words: 20, Lines: 10, Duration: 29ms][0m
+[2K[32mindex.php               [Status: 200, Size: 16593, Words: 3204, Lines: 328, Duration: 201ms][0m
+[2K[32mindex.php               [Status: 200, Size: 16593, Words: 3204, Lines: 328, Duration: 229ms][0m
+[2K[32minstall.php             [Status: 200, Size: 44, Words: 5, Lines: 4, Duration: 77ms][0m
+[2K[34mjs                      [Status: 301, Size: 309, Words: 20, Lines: 10, Duration: 29ms][0m
+[2K[34mlib                     [Status: 301, Size: 310, Words: 20, Lines: 10, Duration: 28ms][0m
+[2K[32mLICENSE.html            [Status: 200, Size: 10679, Words: 1613, Lines: 43, Duration: 34ms][0m
+[2K[32mLICENSE.txt             [Status: 200, Size: 10410, Words: 1701, Lines: 48, Duration: 36ms][0m
+[2K[34mmedia                   [Status: 301, Size: 312, Words: 20, Lines: 10, Duration: 35ms][0m
+[2K[34mpkginfo                 [Status: 301, Size: 314, Words: 20, Lines: 10, Duration: 28ms][0m
+[2K[34mshell                   [Status: 301, Size: 312, Words: 20, Lines: 10, Duration: 36ms][0m
+[2K[34mskin                    [Status: 301, Size: 311, Words: 20, Lines: 10, Duration: 32ms][0m
+[2K[34mvar                     [Status: 301, Size: 310, Words: 20, Lines: 10, Duration: 32ms][0m
