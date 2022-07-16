@@ -1,0 +1,7 @@
+[2K[32m                        [Status: 200, Size: 1895, Words: 201, Lines: 30, Duration: 90ms][0m
+[2K[34mdocs                    [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 24ms][0m
+[2K[34mexamples                [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 30ms][0m
+[2K[34mhost-manager            [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 23ms][0m
+[2K[32mindex.html              [Status: 200, Size: 1895, Words: 201, Lines: 30, Duration: 22ms][0m
+[2K[32mindex.html              [Status: 200, Size: 1895, Words: 201, Lines: 30, Duration: 29ms][0m
+[2K[34mmanager                 [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 21ms][0m

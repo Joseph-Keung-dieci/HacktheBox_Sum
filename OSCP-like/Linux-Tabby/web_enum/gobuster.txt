@@ -1,0 +1,4 @@
+http://10.10.10.194/index.php            (Status: 200) [Size: 14175]
+http://10.10.10.194/news.php             (Status: 200) [Size: 0]    
+http://10.10.10.194/files                (Status: 301) [Size: 312] [--> http://10.10.10.194/files/]
+http://10.10.10.194/assets               (Status: 301) [Size: 313] [--> http://10.10.10.194/assets/]

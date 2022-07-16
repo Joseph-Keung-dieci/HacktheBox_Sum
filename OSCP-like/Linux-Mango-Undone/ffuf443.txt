@@ -1,0 +1,4 @@
+[2K[32m                        [Status: 200, Size: 5152, Words: 543, Lines: 217, Duration: 21ms][0m
+[2K[32manalytics.php           [Status: 200, Size: 397607, Words: 79777, Lines: 15332, Duration: 127ms][0m
+[2K[32mindex.php               [Status: 200, Size: 5152, Words: 543, Lines: 217, Duration: 62ms][0m
+[2K[32mindex.php               [Status: 200, Size: 5152, Words: 543, Lines: 217, Duration: 58ms][0m
