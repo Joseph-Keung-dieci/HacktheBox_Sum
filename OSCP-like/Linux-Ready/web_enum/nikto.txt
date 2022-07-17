@@ -1,0 +1,18 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.10.220
++ Target Hostname:    10.10.10.220
++ Target Port:        5080
++ Start Time:         2022-07-16 21:48:44 (GMT-4)
+---------------------------------------------------------------------------
++ Server: nginx
++ Uncommon header 'x-request-id' found, with contents: aeeffcbd-c3f2-4bba-8ece-97969688cc09
++ Uncommon header 'x-runtime' found, with contents: 0.015136
++ Root page / redirects to: http://10.10.10.220/users/sign_in
++ Entry '/autocomplete/users/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/search/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/help/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/users/sign_in/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ "robots.txt" contains 53 entries which should be manually viewed.
++ OSVDB-630: The web server may reveal its internal or real IP in the Location header via a request to / over HTTP/1.0. The value is "172.19.0.2".
++ /help/: Help directory should not be accessible

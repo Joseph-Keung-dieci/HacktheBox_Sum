@@ -1,0 +1,20 @@
+# Nmap 7.92 scan initiated Sat Jul 16 20:46:00 2022 as: nmap -T4 -p- -oN ./port_scan_files/open-tcp_scan.txt -oG - 10.10.10.220
+Warning: 10.10.10.220 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.220
+Host is up (0.021s latency).
+Not shown: 65523 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+5080/tcp  open     onscreen
+9806/tcp  filtered unknown
+9965/tcp  filtered unknown
+16571/tcp filtered unknown
+20471/tcp filtered unknown
+20941/tcp filtered unknown
+39204/tcp filtered unknown
+40362/tcp filtered unknown
+44492/tcp filtered unknown
+52438/tcp filtered unknown
+61862/tcp filtered unknown
+
+# Nmap done at Sat Jul 16 21:00:15 2022 -- 1 IP address (1 host up) scanned in 854.74 seconds
