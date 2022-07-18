@@ -1,0 +1,18 @@
+[2K[32m                        [Status: 200, Size: 7440, Words: 808, Lines: 157, Duration: 3881ms][0m
+[2K[34mincludes                [Status: 301, Size: 237, Words: 14, Lines: 8, Duration: 24ms][0m
+[2K[32mindex.php               [Status: 200, Size: 7440, Words: 808, Lines: 157, Duration: 244ms][0m
+[2K[32mindex.php               [Status: 200, Size: 7440, Words: 808, Lines: 157, Duration: 286ms][0m
+[2K[32minstall.php             [Status: 200, Size: 3172, Words: 196, Lines: 60, Duration: 164ms][0m
+[2K[32mLICENSE.txt             [Status: 200, Size: 18092, Words: 3133, Lines: 340, Duration: 23ms][0m
+[2K[34mmisc                    [Status: 301, Size: 233, Words: 14, Lines: 8, Duration: 25ms][0m
+[2K[34mmodules                 [Status: 301, Size: 236, Words: 14, Lines: 8, Duration: 28ms][0m
+[2K[34mprofiles                [Status: 301, Size: 237, Words: 14, Lines: 8, Duration: 20ms][0m
+[2K[32mREADME.txt              [Status: 200, Size: 5382, Words: 684, Lines: 124, Duration: 21ms][0m
+[2K[32mrobots.txt              [Status: 200, Size: 2189, Words: 158, Lines: 91, Duration: 25ms][0m
+[2K[32mrobots.txt              [Status: 200, Size: 2189, Words: 158, Lines: 91, Duration: 23ms][0m
+[2K[34mscripts                 [Status: 301, Size: 236, Words: 14, Lines: 8, Duration: 21ms][0m
+[2K[34msites                   [Status: 301, Size: 234, Words: 14, Lines: 8, Duration: 22ms][0m
+[2K[34mthemes                  [Status: 301, Size: 235, Words: 14, Lines: 8, Duration: 29ms][0m
+[2K[32mweb.config              [Status: 200, Size: 2200, Words: 416, Lines: 47, Duration: 21ms][0m
+[2K[32mxmlrpc.php              [Status: 200, Size: 42, Words: 6, Lines: 1, Duration: 260ms][0m
+[2K[32mxmlrpc.php              [Status: 200, Size: 42, Words: 6, Lines: 1, Duration: 271ms][0m
