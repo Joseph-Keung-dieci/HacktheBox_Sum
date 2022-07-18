@@ -1,0 +1,20 @@
+[2K[32m                        [Status: 200, Size: 4933, Words: 781, Lines: 103, Duration: 47ms][0m
+[2K[32maccount.php             [Status: 200, Size: 37319, Words: 6847, Lines: 625, Duration: 55ms][0m
+[2K[34mapi                     [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 23ms][0m
+[2K[34mapps                    [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 114ms][0m
+[2K[34massets                  [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 31ms][0m
+[2K[32mcaptcha.php             [Status: 200, Size: 1160, Words: 6, Lines: 9, Duration: 52ms][0m
+[2K[34mcss                     [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 39ms][0m
+[2K[34mimages                  [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 26ms][0m
+[2K[32mindex.php               [Status: 200, Size: 4933, Words: 781, Lines: 103, Duration: 43ms][0m
+[2K[32mindex.php               [Status: 200, Size: 4933, Words: 781, Lines: 103, Duration: 51ms][0m
+[2K[34mjs                      [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 20ms][0m
+[2K[34mkb                      [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 20ms][0m
+[2K[34mlogo.php                [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 121ms][0m
+[2K[34mlogout.php              [Status: 302, Size: 13, Words: 1, Lines: 1, Duration: 73ms][0m
+[2K[32mmanage.php              [Status: 200, Size: 63, Words: 6, Lines: 3, Duration: 33ms][0m
+[2K[34moffline.php             [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 56ms][0m
+[2K[32mopen.php                [Status: 200, Size: 8133, Words: 2038, Lines: 178, Duration: 52ms][0m
+[2K[34mpages                   [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 27ms][0m
+[2K[32mview.php                [Status: 200, Size: 5263, Words: 852, Lines: 107, Duration: 46ms][0m
+[2K[32mweb.config              [Status: 200, Size: 2197, Words: 830, Lines: 49, Duration: 22ms][0m
