@@ -1,0 +1,12 @@
+[2K[32m                        [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 29ms][0m
+[2K[32mabout.html              [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 28ms][0m
+[2K[32mblog.html               [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 36ms][0m
+[2K[32mcontact.html            [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 22ms][0m
+[2K[34mcss                     [Status: 301, Size: 310, Words: 20, Lines: 10, Duration: 26ms][0m
+[2K[32mdepartments.html        [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 32ms][0m
+[2K[34mfonts                   [Status: 301, Size: 312, Words: 20, Lines: 10, Duration: 21ms][0m
+[2K[34mimages                  [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 81ms][0m
+[2K[32mindex.html              [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 25ms][0m
+[2K[32mindex.html              [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 27ms][0m
+[2K[34mjs                      [Status: 301, Size: 309, Words: 20, Lines: 10, Duration: 33ms][0m
+[2K[32mservices.html           [Status: 200, Size: 19848, Words: 5808, Lines: 504, Duration: 27ms][0m

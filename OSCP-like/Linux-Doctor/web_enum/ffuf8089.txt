@@ -1,0 +1,8 @@
+[2K[32m                        [Status: 200, Size: 2178, Words: 594, Lines: 37, Duration: 63ms][0m
+[2K[32mrobots.txt              [Status: 200, Size: 26, Words: 3, Lines: 3, Duration: 24ms][0m
+[2K[32mrobots.txt              [Status: 200, Size: 26, Words: 3, Lines: 3, Duration: 24ms][0m
+[2K[33mservices                [Status: 401, Size: 130, Words: 12, Lines: 7, Duration: 35ms][0m
+[2K[32mv1                      [Status: 200, Size: 2178, Words: 594, Lines: 37, Duration: 27ms][0m
+[2K[32mv3                      [Status: 200, Size: 2178, Words: 594, Lines: 37, Duration: 32ms][0m
+[2K[32mv2                      [Status: 200, Size: 2178, Words: 594, Lines: 37, Duration: 35ms][0m
+[2K[32mv4                      [Status: 200, Size: 2178, Words: 594, Lines: 37, Duration: 30ms][0m
