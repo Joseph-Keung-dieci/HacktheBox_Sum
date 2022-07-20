@@ -1,0 +1,16 @@
+# Nmap 7.92 scan initiated Tue Jul 19 04:41:27 2022 as: nmap -T4 -A -v -p80 -oN ./port_scan_files/alltcp_scan.txt 10.10.10.191
+Nmap scan report for 10.10.10.191
+Host is up (0.022s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Blunder | A blunder of interesting facts
+|_http-generator: Blunder
+|_http-favicon: Unknown favicon MD5: A0F0E5D852F0E3783AF700B6EE9D00DA
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 19 04:41:35 2022 -- 1 IP address (1 host up) scanned in 7.92 seconds

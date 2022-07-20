@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Tue Jul 19 04:43:24 2022 as: nmap -T4 -sU -sV -vvvv -oN port_scan_files/alludp_scan.txt 10.10.10.191

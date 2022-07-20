@@ -1,0 +1,10 @@
+[2K[32m                        [Status: 200, Size: 7562, Words: 794, Lines: 171, Duration: 461ms][0m
+[2K[32m0                       [Status: 200, Size: 7562, Words: 794, Lines: 171, Duration: 65ms][0m
+[2K[32mabout                   [Status: 200, Size: 3281, Words: 225, Lines: 106, Duration: 60ms][0m
+[2K[34madmin                   [Status: 301, Size: 0, Words: 1, Lines: 1, Duration: 65ms][0m
+[2K[34mcgi-bin/                [Status: 301, Size: 0, Words: 1, Lines: 1, Duration: 72ms][0m
+[2K[32minstall.php             [Status: 200, Size: 30, Words: 5, Lines: 1, Duration: 401ms][0m
+[2K[32mLICENSE                 [Status: 200, Size: 1083, Words: 155, Lines: 22, Duration: 40ms][0m
+[2K[32mrobots.txt              [Status: 200, Size: 22, Words: 3, Lines: 2, Duration: 91ms][0m
+[2K[32mrobots.txt              [Status: 200, Size: 22, Words: 3, Lines: 2, Duration: 153ms][0m
+[2K[32mtodo.txt                [Status: 200, Size: 118, Words: 20, Lines: 5, Duration: 45ms][0m
