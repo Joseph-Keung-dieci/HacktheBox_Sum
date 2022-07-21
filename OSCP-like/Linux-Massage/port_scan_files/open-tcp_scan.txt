@@ -1,0 +1,9 @@
+# Nmap 7.92 scan initiated Wed Jul 20 21:47:07 2022 as: nmap -T4 -p- -oN ./port_scan_files/open-tcp_scan.txt -oG - 10.10.10.206
+Nmap scan report for 10.10.10.206
+Host is up (0.060s latency).
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Wed Jul 20 21:47:42 2022 -- 1 IP address (1 host up) scanned in 34.93 seconds
