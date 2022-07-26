@@ -1,0 +1,22 @@
+[2K[34m                        [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 37ms][0m
+[2K[32maux.html                [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 54ms][0m
+[2K[32maux.js                  [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 27ms][0m
+[2K[32mcom1.html               [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 23ms][0m
+[2K[32mcom3.html               [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 86ms][0m
+[2K[32mcom2.js                 [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 77ms][0m
+[2K[32mcom3.js                 [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 66ms][0m
+[2K[32mcom1.js                 [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 80ms][0m
+[2K[32mcom2.html               [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 79ms][0m
+[2K[32mcon.html                [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 28ms][0m
+[2K[32mcon.js                  [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 57ms][0m
+[2K[32mindex.html              [Status: 200, Size: 5581, Words: 284, Lines: 1, Duration: 53ms][0m
+[2K[32mIndex.html              [Status: 200, Size: 5581, Words: 284, Lines: 1, Duration: 60ms][0m
+[2K[32mindex.html              [Status: 200, Size: 5581, Words: 284, Lines: 1, Duration: 100ms][0m
+[2K[32mlpt2.js                 [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 31ms][0m
+[2K[32mlpt2.html               [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 43ms][0m
+[2K[32mlpt1.html               [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 38ms][0m
+[2K[32mlpt1.js                 [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 100ms][0m
+[2K[32mnul.html                [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 28ms][0m
+[2K[32mnul.js                  [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 38ms][0m
+[2K[32mprn.html                [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 29ms][0m
+[2K[32mprn.js                  [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 34ms][0m

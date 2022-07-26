@@ -1,0 +1,23 @@
+[2K[32m                        [Status: 200, Size: 52227, Words: 3306, Lines: 314, Duration: 3271ms][0m
+[2K[34mindex.php               [Status: 301, Size: 0, Words: 1, Lines: 1, Duration: 43ms][0m
+[2K[34mindex.php               [Status: 301, Size: 0, Words: 1, Lines: 1, Duration: 72ms][0m
+[2K[34mjavascript              [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 24ms][0m
+[2K[32mlicense.txt             [Status: 200, Size: 19935, Words: 3334, Lines: 386, Duration: 28ms][0m
+[2K[34mphpmyadmin              [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 18ms][0m
+[2K[34mplugins                 [Status: 301, Size: 310, Words: 20, Lines: 10, Duration: 26ms][0m
+[2K[32mreadme.html             [Status: 200, Size: 7413, Words: 760, Lines: 99, Duration: 33ms][0m
+[2K[34mwiki                    [Status: 301, Size: 307, Words: 20, Lines: 10, Duration: 28ms][0m
+[2K[34mwp-admin                [Status: 301, Size: 311, Words: 20, Lines: 10, Duration: 23ms][0m
+[2K[34mwp-content              [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 27ms][0m
+[2K[34mwp-includes             [Status: 301, Size: 314, Words: 20, Lines: 10, Duration: 26ms][0m
+[2K[31mwp-settings.php         [Status: 500, Size: 0, Words: 1, Lines: 1, Duration: 23ms][0m
+[2K[32mwp-blog-header.php      [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 250ms][0m
+[2K[32mwp-config.php           [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 260ms][0m
+[2K[32mwp-cron.php             [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 289ms][0m
+[2K[32mwp-load.php             [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 262ms][0m
+[2K[34mwp-signup.php           [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 224ms][0m
+[2K[32mwp-links-opml.php       [Status: 200, Size: 219, Words: 12, Lines: 11, Duration: 297ms][0m
+[2K[32mwp-login.php            [Status: 200, Size: 2397, Words: 147, Lines: 70, Duration: 295ms][0m
+[2K[32mwp-trackback.php        [Status: 200, Size: 135, Words: 11, Lines: 5, Duration: 236ms][0m
+[2K[33mxmlrpc.php              [Status: 405, Size: 42, Words: 6, Lines: 1, Duration: 192ms][0m
+[2K[33mxmlrpc.php              [Status: 405, Size: 42, Words: 6, Lines: 1, Duration: 185ms][0m
