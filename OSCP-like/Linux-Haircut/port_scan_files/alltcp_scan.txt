@@ -1,0 +1,20 @@
+# Nmap 7.92 scan initiated Tue Jul 26 07:39:06 2022 as: nmap -T4 -A -v -p22,80 -oN ./port_scan_files/alltcp_scan.txt 10.10.10.24
+Nmap scan report for 10.10.10.24
+Host is up (0.019s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e9:75:c1:e4:b3:63:3c:93:f2:c6:18:08:36:48:ce:36 (RSA)
+|   256 87:00:ab:a9:8f:6f:4b:ba:fb:c6:7a:55:a8:60:b2:68 (ECDSA)
+|_  256 b6:1b:5c:a9:26:5c:dc:61:b7:75:90:6c:88:51:6e:54 (ED25519)
+80/tcp open  http    nginx 1.10.0 (Ubuntu)
+|_http-server-header: nginx/1.10.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title:  HTB Hairdresser 
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 26 07:39:13 2022 -- 1 IP address (1 host up) scanned in 7.74 seconds
