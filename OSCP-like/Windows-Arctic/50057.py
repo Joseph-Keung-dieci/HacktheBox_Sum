@@ -68,7 +68,7 @@ def listen_connection():
 
 if __name__ == '__main__':
     # Define some information
-    lhost = '10.10.14.23'
+    lhost = '10.10.14.29'
     lport = 12345
     rhost = "10.10.10.11"
     rport = 8500
