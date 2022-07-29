@@ -1,0 +1,3 @@
+[2K[32m                        [Status: 200, Size: 54, Words: 11, Lines: 2, Duration: 5067ms][0m
+[2K[32mindex.html              [Status: 200, Size: 54, Words: 11, Lines: 2, Duration: 19ms][0m
+[2K[32mindex.html              [Status: 200, Size: 54, Words: 11, Lines: 2, Duration: 25ms][0m

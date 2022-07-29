@@ -1,0 +1,8 @@
+http://supersecurehotel.htb/nav.php              (Status: 200) [Size: 1333]
+http://supersecurehotel.htb/css                  (Status: 301) [Size: 326] [--> http://supersecurehotel.htb/css/]
+http://supersecurehotel.htb/js                   (Status: 301) [Size: 325] [--> http://supersecurehotel.htb/js/] 
+http://supersecurehotel.htb/fonts                (Status: 301) [Size: 328] [--> http://supersecurehotel.htb/fonts/]
+http://supersecurehotel.htb/phpmyadmin           (Status: 301) [Size: 333] [--> http://supersecurehotel.htb/phpmyadmin/]
+http://supersecurehotel.htb/connection.php       (Status: 200) [Size: 0]                                                
+http://supersecurehotel.htb/room.php             (Status: 302) [Size: 3024] [--> index.php]                             
+http://supersecurehotel.htb/sass                 (Status: 301) [Size: 327] [--> http://supersecurehotel.htb/sass/]      

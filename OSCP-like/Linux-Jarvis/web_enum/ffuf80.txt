@@ -1,0 +1,11 @@
+[2K[32m                        [Status: 200, Size: 23628, Words: 3014, Lines: 544, Duration: 34ms][0m
+[2K[34mcss                     [Status: 301, Size: 326, Words: 20, Lines: 10, Duration: 25ms][0m
+[2K[34mfonts                   [Status: 301, Size: 328, Words: 20, Lines: 10, Duration: 124ms][0m
+[2K[32mfooter.php              [Status: 200, Size: 2237, Words: 101, Lines: 69, Duration: 31ms][0m
+[2K[34mimages                  [Status: 301, Size: 329, Words: 20, Lines: 10, Duration: 19ms][0m
+[2K[32mindex.php               [Status: 200, Size: 23628, Words: 3014, Lines: 544, Duration: 30ms][0m
+[2K[32mindex.php               [Status: 200, Size: 23628, Words: 3014, Lines: 544, Duration: 38ms][0m
+[2K[34mjs                      [Status: 301, Size: 325, Words: 20, Lines: 10, Duration: 24ms][0m
+[2K[32mnav.php                 [Status: 200, Size: 1333, Words: 76, Lines: 44, Duration: 21ms][0m
+[2K[34mphpmyadmin              [Status: 301, Size: 333, Words: 20, Lines: 10, Duration: 21ms][0m
+[2K[34mroom.php                [Status: 302, Size: 3024, Words: 181, Lines: 102, Duration: 26ms][0m
