@@ -1,0 +1,4 @@
+[2K[32m                        [Status: 200, Size: 630, Words: 25, Lines: 32, Duration: 25ms][0m
+[2K[34maspnet_client           [Status: 301, Size: 156, Words: 9, Lines: 2, Duration: 61ms][0m
+[2K[32mtransfer.aspx           [Status: 200, Size: 941, Words: 89, Lines: 22, Duration: 23ms][0m
+[2K[34muploadedfiles           [Status: 301, Size: 156, Words: 9, Lines: 2, Duration: 29ms][0m
