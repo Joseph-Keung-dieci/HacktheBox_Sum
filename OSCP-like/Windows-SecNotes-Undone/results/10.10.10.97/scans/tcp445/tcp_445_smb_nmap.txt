@@ -1,0 +1,76 @@
+# Nmap 7.92 scan initiated Sun Jul 31 02:03:54 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 445 "--script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.10.10.97
+Nmap scan report for secnotes.htb (10.10.10.97)
+Host is up, received user-set (0.075s latency).
+Scanned at 2022-07-31 02:03:56 EDT for 420s
+
+PORT    STATE SERVICE      REASON  VERSION
+445/tcp open  microsoft-ds syn-ack Windows 10 Enterprise 17134 microsoft-ds (workgroup: HTB)
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+Service Info: Host: SECNOTES; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-capabilities: 
+|   2.0.2: 
+|     Distributed File System
+|   2.1: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0.2: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.1.1: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: <blank>
+|   \\10.10.10.97\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.10.10.97\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.10.10.97\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: READ
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.0.2
+|     2.1
+|     3.0
+|     3.0.2
+|_    3.1.1
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Windows 10 Enterprise 17134 (Windows 10 Enterprise 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: SECNOTES
+|   NetBIOS computer name: SECNOTES\x00
+|   Workgroup: HTB\x00
+|_  System time: 2022-07-30T23:04:14-07:00
+| smb2-time: 
+|   date: 2022-07-31T06:04:09
+|_  start_date: N/A
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+|_smb-print-text: false
+| smb-mbenum: 
+|_  ERROR: Call to Browser Service failed with status = 2184
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 31 02:10:56 2022 -- 1 IP address (1 host up) scanned in 422.39 seconds

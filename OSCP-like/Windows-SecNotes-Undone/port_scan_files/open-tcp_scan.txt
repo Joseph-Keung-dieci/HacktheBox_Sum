@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Sun Jul 31 01:59:40 2022 as: nmap -T4 -p- -oN ./port_scan_files/open-tcp_scan.txt -oG - 10.10.10.97
+Nmap scan report for secnotes.htb (10.10.10.97)
+Host is up (0.022s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+445/tcp  open  microsoft-ds
+8808/tcp open  ssports-bcast
+
+# Nmap done at Sun Jul 31 02:01:36 2022 -- 1 IP address (1 host up) scanned in 116.34 seconds

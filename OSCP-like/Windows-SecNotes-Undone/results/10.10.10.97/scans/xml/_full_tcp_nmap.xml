@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Jul 31 02:03:03 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/_full_tcp_nmap.txt -oX /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/xml/_full_tcp_nmap.xml 10.10.10.97 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/_full_tcp_nmap.txt -oX /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/xml/_full_tcp_nmap.xml 10.10.10.97" start="1659247383" startstr="Sun Jul 31 02:03:03 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1659247383"/>
+<taskend task="NSE" time="1659247383"/>
+<taskbegin task="NSE" time="1659247383"/>
+<taskend task="NSE" time="1659247383"/>
+<taskbegin task="NSE" time="1659247383"/>
+<taskend task="NSE" time="1659247383"/>
+<taskbegin task="Connect Scan" time="1659247384"/>
+<taskprogress task="Connect Scan" time="1659247415" percent="25.54" remaining="91" etc="1659247505"/>
+<taskprogress task="Connect Scan" time="1659247445" percent="51.42" remaining="58" etc="1659247503"/>
+<taskprogress task="Connect Scan" time="1659247475" percent="74.36" remaining="32" etc="1659247506"/>
+<taskend task="Connect Scan" time="1659247508" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1659247508"/>
+<taskend task="Service scan" time="1659247519" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1659247519"/>
+<taskprogress task="NSE" time="1659247550" percent="99.76" remaining="1" etc="1659247550"/>
+<taskend task="NSE" time="1659247560"/>
+<taskbegin task="NSE" time="1659247560"/>
+<taskend task="NSE" time="1659247560"/>
+<taskbegin task="NSE" time="1659247560"/>
+<taskend task="NSE" time="1659247560"/>
+<host starttime="1659247384" endtime="1659247560"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.97" addrtype="ipv4"/>
+<hostnames>
+<hostname name="secnotes.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-79,81-444,446-8807,8809-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="Secure Notes - Login&#xa;Requested resource was login.php"><elem key="title">Secure Notes - Login</elem>
+<elem key="redirect_url">login.php</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows 10 Enterprise 17134 microsoft-ds" extrainfo="workgroup: HTB" hostname="SECNOTES" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="8808"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="IIS Windows"><elem key="title">IIS Windows</elem>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 2h20m00s, deviation: 4h02m30s, median: 0s"><elem key="count">3</elem>
+<elem key="stddev">14550</elem>
+<elem key="mean">8400</elem>
+<elem key="median">0</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2022-07-31T06:05:23&#xa;  start_date: N/A"><elem key="date">2022-07-31T06:05:23</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 10 Enterprise 17134 (Windows 10 Enterprise 6.3)&#xa;  OS CPE: cpe:/o:microsoft:windows_10::-&#xa;  Computer name: SECNOTES&#xa;  NetBIOS computer name: SECNOTES\x00&#xa;  Workgroup: HTB\x00&#xa;  System time: 2022-07-30T23:05:21-07:00&#xa;"><elem key="os">Windows 10 Enterprise 17134</elem>
+<elem key="lanmanager">Windows 10 Enterprise 6.3</elem>
+<elem key="server">SECNOTES\x00</elem>
+<elem key="date">2022-07-30T23:05:21-07:00</elem>
+<elem key="fqdn">SECNOTES</elem>
+<elem key="domain_dns">SECNOTES</elem>
+<elem key="workgroup">HTB\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_10::-</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 25086/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 63404/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 53444/udp): CLEAN (Timeout)&#xa;  Check 4 (port 56035/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/></hostscript><times srtt="76505" rttvar="32465" to="206365"/>
+</host>
+<taskbegin task="NSE" time="1659247560"/>
+<taskend task="NSE" time="1659247560"/>
+<taskbegin task="NSE" time="1659247560"/>
+<taskend task="NSE" time="1659247560"/>
+<taskbegin task="NSE" time="1659247560"/>
+<taskend task="NSE" time="1659247560"/>
+<runstats><finished time="1659247560" timestr="Sun Jul 31 02:06:00 2022" summary="Nmap done at Sun Jul 31 02:06:00 2022; 1 IP address (1 host up) scanned in 177.14 seconds" elapsed="177.14" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

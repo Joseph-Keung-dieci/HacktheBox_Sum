@@ -1,0 +1,13 @@
+[2K[34m                        [Status: 302, Size: 9546, Words: 1453, Lines: 267, Duration: 70ms][0m
+[2K[32majax.php                [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 23ms][0m
+[2K[34massets                  [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 29ms][0m
+[2K[34mdatabase                [Status: 301, Size: 185, Words: 6, Lines: 8, Duration: 20ms][0m
+[2K[32mdb_connect.php          [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 36ms][0m
+[2K[32memployee.php            [Status: 200, Size: 2717, Words: 74, Lines: 96, Duration: 29ms][0m
+[2K[32mheader.php              [Status: 200, Size: 2548, Words: 145, Lines: 46, Duration: 26ms][0m
+[2K[32mhome.php                [Status: 200, Size: 486, Words: 180, Lines: 27, Duration: 23ms][0m
+[2K[34mindex.php               [Status: 302, Size: 9546, Words: 1453, Lines: 267, Duration: 32ms][0m
+[2K[34mindex.php               [Status: 302, Size: 9546, Words: 1453, Lines: 267, Duration: 37ms][0m
+[2K[32mlogin.php               [Status: 200, Size: 5571, Words: 374, Lines: 177, Duration: 88ms][0m
+[2K[32mreadme.txt              [Status: 200, Size: 149, Words: 5, Lines: 2, Duration: 116ms][0m
+[2K[32musers.php               [Status: 200, Size: 2197, Words: 103, Lines: 81, Duration: 23ms][0m

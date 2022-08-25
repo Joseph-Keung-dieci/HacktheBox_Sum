@@ -1,0 +1,53 @@
+# Nmap 7.92 scan initiated Sun Jul 31 02:03:03 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/_full_tcp_nmap.txt -oX /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/xml/_full_tcp_nmap.xml 10.10.10.97
+Nmap scan report for secnotes.htb (10.10.10.97)
+Host is up, received user-set (0.077s latency).
+Scanned at 2022-07-31 02:03:04 EDT for 176s
+Not shown: 65532 filtered tcp ports (no-response)
+PORT     STATE SERVICE      REASON  VERSION
+80/tcp   open  http         syn-ack Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+| http-title: Secure Notes - Login
+|_Requested resource was login.php
+445/tcp  open  microsoft-ds syn-ack Windows 10 Enterprise 17134 microsoft-ds (workgroup: HTB)
+8808/tcp open  http         syn-ack Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows
+Service Info: Host: SECNOTES; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h20m00s, deviation: 4h02m30s, median: 0s
+| smb2-time: 
+|   date: 2022-07-31T06:05:23
+|_  start_date: N/A
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows 10 Enterprise 17134 (Windows 10 Enterprise 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: SECNOTES
+|   NetBIOS computer name: SECNOTES\x00
+|   Workgroup: HTB\x00
+|_  System time: 2022-07-30T23:05:21-07:00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 25086/tcp): CLEAN (Timeout)
+|   Check 2 (port 63404/tcp): CLEAN (Timeout)
+|   Check 3 (port 53444/udp): CLEAN (Timeout)
+|   Check 4 (port 56035/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 31 02:06:00 2022 -- 1 IP address (1 host up) scanned in 177.14 seconds

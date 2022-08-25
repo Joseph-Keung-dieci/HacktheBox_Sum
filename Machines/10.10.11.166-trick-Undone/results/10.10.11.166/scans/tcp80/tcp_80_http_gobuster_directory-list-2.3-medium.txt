@@ -1,0 +1,4 @@
+http://10.10.11.166:80/index.html           (Status: 200) [Size: 5480]
+http://10.10.11.166:80/assets               (Status: 301) [Size: 185] [--> http://10.10.11.166/assets/]
+http://10.10.11.166:80/css                  (Status: 301) [Size: 185] [--> http://10.10.11.166/css/]
+http://10.10.11.166:80/js                   (Status: 301) [Size: 185] [--> http://10.10.11.166/js/]

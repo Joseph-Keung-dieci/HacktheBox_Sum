@@ -1,0 +1,111 @@
+# Nmap 7.92 scan initiated Sun Jul 31 02:03:54 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp80/tcp_80_http_nmap.txt -oX /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.97
+Nmap scan report for secnotes.htb (10.10.10.97)
+Host is up, received user-set (0.080s latency).
+Scanned at 2022-07-31 02:03:56 EDT for 797s
+
+Bug in http-security-headers: no string output.
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Microsoft IIS httpd 10.0
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-comments-displayer: Couldn't find any comments.
+|_http-feed: Couldn't find any feeds.
+| http-vhosts: 
+| admin.htb
+| http.htb
+| ns2.htb
+| appserver.htb
+| mail.htb
+| vpn.htb
+| info.htb
+|_121 names had status 302
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-server-header: Microsoft-IIS/10.0
+| http-title: Secure Notes - Login
+|_Requested resource was login.php
+| http-enum: 
+|_  /login.php: Possible admin folder
+|_http-chrono: Request times for /; avg: 1750.68ms; min: 379.83ms; max: 5057.82ms
+| http-waf-detect: IDS/IPS/WAF detected:
+|_secnotes.htb:80/?p4yl04d3=<script>alert(document.cookie)</script>
+|_http-mobileversion-checker: No mobile version detected.
+|_http-date: Sun, 31 Jul 2022 06:04:08 GMT; -2s from local time.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-errors: Couldn't find any error pages.
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; php: 2
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    Other: 1; php: 2
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+| http-headers: 
+|   Content-Length: 0
+|   Content-Type: text/html; charset=UTF-8
+|   Server: Microsoft-IIS/10.0
+|   X-Powered-By: PHP/7.2.7
+|   Date: Sun, 31 Jul 2022 06:04:05 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+|_http-malware-host: Host appears to be clean
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Redirected To: login.php
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     Snoopy
+|     MFC_Tear_Sample
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=secnotes.htb
+|   url                                  method
+|   http://secnotes.htb:80/              FORM
+|   http://secnotes.htb:80/login.php     FORM
+|_  http://secnotes.htb:80/register.php  FORM
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=secnotes.htb
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://secnotes.htb:80/
+|     Form id: 
+|     Form action: /login.php
+|     
+|     Path: http://secnotes.htb:80/login.php
+|     Form id: 
+|     Form action: /login.php
+|     
+|     Path: http://secnotes.htb:80/register.php
+|     Form id: 
+|_    Form action: /register.php
+| http-php-version: Logo query returned unknown hash d47c49c6c47ca831e93616b5f17dbf2f
+| Credits query returned unknown hash d47c49c6c47ca831e93616b5f17dbf2f
+|_Version from header x-powered-by: PHP/7.2.7
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 31 02:17:13 2022 -- 1 IP address (1 host up) scanned in 799.10 seconds

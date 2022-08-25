@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Jul 31 02:03:54 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.10.10.97 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/kali/Desktop/HTB/HacktheBox/OSCP-like/Windows-SecNotes/results/10.10.10.97/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.10.10.97" start="1659247434" startstr="Sun Jul 31 02:03:54 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1659247436"/>
+<taskend task="NSE" time="1659247436"/>
+<taskbegin task="NSE" time="1659247436"/>
+<taskend task="NSE" time="1659247436"/>
+<taskbegin task="NSE" time="1659247436"/>
+<taskend task="NSE" time="1659247436"/>
+<taskbegin task="Connect Scan" time="1659247436"/>
+<taskend task="Connect Scan" time="1659247436" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1659247436"/>
+<taskend task="Service scan" time="1659247443" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1659247443"/>
+<taskprogress task="NSE" time="1659247474" percent="94.29" remaining="2" etc="1659247476"/>
+<taskprogress task="NSE" time="1659247504" percent="97.14" remaining="2" etc="1659247506"/>
+<taskprogress task="NSE" time="1659247534" percent="97.14" remaining="3" etc="1659247537"/>
+<taskprogress task="NSE" time="1659247564" percent="97.14" remaining="4" etc="1659247568"/>
+<taskprogress task="NSE" time="1659247594" percent="97.14" remaining="5" etc="1659247598"/>
+<taskprogress task="NSE" time="1659247624" percent="97.14" remaining="6" etc="1659247629"/>
+<taskprogress task="NSE" time="1659247654" percent="97.14" remaining="7" etc="1659247660"/>
+<taskprogress task="NSE" time="1659247684" percent="97.14" remaining="8" etc="1659247691"/>
+<taskprogress task="NSE" time="1659247714" percent="97.14" remaining="8" etc="1659247722"/>
+<taskprogress task="NSE" time="1659247744" percent="97.14" remaining="9" etc="1659247753"/>
+<taskprogress task="NSE" time="1659247774" percent="97.14" remaining="10" etc="1659247784"/>
+<taskprogress task="NSE" time="1659247804" percent="97.14" remaining="11" etc="1659247815"/>
+<taskprogress task="NSE" time="1659247834" percent="97.14" remaining="12" etc="1659247846"/>
+<taskend task="NSE" time="1659247849"/>
+<taskbegin task="NSE" time="1659247849"/>
+<taskend task="NSE" time="1659247856"/>
+<taskbegin task="NSE" time="1659247856"/>
+<taskend task="NSE" time="1659247856"/>
+<host starttime="1659247436" endtime="1659247856"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.97" addrtype="ipv4"/>
+<hostnames>
+<hostname name="secnotes.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows 10 Enterprise 17134 microsoft-ds" extrainfo="workgroup: HTB" hostname="SECNOTES" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smb-enum-services" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<hostscript><script id="smb2-capabilities" output="&#xa;  2.0.2: &#xa;    Distributed File System&#xa;  2.1: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.0: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.0.2: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.1.1: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations"><table key="2.0.2">
+<elem>Distributed File System</elem>
+</table>
+<table key="2.1">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.0">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.0.2">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.1.1">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+</script><script id="smb-enum-shares" output="&#xa;  note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)&#xa;  account_used: &lt;blank&gt;&#xa;  \\10.10.10.97\ADMIN$: &#xa;    warning: Couldn&apos;t get details for share: NT_STATUS_ACCESS_DENIED&#xa;    Anonymous access: &lt;none&gt;&#xa;  \\10.10.10.97\C$: &#xa;    warning: Couldn&apos;t get details for share: NT_STATUS_ACCESS_DENIED&#xa;    Anonymous access: &lt;none&gt;&#xa;  \\10.10.10.97\IPC$: &#xa;    warning: Couldn&apos;t get details for share: NT_STATUS_ACCESS_DENIED&#xa;    Anonymous access: READ"><elem key="note">ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)</elem>
+<elem key="account_used">&lt;blank&gt;</elem>
+<table key="\\10.10.10.97\ADMIN$">
+<elem key="warning">Couldn&apos;t get details for share: NT_STATUS_ACCESS_DENIED</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+</table>
+<table key="\\10.10.10.97\C$">
+<elem key="warning">Couldn&apos;t get details for share: NT_STATUS_ACCESS_DENIED</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+</table>
+<table key="\\10.10.10.97\IPC$">
+<elem key="warning">Couldn&apos;t get details for share: NT_STATUS_ACCESS_DENIED</elem>
+<elem key="Anonymous access">READ</elem>
+</table>
+</script><script id="smb-protocols" output="&#xa;  dialects: &#xa;    NT LM 0.12 (SMBv1) [dangerous, but default]&#xa;    2.0.2&#xa;    2.1&#xa;    3.0&#xa;    3.0.2&#xa;    3.1.1"><table key="dialects">
+<elem>NT LM 0.12 (SMBv1) [dangerous, but default]</elem>
+<elem>2.0.2</elem>
+<elem>2.1</elem>
+<elem>3.0</elem>
+<elem>3.0.2</elem>
+<elem>3.1.1</elem>
+</table>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 10 Enterprise 17134 (Windows 10 Enterprise 6.3)&#xa;  OS CPE: cpe:/o:microsoft:windows_10::-&#xa;  Computer name: SECNOTES&#xa;  NetBIOS computer name: SECNOTES\x00&#xa;  Workgroup: HTB\x00&#xa;  System time: 2022-07-30T23:04:14-07:00&#xa;"><elem key="os">Windows 10 Enterprise 17134</elem>
+<elem key="lanmanager">Windows 10 Enterprise 6.3</elem>
+<elem key="server">SECNOTES\x00</elem>
+<elem key="date">2022-07-30T23:04:14-07:00</elem>
+<elem key="fqdn">SECNOTES</elem>
+<elem key="domain_dns">SECNOTES</elem>
+<elem key="workgroup">HTB\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_10::-</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2022-07-31T06:04:09&#xa;  start_date: N/A"><elem key="date">2022-07-31T06:04:09</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-vuln-ms10-061" output="NT_STATUS_ACCESS_DENIED">false</script><script id="smb-print-text" output="false">false</script><script id="smb-mbenum" output="&#xa;  ERROR: Call to Browser Service failed with status = 2184"/></hostscript><times srtt="74831" rttvar="74831" to="374155"/>
+</host>
+<taskbegin task="NSE" time="1659247856"/>
+<taskend task="NSE" time="1659247856"/>
+<taskbegin task="NSE" time="1659247856"/>
+<taskend task="NSE" time="1659247856"/>
+<taskbegin task="NSE" time="1659247856"/>
+<taskend task="NSE" time="1659247856"/>
+<runstats><finished time="1659247856" timestr="Sun Jul 31 02:10:56 2022" summary="Nmap done at Sun Jul 31 02:10:56 2022; 1 IP address (1 host up) scanned in 422.39 seconds" elapsed="422.39" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
