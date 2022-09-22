@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Sep 18 15:13:45 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 32400 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Mirai/results/10.10.10.48/scans/tcp32400/tcp_32400_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Mirai/results/10.10.10.48/scans/tcp32400/xml/tcp_32400_http_nmap.xml 10.10.10.48 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 32400 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Mirai/results/10.10.10.48/scans/tcp32400/tcp_32400_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Mirai/results/10.10.10.48/scans/tcp32400/xml/tcp_32400_http_nmap.xml 10.10.10.48" start="1663478025" startstr="Sun Sep 18 15:13:45 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="32400"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1663478025"/>
+<taskend task="NSE" time="1663478025"/>
+<taskbegin task="NSE" time="1663478025"/>
+<taskend task="NSE" time="1663478025"/>
+<taskbegin task="NSE" time="1663478025"/>
+<taskend task="NSE" time="1663478025"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1663478025"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1663478025"/>
+<taskbegin task="Connect Scan" time="1663478025"/>
+<taskend task="Connect Scan" time="1663478025" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1663478025"/>
+<taskend task="Service scan" time="1663478036" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1663478036"/>
+<taskprogress task="NSE" time="1663478067" percent="99.02" remaining="1" etc="1663478067"/>
+<taskprogress task="NSE" time="1663478097" percent="99.67" remaining="1" etc="1663478097"/>
+<taskprogress task="NSE" time="1663478127" percent="99.67" remaining="1" etc="1663478127"/>
+<taskprogress task="NSE" time="1663478157" percent="99.67" remaining="1" etc="1663478157"/>
+<taskend task="NSE" time="1663478178"/>
+<taskbegin task="NSE" time="1663478178"/>
+<taskend task="NSE" time="1663478182"/>
+<taskbegin task="NSE" time="1663478182"/>
+<taskend task="NSE" time="1663478182"/>
+<host starttime="1663478025" endtime="1663478182"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.48" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="32400"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Plex Media Server httpd" method="probed" conf="10"><cpe>cpe:/a:plex:plex_media_server</cpe></service><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-date" output="Sun, 18 Sep 2022 05:13:56 GMT; 0s from local time."><elem key="date">2022-09-18T05:13:56+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="http-chrono" output="Request times for /; avg: 149.94ms; min: 149.16ms; max: 150.43ms"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.10.48&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 401&#xa;  &#x9;http://10.10.10.48:32400/&#xa;"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /weblog/: Blog&#xa;  /weblogs/: Blog&#xa;  /websvn/: WEBSVN Repository&#xa;  /webedition/: Web Edition&#xa;  /manager/: Possible admin folder&#xa;  /webadmin/: Possible admin folder&#xa;  /webadmin.html: Possible admin folder&#xa;  /webadmin.php: Possible admin folder&#xa;  /webadmin.cfm: Possible admin folder&#xa;  /webadmin.asp: Possible admin folder&#xa;  /webadmin.aspx: Possible admin folder&#xa;  /webadmin.jsp: Possible admin folder&#xa;  /clientaccesspolicy.xml: Microsoft Silverlight crossdomain policy&#xa;  /webmail/: Mail folder&#xa;  /crossdomain.xml: Adobe Flash crossdomain policy&#xa;  /websql/: phpMyAdmin&#xa;  /webadmin.nsf: Lotus Domino&#xa;  /web.nsf: Lotus Domino&#xa;  /weblink_cat_list.php: WHMCompleteSolution CMS&#xa;  /management/: Potentially interesting folder&#xa;  /security/: Potentially interesting folder&#xa;  /web800fo/: Potentially interesting folder&#xa;  /webaccess/: Potentially interesting folder&#xa;  /webadmin/: Potentially interesting folder&#xa;  /webAdmin/: Potentially interesting folder&#xa;  /webalizer/: Potentially interesting folder&#xa;  /webapps/: Potentially interesting folder&#xa;  /webboard/: Potentially interesting folder&#xa;  /webcart/: Potentially interesting folder&#xa;  /webcart-lite/: Potentially interesting folder&#xa;  /webcgi/: Potentially interesting folder&#xa;  /webdata/: Potentially interesting folder&#xa;  /webdav/: Potentially interesting folder&#xa;  /webdb/: Potentially interesting folder&#xa;  /webDB/: Potentially interesting folder&#xa;  /webimages2/: Potentially interesting folder&#xa;  /webimages/: Potentially interesting folder&#xa;  /web-inf/: Potentially interesting folder&#xa;  /webmaster/: Potentially interesting folder&#xa;  /webmaster_logs/: Potentially interesting folder&#xa;  /webMathematica/: Potentially interesting folder&#xa;  /webpub/: Potentially interesting folder&#xa;  /webpub-ui/: Potentially interesting folder&#xa;  /webreports/: Potentially interesting folder&#xa;  /webreps/: Potentially interesting folder&#xa;  /webshare/: Potentially interesting folder&#xa;  /website/: Potentially interesting folder&#xa;  /webstat/: Potentially interesting folder&#xa;  /webstats/: Potentially interesting folder&#xa;  /webtrace/: Potentially interesting folder&#xa;  /webtrends/: Potentially interesting folder&#xa;  /web_usage/: Potentially interesting folder&#xa;"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 401&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">401</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized&#xd;&#xa;  Server returned status 401 but no WWW-Authenticate header.&#xa;"/><script id="http-iis-webdav-vuln" output="Could not determine vulnerability, since root folder is password protected"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-vhosts" output="&#xa;128 names had status 401"/><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.48&#xa;  url                        method&#xa;  http://10.10.10.48:32400/  HTTP: Server returned no authentication headers.&#xa;"/><script id="http-cors" output="HEAD GET POST PUT DELETE OPTIONS"/><script id="http-security-headers" output="&#xa;  Cache_Control: &#xa;    Header: Cache-Control: no-cache"><table key="Cache_Control">
+<elem>Header: Cache-Control: no-cache</elem>
+</table>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    &#xa;"/><script id="http-favicon" output="Plex"/><script id="http-title" output="Unauthorized"><elem key="title">Unauthorized</elem>
+</script><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-headers" output="&#xa;  Content-Length: 193&#xa;  Content-Type: text/html&#xa;  X-Plex-Protocol: 1.0&#xa;  Cache-Control: no-cache&#xa;  Date: Sun, 18 Sep 2022 05:14:07 GMT&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="27027" rttvar="27027" to="135135"/>
+</host>
+<taskbegin task="NSE" time="1663478182"/>
+<taskend task="NSE" time="1663478182"/>
+<taskbegin task="NSE" time="1663478182"/>
+<taskend task="NSE" time="1663478182"/>
+<taskbegin task="NSE" time="1663478182"/>
+<taskend task="NSE" time="1663478182"/>
+<runstats><finished time="1663478182" timestr="Sun Sep 18 15:16:22 2022" summary="Nmap done at Sun Sep 18 15:16:22 2022; 1 IP address (1 host up) scanned in 156.89 seconds" elapsed="156.89" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
