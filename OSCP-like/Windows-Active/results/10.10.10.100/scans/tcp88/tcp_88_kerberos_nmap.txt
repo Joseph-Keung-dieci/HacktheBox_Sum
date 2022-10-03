@@ -1,0 +1,12 @@
+# Nmap 7.92 scan initiated Sun Oct  2 21:17:03 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 88 --script=banner,krb5-enum-users -oN /home/parallels/HacktheBox/OSCP-like/Windows-Active/results/10.10.10.100/scans/tcp88/tcp_88_kerberos_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Active/results/10.10.10.100/scans/tcp88/xml/tcp_88_kerberos_nmap.xml 10.10.10.100
+Nmap scan report for 10.10.10.100
+Host is up, received user-set (0.032s latency).
+Scanned at 2022-10-02 21:17:04 AEDT for 17s
+
+PORT   STATE SERVICE      REASON  VERSION
+88/tcp open  kerberos-sec syn-ack Microsoft Windows Kerberos (server time: 2022-10-02 10:17:11Z)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct  2 21:17:21 2022 -- 1 IP address (1 host up) scanned in 18.45 seconds

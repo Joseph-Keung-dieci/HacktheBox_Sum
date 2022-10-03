@@ -1,0 +1,35 @@
+# Nmap 7.92 scan initiated Sun Oct  2 21:17:03 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 445 "--script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Windows-Active/results/10.10.10.100/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Active/results/10.10.10.100/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.10.10.100
+Nmap scan report for 10.10.10.100
+Host is up, received user-set (0.029s latency).
+Scanned at 2022-10-02 21:17:05 AEDT for 43s
+
+PORT    STATE SERVICE       REASON  VERSION
+445/tcp open  microsoft-ds? syn-ack
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+
+Host script results:
+| smb2-time: 
+|   date: 2022-10-02T10:17:19
+|_  start_date: 2022-10-01T13:52:47
+| smb-mbenum: 
+|_  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+| smb2-capabilities: 
+|   2.0.2: 
+|     Distributed File System
+|   2.1: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+| smb-protocols: 
+|   dialects: 
+|     2.0.2
+|_    2.1
+| smb2-security-mode: 
+|   2.1: 
+|_    Message signing enabled and required
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-print-text: false
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct  2 21:17:48 2022 -- 1 IP address (1 host up) scanned in 44.69 seconds
