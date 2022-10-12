@@ -1,0 +1,16 @@
+[*] ssh found on tcp/22.
+
+
+
+[*] hadoop-tasktracker found on tcp/3000.
+
+
+
+[*] ssh found on tcp/22.
+
+
+
+[*] hadoop-datanode found on tcp/3000.
+
+
+
