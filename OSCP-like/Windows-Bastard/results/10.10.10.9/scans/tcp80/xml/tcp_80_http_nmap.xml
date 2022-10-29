@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Oct 28 16:57:40 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/tcp80/tcp_80_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.9 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/tcp80/tcp_80_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.9" start="1666936660" startstr="Fri Oct 28 16:57:40 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1666936660"/>
+<taskend task="NSE" time="1666936660"/>
+<taskbegin task="NSE" time="1666936660"/>
+<taskend task="NSE" time="1666936660"/>
+<taskbegin task="NSE" time="1666936660"/>
+<taskend task="NSE" time="1666936660"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1666936660"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1666936660"/>
+<taskbegin task="Connect Scan" time="1666936660"/>
+<taskend task="Connect Scan" time="1666936660" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1666936661"/>
+<taskend task="Service scan" time="1666936672" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1666936672"/>
+<taskprogress task="NSE" time="1666936703" percent="42.71" remaining="42" etc="1666936745"/>
+<taskprogress task="NSE" time="1666936733" percent="64.43" remaining="34" etc="1666936767"/>
+<taskprogress task="NSE" time="1666936763" percent="84.87" remaining="17" etc="1666936779"/>
+<taskprogress task="NSE" time="1666936793" percent="85.90" remaining="20" etc="1666936813"/>
+<taskprogress task="NSE" time="1666936823" percent="96.39" remaining="6" etc="1666936829"/>
+<taskprogress task="NSE" time="1666936853" percent="97.70" remaining="5" etc="1666936857"/>
+<taskprogress task="NSE" time="1666936883" percent="97.71" remaining="5" etc="1666936888"/>
+<taskprogress task="NSE" time="1666936913" percent="98.69" remaining="4" etc="1666936916"/>
+<taskprogress task="NSE" time="1666936943" percent="98.69" remaining="4" etc="1666936947"/>
+<taskprogress task="NSE" time="1666936973" percent="99.02" remaining="3" etc="1666936976"/>
+<taskprogress task="NSE" time="1666937003" percent="99.02" remaining="4" etc="1666937006"/>
+<taskprogress task="NSE" time="1666937033" percent="99.02" remaining="4" etc="1666937037"/>
+<taskprogress task="NSE" time="1666937063" percent="99.02" remaining="4" etc="1666937067"/>
+<taskprogress task="NSE" time="1666937093" percent="99.35" remaining="3" etc="1666937096"/>
+<taskprogress task="NSE" time="1666937123" percent="99.35" remaining="3" etc="1666937126"/>
+<taskprogress task="NSE" time="1666937153" percent="99.35" remaining="4" etc="1666937156"/>
+<taskprogress task="NSE" time="1666937183" percent="99.35" remaining="4" etc="1666937186"/>
+<taskprogress task="NSE" time="1666937213" percent="99.35" remaining="4" etc="1666937217"/>
+<taskprogress task="NSE" time="1666937243" percent="99.67" remaining="2" etc="1666937245"/>

@@ -1,0 +1,5 @@
+http://10.10.10.9:80/misc                 (Status: 301) [Size: 149] [--> http://10.10.10.9:80/misc/]
+http://10.10.10.9:80/themes               (Status: 301) [Size: 151] [--> http://10.10.10.9:80/themes/]
+http://10.10.10.9:80/install.php          (Status: 200) [Size: 3189]
+http://10.10.10.9:80/changelog.txt        (Status: 200) [Size: 110781]
+http://10.10.10.9:80/Themes               (Status: 301) [Size: 151] [--> http://10.10.10.9:80/Themes/]

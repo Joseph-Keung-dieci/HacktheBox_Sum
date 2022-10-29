@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Oct 28 16:56:26 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/xml/_full_tcp_nmap.xml 10.10.10.9 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bastard/results/10.10.10.9/scans/xml/_full_tcp_nmap.xml 10.10.10.9" start="1666936586" startstr="Fri Oct 28 16:56:26 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1666936586"/>
+<taskend task="NSE" time="1666936586"/>
+<taskbegin task="NSE" time="1666936586"/>
+<taskend task="NSE" time="1666936586"/>
+<taskbegin task="NSE" time="1666936586"/>
+<taskend task="NSE" time="1666936586"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1666936586"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1666936586"/>
+<taskbegin task="Connect Scan" time="1666936586"/>
+<taskprogress task="Connect Scan" time="1666936617" percent="26.01" remaining="89" etc="1666936705"/>
+<taskprogress task="Connect Scan" time="1666936647" percent="62.86" remaining="37" etc="1666936683"/>
+<taskend task="Connect Scan" time="1666936671" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1666936671"/>
+<taskend task="Service scan" time="1666936733" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1666936733"/>
+<taskprogress task="NSE" time="1666936764" percent="99.04" remaining="1" etc="1666936764"/>
+<taskend task="NSE" time="1666936775"/>
+<taskbegin task="NSE" time="1666936775"/>
+<taskend task="NSE" time="1666936782"/>
+<taskbegin task="NSE" time="1666936782"/>
+<taskend task="NSE" time="1666936782"/>
+<host starttime="1666936586" endtime="1666936782"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-79,81-134,136-49153,49155-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="7.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:7.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-generator" output="Drupal 7 (http://drupal.org)"/><script id="http-title" output="Welcome to 10.10.10.9 | 10.10.10.9"><elem key="title">Welcome to 10.10.10.9 | 10.10.10.9</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-robots.txt" output="36 disallowed entries &#xa;/includes/ /misc/ /modules/ /profiles/ /scripts/ &#xa;/themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt &#xa;/INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt &#xa;/LICENSE.txt /MAINTAINERS.txt /update.php /UPGRADE.txt /xmlrpc.php &#xa;/admin/ /comment/reply/ /filter/tips/ /node/add/ /search/ &#xa;/user/register/ /user/password/ /user/login/ /user/logout/ /?q=admin/ &#xa;/?q=comment/reply/ /?q=filter/tips/ /?q=node/add/ /?q=search/ &#xa;/?q=user/password/ /?q=user/register/ /?q=user/login/ /?q=user/logout/"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="25219" rttvar="2221" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1666936782"/>
+<taskend task="NSE" time="1666936782"/>
+<taskbegin task="NSE" time="1666936782"/>
+<taskend task="NSE" time="1666936782"/>
+<taskbegin task="NSE" time="1666936782"/>
+<taskend task="NSE" time="1666936782"/>
+<runstats><finished time="1666936782" timestr="Fri Oct 28 16:59:42 2022" summary="Nmap done at Fri Oct 28 16:59:42 2022; 1 IP address (1 host up) scanned in 195.76 seconds" elapsed="195.76" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
