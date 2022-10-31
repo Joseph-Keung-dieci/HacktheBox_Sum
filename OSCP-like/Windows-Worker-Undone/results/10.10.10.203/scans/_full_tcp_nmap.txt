@@ -1,0 +1,21 @@
+# Nmap 7.92 scan initiated Sat Oct 29 16:48:55 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/xml/_full_tcp_nmap.xml 10.10.10.203
+Nmap scan report for 10.10.10.203
+Host is up, received user-set (0.063s latency).
+Scanned at 2022-10-29 16:48:56 AEDT for 269s
+Not shown: 65532 filtered tcp ports (no-response)
+PORT     STATE SERVICE  REASON  VERSION
+80/tcp   open  http     syn-ack Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+3690/tcp open  svnserve syn-ack Subversion
+5985/tcp open  http     syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 29 16:53:25 2022 -- 1 IP address (1 host up) scanned in 269.61 seconds

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat Oct 29 16:48:55 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/xml/_full_tcp_nmap.xml 10.10.10.203 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/xml/_full_tcp_nmap.xml 10.10.10.203" start="1667022535" startstr="Sat Oct 29 16:48:55 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1667022535"/>
+<taskend task="NSE" time="1667022535"/>
+<taskbegin task="NSE" time="1667022535"/>
+<taskend task="NSE" time="1667022535"/>
+<taskbegin task="NSE" time="1667022535"/>
+<taskend task="NSE" time="1667022535"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1667022535"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1667022536"/>
+<taskbegin task="Connect Scan" time="1667022536"/>
+<taskprogress task="Connect Scan" time="1667022567" percent="23.61" remaining="101" etc="1667022667"/>
+<taskprogress task="Connect Scan" time="1667022597" percent="46.50" remaining="71" etc="1667022667"/>
+<taskprogress task="Connect Scan" time="1667022627" percent="44.25" remaining="115" etc="1667022742"/>
+<taskprogress task="Connect Scan" time="1667022657" percent="44.52" remaining="151" etc="1667022808"/>
+<taskprogress task="Connect Scan" time="1667022687" percent="54.57" remaining="126" etc="1667022813"/>
+<taskprogress task="Connect Scan" time="1667022717" percent="65.48" remaining="96" etc="1667022812"/>
+<taskprogress task="Connect Scan" time="1667022747" percent="78.06" remaining="60" etc="1667022806"/>
+<taskend task="Connect Scan" time="1667022797" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1667022797"/>
+<taskend task="Service scan" time="1667022803" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1667022803"/>
+<taskend task="NSE" time="1667022804"/>
+<taskbegin task="NSE" time="1667022804"/>
+<taskend task="NSE" time="1667022805"/>
+<taskbegin task="NSE" time="1667022805"/>
+<taskend task="NSE" time="1667022805"/>
+<host starttime="1667022536" endtime="1667022805"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.203" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-79,81-3689,3691-5984,5986-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="IIS Windows Server"><elem key="title">IIS Windows Server</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="3690"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="svnserve" product="Subversion" method="probed" conf="10"><cpe>cpe:/a:apache:subversion</cpe></service></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+</ports>
+<times srtt="62773" rttvar="47621" to="253257"/>
+</host>
+<taskbegin task="NSE" time="1667022805"/>
+<taskend task="NSE" time="1667022805"/>
+<taskbegin task="NSE" time="1667022805"/>
+<taskend task="NSE" time="1667022805"/>
+<taskbegin task="NSE" time="1667022805"/>
+<taskend task="NSE" time="1667022805"/>
+<runstats><finished time="1667022805" timestr="Sat Oct 29 16:53:25 2022" summary="Nmap done at Sat Oct 29 16:53:25 2022; 1 IP address (1 host up) scanned in 269.61 seconds" elapsed="269.61" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

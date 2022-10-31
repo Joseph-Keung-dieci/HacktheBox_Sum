@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Sat Oct 29 16:48:55 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -oN /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/_quick_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Worker/results/10.10.10.203/scans/xml/_quick_tcp_nmap.xml 10.10.10.203
+Nmap scan report for 10.10.10.203
+Host is up, received user-set.
+Scanned at 2022-10-29 16:48:56 AEDT for 2s
+All 1000 scanned ports on 10.10.10.203 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 29 16:48:58 2022 -- 1 IP address (1 host up) scanned in 2.90 seconds
