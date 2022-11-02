@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Mon Oct 31 15:51:04 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/AD-Forest/results/10.10.10.161/scans/tcp139/tcp_139_smb_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Forest/results/10.10.10.161/scans/tcp139/xml/tcp_139_smb_nmap.xml 10.10.10.161 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/AD-Forest/results/10.10.10.161/scans/tcp139/tcp_139_smb_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Forest/results/10.10.10.161/scans/tcp139/xml/tcp_139_smb_nmap.xml 10.10.10.161" start="1667191864" startstr="Mon Oct 31 15:51:04 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="139"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1667191865"/>
+<taskend task="NSE" time="1667191865"/>
+<taskbegin task="NSE" time="1667191865"/>
+<taskend task="NSE" time="1667191865"/>
+<taskbegin task="NSE" time="1667191865"/>
+<taskend task="NSE" time="1667191865"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1667191865"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1667191871"/>
+<taskbegin task="Connect Scan" time="1667191871"/>
+<taskend task="Connect Scan" time="1667191872" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1667191872"/>
+<taskend task="Service scan" time="1667191878" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1667191878"/>
+<taskprogress task="NSE" time="1667191909" percent="98.57" remaining="1" etc="1667191909"/>
+<taskend task="NSE" time="1667191909"/>
+<taskbegin task="NSE" time="1667191909"/>
+<taskend task="NSE" time="1667191911"/>
+<taskbegin task="NSE" time="1667191911"/>
+<taskend task="NSE" time="1667191911"/>
+<host starttime="1667191871" endtime="1667191911"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.161" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smb-enum-services" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script><script id="smb2-time" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-mbenum" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-protocols" output="No dialects accepted. Something may be blocking the responses"/><script id="smb-vuln-ms10-061" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script><script id="smb2-capabilities" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script><script id="smb-print-text" output="false">false</script></hostscript><times srtt="20991" rttvar="20991" to="104955"/>
+</host>
+<taskbegin task="NSE" time="1667191911"/>
+<taskend task="NSE" time="1667191911"/>
+<taskbegin task="NSE" time="1667191911"/>
+<taskend task="NSE" time="1667191911"/>
+<taskbegin task="NSE" time="1667191911"/>
+<taskend task="NSE" time="1667191911"/>
+<runstats><finished time="1667191911" timestr="Mon Oct 31 15:51:51 2022" summary="Nmap done at Mon Oct 31 15:51:51 2022; 1 IP address (1 host up) scanned in 46.90 seconds" elapsed="46.90" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
