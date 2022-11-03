@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu Nov  3 16:50:51 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Linux-Shibboleth/results/10.10.11.124/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Shibboleth/results/10.10.11.124/scans/xml/_full_tcp_nmap.xml 10.10.11.124 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Linux-Shibboleth/results/10.10.11.124/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Shibboleth/results/10.10.11.124/scans/xml/_full_tcp_nmap.xml 10.10.11.124" start="1667454651" startstr="Thu Nov  3 16:50:51 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1667454651"/>
+<taskend task="NSE" time="1667454651"/>
+<taskbegin task="NSE" time="1667454651"/>
+<taskend task="NSE" time="1667454651"/>
+<taskbegin task="NSE" time="1667454651"/>
+<taskend task="NSE" time="1667454651"/>
+<taskbegin task="Connect Scan" time="1667454651"/>
+<taskend task="Connect Scan" time="1667454665" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1667454665"/>
+<taskend task="Service scan" time="1667454671" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1667454671"/>
+<taskend task="NSE" time="1667454672"/>
+<taskbegin task="NSE" time="1667454672"/>
+<taskend task="NSE" time="1667454672"/>
+<taskbegin task="NSE" time="1667454672"/>
+<taskend task="NSE" time="1667454672"/>
+<host starttime="1667454651" endtime="1667454672"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.124" addrtype="ipv4"/>
+<hostnames>
+<hostname name="shibboleth.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="conn-refused" count="65534" proto="tcp" ports="1-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" hostname="shibboleth.htb" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="FlexStart Bootstrap Template - Index"><elem key="title">FlexStart Bootstrap Template - Index</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: FED84E16B6CCFE88EE7FFAAE5DFEFD34"/><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="39782" rttvar="2624" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1667454672"/>
+<taskend task="NSE" time="1667454672"/>
+<taskbegin task="NSE" time="1667454672"/>
+<taskend task="NSE" time="1667454672"/>
+<taskbegin task="NSE" time="1667454672"/>
+<taskend task="NSE" time="1667454672"/>
+<runstats><finished time="1667454672" timestr="Thu Nov  3 16:51:12 2022" summary="Nmap done at Thu Nov  3 16:51:12 2022; 1 IP address (1 host up) scanned in 21.04 seconds" elapsed="21.04" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
