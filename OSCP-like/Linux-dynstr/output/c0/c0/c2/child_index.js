@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 4, 'name': 'logo', 'dir': 'c0', 'linked': 2, 'url': 'http://10.10.10.244/assets/img/logo/', 'fetched': true, 'code': 403, 'len': 277, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'iso-8859-1', 'missing': false, 'csens': true, 'child_cnt': 4, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xa02807f },
+  { 'dupe': false, 'type': 32, 'name': 'favicon.ico', 'dir': 'c1', 'linked': 2, 'url': 'http://10.10.10.244/assets/img/favicon.ico', 'fetched': true, 'code': 404, 'len': 274, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'iso-8859-1', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffdfffff },
+  { 'dupe': true, 'type': 32, 'name': 'marker.png', 'dir': 'c2', 'linked': 1, 'url': 'http://10.10.10.244/assets/img/marker.png', 'fetched': true, 'code': 404, 'len': 274, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'iso-8859-1', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffdfffff }
+];

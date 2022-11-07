@@ -1,0 +1,12 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 04 Nov 2022 06:22:37 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Last-Modified: Fri, 12 Mar 2021 18:23:04 GMT
+ETag: "13b0c-5bd5afda97200"
+Accept-Ranges: bytes
+Content-Length: 80652
+Content-Range: bytes 0-80651/80652
+Keep-Alive: timeout=5, max=36
+Connection: Keep-Alive
+Content-Type: font/ttf
+

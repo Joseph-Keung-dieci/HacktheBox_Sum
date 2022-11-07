@@ -1,0 +1,22 @@
+
+; <<>> DiG 9.18.4-2-Debian <<>> -p 53 -x 10.10.10.244 @10.10.10.244
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 9153
+;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 086870a3137a0cd9010000006364a5ae541f4e26761ae533 (good)
+;; QUESTION SECTION:
+;244.10.10.10.in-addr.arpa.	IN	PTR
+
+;; AUTHORITY SECTION:
+10.in-addr.arpa.	60	IN	SOA	dns1.dyna.htb. hostmaster.dyna.htb. 2021030302 21600 3600 604800 60
+
+;; Query time: 27 msec
+;; SERVER: 10.10.10.244#53(10.10.10.244) (UDP)
+;; WHEN: Fri Nov 04 16:39:58 AEDT 2022
+;; MSG SIZE  rcvd: 157
+

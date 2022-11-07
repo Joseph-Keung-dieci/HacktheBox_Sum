@@ -1,0 +1,35 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 04 Nov 2022 06:19:53 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Last-Modified: Sat, 13 Mar 2021 10:34:00 GMT
+ETag: "2a9d-5bd688dfd7600-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-2915/2916
+Content-Length: 2916
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <title>Dyna DNS</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+ 	<link href="assets/css/animate.css" rel="stylesheet">
+  	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  	<link href="assets/css/pe-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Cabin:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Nov  4 16:39:58 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-dynstr/results/10.10.10.244/scans/tcp80/tcp_80_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-dynstr/results/10.10.10.244/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.244 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-dynstr/results/10.10.10.244/scans/tcp80/tcp_80_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-dynstr/results/10.10.10.244/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.244" start="1667540398" startstr="Fri Nov  4 16:39:58 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1667540398"/>
+<taskend task="NSE" time="1667540398"/>
+<taskbegin task="NSE" time="1667540398"/>
+<taskend task="NSE" time="1667540398"/>
+<taskbegin task="NSE" time="1667540398"/>
+<taskend task="NSE" time="1667540398"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1667540398"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1667540404"/>
+<taskbegin task="Connect Scan" time="1667540404"/>
+<taskend task="Connect Scan" time="1667540404" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1667540405"/>
+<taskend task="Service scan" time="1667540411" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1667540411"/>
+<taskend task="NSE" time="1667540422"/>
+<taskbegin task="NSE" time="1667540422"/>
+<taskend task="NSE" time="1667540422"/>
+<taskbegin task="NSE" time="1667540422"/>
+<taskend task="NSE" time="1667540422"/>
+<host starttime="1667540404" endtime="1667540422"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.244" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-vhosts" output="&#xa;128 names had status 200"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.244&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 273&#xa;    Comment: &#xa;        &lt;!-&#45; Placed at the end of the document so the pages load faster -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 271&#xa;    Comment: &#xa;        &lt;!-&#45; Bootstrap core JavaScript&#xa;            ================================================== -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 94&#xa;    Comment: &#xa;        &lt;!-&#45; /headerwrap -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 269&#xa;    Comment: &#xa;        &lt;!-&#45; END MAIN FOOTER -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 246&#xa;    Comment: &#xa;        &lt;!-&#45;col-lg-4-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 18&#xa;    Comment: &#xa;        &lt;!-&#45; HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 241&#xa;    Comment: &#xa;        &lt;!-&#45; MAIN FOOTER -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 128&#xa;    Comment: &#xa;        &lt;!-&#45;&#xa;        &#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;row&quot;&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;col-lg-1 col-md-1 col-sm-1 centered bounce-in&quot;&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;span class=&quot;pe-7s-chat icon&quot;&gt;&lt;/span&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;col-lg-3 col-md-3 col-sm-3 fade-up&quot;&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;h3&gt;Quality Design&lt;/h3&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.&lt;/p&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xa;        &#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;col-lg-1 col-md-1 col-sm-1 centered bounce-in&quot;&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;i class=&quot;fa fa-question-circle&quot;&gt;&lt;/i&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;col-lg-3 col-md-3 col-sm-3 fade-up&quot;&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;h3&gt;Awesome Support&lt;/h3&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.&lt;/p&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#x9;&#x9;&#x9;&#xa;        &#x9;&#x9;&#x9;&#x9;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;col-lg-1 col-md-1 col-sm-1 centered bounce-in&quot;&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;i class=&quot;fa fa-globe&quot;&gt;&lt;/i&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;col-lg-3 col-md-3 col-sm-3 fade-up&quot;&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;h3&gt;Global Services&lt;/h3&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.&lt;/p&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#x9;&#x9;&#x9;&#x9;&#xa;        &#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xa;        &#x9;&#x9;&#x9;&#x9;-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 236&#xa;    Comment: &#xa;        &lt;!-&#45; dg -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 80&#xa;    Comment: &#xa;        &lt;!-&#45; MAIN IMAGE SECTION -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 204&#xa;    Comment: &#xa;        &lt;!-&#45; CLIENTS LOGOS -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 58&#xa;    Comment: &#xa;        &lt;!-&#45; END NAV -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 155&#xa;    Comment: &#xa;        &lt;!-&#45; container -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 19&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;        &#x9;  &lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;&#xa;        &#x9;  &lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js&quot;&gt;&lt;/script&gt;&#xa;        &#x9;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 89&#xa;    Comment: &#xa;        &lt;!-&#45; row -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.244:80/&#xa;    Line number: 90&#xa;    Comment: &#xa;        &lt;!-&#45; /container -&#45;&gt;&#xa;"/><script id="http-referer-checker" output="&#xa;Spidering limited to: maxpagecount=30&#xa;  https://cdn.jsdelivr.net:443/libs/respond.js/1.3.0/respond.min.js&#xa;  https://maps.googleapis.com:443/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;amp;sensor=true&#xa;  https://cdn.jsdelivr.net:443/libs/html5shiv/3.7.0/html5shiv.js&#xa;"/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-chrono" output="Request times for /; avg: 180.91ms; min: 163.51ms; max: 201.07ms"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-malware-host" output="Host appears to be clean"/><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.10.244&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 404&#xa;  &#x9;http://10.10.10.244:80/assets/img/favicon.ico&#xa;"/><script id="http-headers" output="&#xa;  Date: Fri, 04 Nov 2022 05:40:11 GMT&#xa;  Server: Apache/2.4.41 (Ubuntu)&#xa;  Last-Modified: Sat, 13 Mar 2021 10:34:00 GMT&#xa;  ETag: &quot;2a9d-5bd688dfd7600&quot;&#xa;  Accept-Ranges: bytes&#xa;  Content-Length: 10909&#xa;  Vary: Accept-Encoding&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-date" output="Fri, 04 Nov 2022 05:40:12 GMT; +1s from local time."><elem key="date">2022-11-04T05:40:12+00:00</elem>
+<elem key="delta">1.0</elem>
+</script><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-php-version" output="Logo query returned unknown hash 6b02bd9b72bcd29daff94fc12941feb9&#xa;Credits query returned unknown hash 6b02bd9b72bcd29daff94fc12941feb9"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;    /assets/css/&#xa;      css: 5&#xa;    /assets/img/logo/&#xa;      png: 2&#xa;    /assets/js/&#xa;      js: 2&#xa;  Longest directory structure:&#xa;    Depth: 3&#xa;    Dir: /assets/img/logo/&#xa;  Total files found (by extension):&#xa;    Other: 1; css: 5; js: 2; png: 2&#xa;"/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-security-headers" output=""></script><script id="http-title" output="Dyna DNS"><elem key="title">Dyna DNS</elem>
+</script><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-grep" output="&#xa;  (1) http://10.10.10.244:80/: &#xa;    (1) email: &#xa;      + dns@dyna.htb"><table key="(1) http://10.10.10.244:80/">
+<table key="(1) email">
+<elem>+ dns@dyna.htb</elem>
+</table>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/></port>
+</ports>
+<times srtt="39045" rttvar="39045" to="195225"/>
+</host>
+<taskbegin task="NSE" time="1667540422"/>
+<taskend task="NSE" time="1667540422"/>
+<taskbegin task="NSE" time="1667540422"/>
+<taskend task="NSE" time="1667540422"/>
+<taskbegin task="NSE" time="1667540422"/>
+<taskend task="NSE" time="1667540422"/>
+<runstats><finished time="1667540422" timestr="Fri Nov  4 16:40:22 2022" summary="Nmap done at Fri Nov  4 16:40:22 2022; 1 IP address (1 host up) scanned in 24.46 seconds" elapsed="24.46" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

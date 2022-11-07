@@ -1,0 +1,11 @@
+# Nmap 7.92 scan initiated Fri Nov  4 13:12:57 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 1521 "--script=banner,(oracle* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Windows-Silo/results/10.10.10.82/scans/tcp1521/tcp_1521_oracle_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Silo/results/10.10.10.82/scans/tcp1521/xml/tcp_1521_oracle_nmap.xml 10.10.10.82
+Nmap scan report for 10.10.10.82
+Host is up, received user-set (0.040s latency).
+Scanned at 2022-11-04 13:13:00 AEDT for 21s
+
+PORT     STATE SERVICE    REASON  VERSION
+1521/tcp open  oracle-tns syn-ack Oracle TNS listener 11.2.0.2.0 (unauthorized)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov  4 13:13:21 2022 -- 1 IP address (1 host up) scanned in 23.85 seconds
