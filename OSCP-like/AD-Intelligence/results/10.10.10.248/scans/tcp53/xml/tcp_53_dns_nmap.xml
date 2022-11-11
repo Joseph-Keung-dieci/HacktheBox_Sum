@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu Nov 10 14:43:14 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp53/xml/tcp_53_dns_nmap.xml 10.10.10.248 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp53/xml/tcp_53_dns_nmap.xml 10.10.10.248" start="1668051794" startstr="Thu Nov 10 14:43:14 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="53"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668051794"/>
+<taskend task="NSE" time="1668051794"/>
+<taskbegin task="NSE" time="1668051794"/>
+<taskend task="NSE" time="1668051794"/>
+<taskbegin task="NSE" time="1668051794"/>
+<taskend task="NSE" time="1668051794"/>
+<taskbegin task="Connect Scan" time="1668051795"/>
+<taskend task="Connect Scan" time="1668051795" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668051795"/>
+<taskend task="Service scan" time="1668051942" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668051942"/>
+<taskend task="NSE" time="1668051959"/>
+<taskbegin task="NSE" time="1668051959"/>
+<taskend task="NSE" time="1668051961"/>
+<taskbegin task="NSE" time="1668051961"/>
+<taskend task="NSE" time="1668051961"/>
+<host starttime="1668051795" endtime="1668051961"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.248" addrtype="ipv4"/>
+<hostnames>
+<hostname name="intelligence.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/><script id="dns-nsec-enum" output="&#xa;  No NSEC records found&#xa;"/><script id="dns-nsec3-enum" output="&#xa;  DNSSEC NSEC3 not supported&#xa;"/></port>
+</ports>
+<hostscript><script id="dns-brute" output="&#xa;  DNS Brute-force hostnames: No results."><table key="DNS Brute-force hostnames">
+</table>
+</script></hostscript><times srtt="212460" rttvar="212460" to="1062300"/>
+</host>
+<taskbegin task="NSE" time="1668051961"/>
+<taskend task="NSE" time="1668051961"/>
+<taskbegin task="NSE" time="1668051961"/>
+<taskend task="NSE" time="1668051961"/>
+<taskbegin task="NSE" time="1668051961"/>
+<taskend task="NSE" time="1668051961"/>
+<runstats><finished time="1668051961" timestr="Thu Nov 10 14:46:01 2022" summary="Nmap done at Thu Nov 10 14:46:01 2022; 1 IP address (1 host up) scanned in 167.62 seconds" elapsed="167.62" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu Nov 10 14:43:14 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 135 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp135/tcp_135_rpc_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp135/xml/tcp_135_rpc_nmap.xml 10.10.10.248 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 135 -&#45;script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp135/tcp_135_rpc_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Intelligence/results/10.10.10.248/scans/tcp135/xml/tcp_135_rpc_nmap.xml 10.10.10.248" start="1668051794" startstr="Thu Nov 10 14:43:14 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="135"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668051795"/>
+<taskend task="NSE" time="1668051795"/>
+<taskbegin task="NSE" time="1668051795"/>
+<taskend task="NSE" time="1668051795"/>
+<taskbegin task="Connect Scan" time="1668051796"/>
+<taskend task="Connect Scan" time="1668051796" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668051796"/>
+<taskend task="Service scan" time="1668051803" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668051803"/>
+<taskend task="NSE" time="1668051818"/>
+<taskbegin task="NSE" time="1668051818"/>
+<taskend task="NSE" time="1668051818"/>
+<host starttime="1668051796" endtime="1668051818"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.248" addrtype="ipv4"/>
+<hostnames>
+<hostname name="intelligence.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="227508" rttvar="227508" to="1137540"/>
+</host>
+<taskbegin task="NSE" time="1668051818"/>
+<taskend task="NSE" time="1668051818"/>
+<taskbegin task="NSE" time="1668051818"/>
+<taskend task="NSE" time="1668051818"/>
+<runstats><finished time="1668051818" timestr="Thu Nov 10 14:43:38 2022" summary="Nmap done at Thu Nov 10 14:43:38 2022; 1 IP address (1 host up) scanned in 24.64 seconds" elapsed="24.64" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
