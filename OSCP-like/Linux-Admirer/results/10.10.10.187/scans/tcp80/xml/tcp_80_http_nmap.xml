@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Nov 13 14:14:00 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Admirer/results/10.10.10.187/scans/tcp80/tcp_80_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Admirer/results/10.10.10.187/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.187 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 80 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Admirer/results/10.10.10.187/scans/tcp80/tcp_80_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Admirer/results/10.10.10.187/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.187" start="1668309240" startstr="Sun Nov 13 14:14:00 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668309240"/>
+<taskend task="NSE" time="1668309240"/>
+<taskbegin task="NSE" time="1668309240"/>
+<taskend task="NSE" time="1668309240"/>
+<taskbegin task="NSE" time="1668309240"/>
+<taskend task="NSE" time="1668309240"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668309240"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668309240"/>
+<taskbegin task="Connect Scan" time="1668309240"/>
+<taskend task="Connect Scan" time="1668309240" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668309241"/>
+<taskend task="Service scan" time="1668309248" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668309248"/>
+<taskend task="NSE" time="1668309258"/>
+<taskbegin task="NSE" time="1668309258"/>
+<taskend task="NSE" time="1668309258"/>
+<taskbegin task="NSE" time="1668309258"/>
+<taskend task="NSE" time="1668309258"/>
+<host starttime="1668309240" endtime="1668309258"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.187" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-chrono" output="Request times for /; avg: 197.27ms; min: 153.68ms; max: 274.42ms"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-date" output="Sun, 13 Nov 2022 03:14:11 GMT; 0s from local time."><elem key="date">2022-11-13T03:14:11+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="http-headers" output="&#xa;  Date: Sun, 13 Nov 2022 03:14:10 GMT&#xa;  Server: Apache/2.4.25 (Debian)&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-robots.txt" output="1 disallowed entry &#xa;/admin-dir"/><script id="http-vhosts" output="&#xa;128 names had status 200"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-title" output="Admirer"><elem key="title">Admirer</elem>
+</script><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.10.187&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 404&#xa;  &#x9;http://10.10.10.187:80/index.html&#xa;"/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.187&#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Line number: 20&#xa;    Comment: &#xa;        &lt;!-&#45; Header -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Line number: 17&#xa;    Comment: &#xa;        &lt;!-&#45; Wrapper -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Line number: 94&#xa;    Comment: &#xa;        &lt;!-&#45; Footer -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Line number: 120&#xa;    Comment: &#xa;        &lt;!-&#45; Still under development... This does not send anything yet, but it looks nice! -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Line number: 30&#xa;    Comment: &#xa;        &lt;!-&#45; Main -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Line number: 144&#xa;    Comment: &#xa;        &lt;!-&#45; Scripts -&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Line number: 2&#xa;    Comment: &#xa;        &lt;!-&#45;&#xa;        &#x9;Multiverse by HTML5 UP&#xa;        &#x9;html5up.net | @ajlkn&#xa;        &#x9;Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)&#xa;        -&#45;&gt;&#xa;"/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-enum" output="&#xa;  /robots.txt: Robots file&#xa;"/><script id="http-vuln-cve2017-1001000" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-exif-spider" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;    /assets/css/&#xa;      css: 1&#xa;    /assets/js/&#xa;      js: 2&#xa;    /images/fulls/&#xa;      jpg: 4&#xa;    /images/thumbs/&#xa;      jpg: 4&#xa;  Longest directory structure:&#xa;    Depth: 2&#xa;    Dir: /images/thumbs/&#xa;  Total files found (by extension):&#xa;    Other: 1; css: 1; jpg: 8; js: 2&#xa;"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.187&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.10.10.187:80/&#xa;    Form id: name&#xa;    Form action: #&#xa;"/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-php-version" output="Logo query returned unknown hash 123371a226c5565255e93ac3b0dc0f5a&#xa;Credits query returned unknown hash 123371a226c5565255e93ac3b0dc0f5a"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-security-headers" output=""></script></port>
+</ports>
+<times srtt="25752" rttvar="25752" to="128760"/>
+</host>
+<taskbegin task="NSE" time="1668309258"/>
+<taskend task="NSE" time="1668309258"/>
+<taskbegin task="NSE" time="1668309258"/>
+<taskend task="NSE" time="1668309258"/>
+<taskbegin task="NSE" time="1668309258"/>
+<taskend task="NSE" time="1668309258"/>
+<runstats><finished time="1668309258" timestr="Sun Nov 13 14:14:18 2022" summary="Nmap done at Sun Nov 13 14:14:18 2022; 1 IP address (1 host up) scanned in 18.74 seconds" elapsed="18.74" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,13 @@
+# Nmap 7.93 scan initiated Sun Nov 13 14:13:59 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 21 "--script=banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Linux-Admirer/results/10.10.10.187/scans/tcp21/tcp_21_ftp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Admirer/results/10.10.10.187/scans/tcp21/xml/tcp_21_ftp_nmap.xml 10.10.10.187
+Nmap scan report for 10.10.10.187
+Host is up, received user-set (0.035s latency).
+Scanned at 2022-11-13 14:14:00 AEDT for 2s
+
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp     syn-ack vsftpd 3.0.3
+|_banner: 220 (vsFTPd 3.0.3)
+Service Info: OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 13 14:14:02 2022 -- 1 IP address (1 host up) scanned in 2.68 seconds
