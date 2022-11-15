@@ -1,0 +1,126 @@
+# Nmap 7.93 scan initiated Mon Nov 14 15:59:11 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 443 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.154
+Nmap scan report for 10.10.10.154
+Host is up, received user-set (0.051s latency).
+Scanned at 2022-11-14 15:59:17 AEDT for 756s
+
+PORT    STATE SERVICE REASON  VERSION
+443/tcp open  https?  syn-ack
+|_http-feed: Couldn't find any feeds.
+| http-useragent-tester: 
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-headers: 
+|   Date: Mon, 14 Nov 2022 05:07:40 GMT
+|   Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4
+|   Vary: accept-language,accept-charset
+|   Accept-Ranges: bytes
+|   Connection: close
+|   Content-Type: text/html; charset=utf-8
+|   Content-Language: en
+|   Expires: Mon, 14 Nov 2022 05:07:40 GMT
+|   
+|_  (Request type: GET)
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_http-chrono: Request times for /; avg: 22199.26ms; min: 22107.76ms; max: 22325.58ms
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-mobileversion-checker: No mobile version detected.
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.154
+|     
+|     Path: http://10.10.10.154:443/
+|     Line number: 13
+|     Comment: 
+|         /*]]>*/
+|     
+|     Path: http://10.10.10.154:443/
+|     Line number: 8
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         /*]]>*/-->
+|     
+|     Path: http://10.10.10.154:443/
+|     Line number: 8
+|     Comment: 
+|         <!--/*-->
+|     
+|     Path: http://10.10.10.154:443/
+|     Line number: 8
+|     Comment: 
+|_        /*--><![CDATA[/*><!--*/
+|_http-malware-host: Host appears to be clean
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:   a0a44cc99e84b26f9e639f9ed229dee0
+| SHA-1: b0238c547a905bfa119c4e8baccaeacf36491ff6
+| -----BEGIN CERTIFICATE-----
+| MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls
+| b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD
+| VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj
+| 7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o
+| J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT
+| gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD
+| gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd
+| aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL
+| vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=
+|_-----END CERTIFICATE-----
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-sitemap-generator: 
+|   Directory structure:
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    
+| http-grep: 
+|   (1) http://10.10.10.154:443/: 
+|     (1) email: 
+|_      + admin@example.com
+| http-errors: 
+| Spidering limited to: maxpagecount=40; withinhost=10.10.10.154
+|   Found the following error pages: 
+|   
+|   Error Code: 400
+|_  	http://10.10.10.154:443/
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+| http-vhosts: 
+|_128 names had status ERROR
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 14 16:11:53 2022 -- 1 IP address (1 host up) scanned in 761.88 seconds

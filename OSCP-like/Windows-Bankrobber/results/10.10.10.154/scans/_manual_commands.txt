@@ -1,0 +1,92 @@
+[*] http on tcp/80
+
+	[-] (gobuster v3) Multi-threaded directory/file enumeration for web servers using various wordlists:
+
+		gobuster dir -u http://10.10.10.154:80/ -t 50 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -x "txt,html,php,asp,aspx,jsp" -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_gobuster_dirbuster.txt"
+
+	[-] Credential bruteforcing commands (don't run these without modifying them):
+
+		hydra -L "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e nsr -s 80 -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_auth_hydra.txt" http-get://10.10.10.154/path/to/auth/area
+
+		medusa -U "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e ns -n 80 -O "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_auth_medusa.txt" -M http -h 10.10.10.154 -m DIR:/path/to/auth/area
+
+		hydra -L "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e nsr -s 80 -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_form_hydra.txt" http-post-form://10.10.10.154/path/to/login.php:"username=^USER^&password=^PASS^":"invalid-login-message"
+
+		medusa -U "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e ns -n 80 -O "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_form_medusa.txt" -M web-form -h 10.10.10.154 -m FORM:/path/to/login.php -m FORM-DATA:"post?username=&password=" -m DENY-SIGNAL:"invalid login message"
+
+	[-] (nikto) old but generally reliable web server enumeration tool:
+
+		nikto -ask=no -h http://10.10.10.154:80 2>&1 | tee "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_nikto.txt"
+
+	[-] (wpscan) WordPress Security Scanner (useful if WordPress is found):
+
+		wpscan --url http://10.10.10.154:80/ --no-update -e vp,vt,tt,cb,dbe,u,m --plugins-detection aggressive --plugins-version-detection aggressive -f cli-no-color 2>&1 | tee "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_wpscan.txt"
+
+[*] http on tcp/443
+
+	[-] (gobuster v3) Multi-threaded directory/file enumeration for web servers using various wordlists:
+
+		gobuster dir -u https://10.10.10.154:443/ -t 50 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -x "txt,html,php,asp,aspx,jsp" -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_gobuster_dirbuster.txt"
+
+	[-] Credential bruteforcing commands (don't run these without modifying them):
+
+		hydra -L "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e nsr -s 443 -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_auth_hydra.txt" https-get://10.10.10.154/path/to/auth/area
+
+		medusa -U "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e ns -n 443 -O "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_auth_medusa.txt" -M http -h 10.10.10.154 -m DIR:/path/to/auth/area
+
+		hydra -L "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e nsr -s 443 -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_form_hydra.txt" https-post-form://10.10.10.154/path/to/login.php:"username=^USER^&password=^PASS^":"invalid-login-message"
+
+		medusa -U "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e ns -n 443 -O "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_form_medusa.txt" -M web-form -h 10.10.10.154 -m FORM:/path/to/login.php -m FORM-DATA:"post?username=&password=" -m DENY-SIGNAL:"invalid login message"
+
+	[-] (nikto) old but generally reliable web server enumeration tool:
+
+		nikto -ask=no -h https://10.10.10.154:443 2>&1 | tee "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_nikto.txt"
+
+	[-] (wpscan) WordPress Security Scanner (useful if WordPress is found):
+
+		wpscan --url https://10.10.10.154:443/ --no-update -e vp,vt,tt,cb,dbe,u,m --plugins-detection aggressive --plugins-version-detection aggressive -f cli-no-color 2>&1 | tee "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_wpscan.txt"
+
+[*] microsoft-ds on tcp/445
+
+	[-] Lookup SIDs
+
+		lookupsid.py [username]:[password]@10.10.10.154
+
+	[-] Nmap scans for SMB vulnerabilities that could potentially cause a DoS if scanned (according to Nmap). Be careful:
+
+		nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 445 --script="smb-vuln-ms06-025" --script-args="unsafe=1" -oN "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp445/tcp_445_smb_ms06-025.txt" -oX "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp445/xml/tcp_445_smb_ms06-025.xml" 10.10.10.154
+
+		nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 445 --script="smb-vuln-ms07-029" --script-args="unsafe=1" -oN "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp445/tcp_445_smb_ms07-029.txt" -oX "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp445/xml/tcp_445_smb_ms07-029.xml" 10.10.10.154
+
+		nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 445 --script="smb-vuln-ms08-067" --script-args="unsafe=1" -oN "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp445/tcp_445_smb_ms08-067.txt" -oX "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp445/xml/tcp_445_smb_ms08-067.xml" 10.10.10.154
+
+[*] mysql on tcp/3306
+
+	[-] (sqsh) interactive database shell:
+
+		sqsh -U <username> -P <password> -S 10.10.10.154:3306
+
+[*] https on tcp/443
+
+	[-] (gobuster v3) Multi-threaded directory/file enumeration for web servers using various wordlists:
+
+		gobuster dir -u https://10.10.10.154:443/ -t 50 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -x "txt,html,php,asp,aspx,jsp" -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_gobuster_dirbuster.txt"
+
+	[-] Credential bruteforcing commands (don't run these without modifying them):
+
+		hydra -L "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e nsr -s 443 -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_auth_hydra.txt" https-get://10.10.10.154/path/to/auth/area
+
+		medusa -U "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e ns -n 443 -O "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_auth_medusa.txt" -M http -h 10.10.10.154 -m DIR:/path/to/auth/area
+
+		hydra -L "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e nsr -s 443 -o "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_form_hydra.txt" https-post-form://10.10.10.154/path/to/login.php:"username=^USER^&password=^PASS^":"invalid-login-message"
+
+		medusa -U "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -P "/usr/share/seclists/Passwords/darkweb2017-top100.txt" -e ns -n 443 -O "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_form_medusa.txt" -M web-form -h 10.10.10.154 -m FORM:/path/to/login.php -m FORM-DATA:"post?username=&password=" -m DENY-SIGNAL:"invalid login message"
+
+	[-] (nikto) old but generally reliable web server enumeration tool:
+
+		nikto -ask=no -h https://10.10.10.154:443 2>&1 | tee "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_nikto.txt"
+
+	[-] (wpscan) WordPress Security Scanner (useful if WordPress is found):
+
+		wpscan --url https://10.10.10.154:443/ --no-update -e vp,vt,tt,cb,dbe,u,m --plugins-detection aggressive --plugins-version-detection aggressive -f cli-no-color 2>&1 | tee "/home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_wpscan.txt"
+

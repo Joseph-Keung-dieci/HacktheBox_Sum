@@ -1,0 +1,14 @@
+# Nmap 7.93 scan initiated Mon Nov 14 15:47:48 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 3306 "--script=banner,(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp3306/tcp_3306_mysql_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp3306/xml/tcp_3306_mysql_nmap.xml 10.10.10.154
+Nmap scan report for 10.10.10.154
+Host is up, received user-set (0.033s latency).
+Scanned at 2022-11-14 15:47:49 AEDT for 16s
+
+PORT     STATE SERVICE REASON  VERSION
+3306/tcp open  mysql   syn-ack MariaDB (unauthorized)
+|_mysql-empty-password: Host '10.10.14.8' is not allowed to connect to this MariaDB server
+| banner: E\x00\x00\x00\xFFj\x04Host '10.10.14.8' is not allowed to conne
+|_ct to this MariaDB server
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 14 15:48:05 2022 -- 1 IP address (1 host up) scanned in 16.66 seconds

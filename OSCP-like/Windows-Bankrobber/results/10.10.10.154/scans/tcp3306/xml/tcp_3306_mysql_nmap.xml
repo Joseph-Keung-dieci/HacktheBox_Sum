@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Mon Nov 14 15:47:48 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 3306 &quot;-&#45;script=banner,(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp3306/tcp_3306_mysql_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp3306/xml/tcp_3306_mysql_nmap.xml 10.10.10.154 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 3306 &quot;-&#45;script=banner,(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp3306/tcp_3306_mysql_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp3306/xml/tcp_3306_mysql_nmap.xml 10.10.10.154" start="1668401268" startstr="Mon Nov 14 15:47:48 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668401269"/>
+<taskend task="NSE" time="1668401269"/>
+<taskbegin task="NSE" time="1668401269"/>
+<taskend task="NSE" time="1668401269"/>
+<taskbegin task="NSE" time="1668401269"/>
+<taskend task="NSE" time="1668401269"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668401269"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668401269"/>
+<taskbegin task="Connect Scan" time="1668401269"/>
+<taskend task="Connect Scan" time="1668401269" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668401269"/>
+<taskend task="Service scan" time="1668401271" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668401271"/>
+<taskend task="NSE" time="1668401271"/>
+<taskbegin task="NSE" time="1668401271"/>
+<taskend task="NSE" time="1668401283"/>
+<taskbegin task="NSE" time="1668401283"/>
+<taskend task="NSE" time="1668401285"/>
+<host starttime="1668401269" endtime="1668401285"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.154" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MariaDB" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb</cpe></service><script id="mysql-empty-password" output="Host &apos;10.10.14.8&apos; is not allowed to connect to this MariaDB server"/><script id="banner" output="E\x00\x00\x00\xFFj\x04Host &apos;10.10.14.8&apos; is not allowed to conne&#xa;ct to this MariaDB server"/></port>
+</ports>
+<times srtt="32994" rttvar="32994" to="164970"/>
+</host>
+<taskbegin task="NSE" time="1668401285"/>
+<taskend task="NSE" time="1668401285"/>
+<taskbegin task="NSE" time="1668401285"/>
+<taskend task="NSE" time="1668401285"/>
+<taskbegin task="NSE" time="1668401285"/>
+<taskend task="NSE" time="1668401285"/>
+<runstats><finished time="1668401285" timestr="Mon Nov 14 15:48:05 2022" summary="Nmap done at Mon Nov 14 15:48:05 2022; 1 IP address (1 host up) scanned in 16.66 seconds" elapsed="16.66" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

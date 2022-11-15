@@ -1,0 +1,198 @@
+# Nmap 7.93 scan initiated Mon Nov 14 15:47:48 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/tcp_80_http_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp80/xml/tcp_80_http_nmap.xml 10.10.10.154
+Nmap scan report for 10.10.10.154
+Host is up, received user-set (0.027s latency).
+Scanned at 2022-11-14 15:47:49 AEDT for 852s
+
+Bug in http-security-headers: no string output.
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http?   syn-ack
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+| http-headers: 
+|   Date: Mon, 14 Nov 2022 04:56:51 GMT
+|   Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4
+|   X-Powered-By: PHP/7.3.4
+|   Connection: close
+|   Transfer-Encoding: chunked
+|   Content-Type: text/html; charset=UTF-8
+|   
+|_  (Request type: GET)
+|_http-chrono: Request times for /; avg: 17535.34ms; min: 9263.27ms; max: 22189.31ms
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+| http-referer-checker: 
+| Spidering limited to: maxpagecount=30
+|   https://maps.googleapis.com:443/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA
+|_  https://cdnjs.cloudflare.com:443/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+|_http-traceroute: ERROR: Script execution failed (use -d to debug)
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.154
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 176
+|     Comment: 
+|         <!-- End footer Area -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 121
+|     Comment: 
+|         <!-- start footer Area -->
+|     
+|     Path: http://10.10.10.154:80/js/vendor/bootstrap.min.js
+|     Line number: 1
+|     Comment: 
+|         /*!
+|           * Bootstrap v4.0.0 (https://getbootstrap.com)
+|           * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+|           * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+|           */
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 9
+|     Comment: 
+|         <!-- Author Meta -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 68
+|     Comment: 
+|         <!-- End banner Area -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 11
+|     Comment: 
+|         <!-- Meta Description -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 17
+|     Comment: 
+|         <!-- Site Title -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 165
+|     Comment: 
+|         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 15
+|     Comment: 
+|         <!-- meta character set -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 21
+|     Comment: 
+|         <!--
+|         		CSS
+|         		============================================= -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 46
+|     Comment: 
+|         <!-- #nav-menu-container -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 49
+|     Comment: 
+|         <!-- #header -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 7
+|     Comment: 
+|         <!-- Favicon-->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 13
+|     Comment: 
+|         <!-- Meta Keyword -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 94
+|     Comment: 
+|         <!-- End register Area -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 5
+|     Comment: 
+|         <!-- Mobile Specific Meta -->
+|     
+|     Path: http://10.10.10.154:80/
+|     Line number: 70
+|     Comment: 
+|_        <!-- Start register Area -->
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 2; php: 1
+|     /css/
+|       css: 2
+|     /js/
+|       js: 6
+|     /js/vendor/
+|       js: 1
+|   Longest directory structure:
+|     Depth: 2
+|     Dir: /js/vendor/
+|   Total files found (by extension):
+|_    Other: 2; css: 2; js: 7; php: 1
+|_http-mobileversion-checker: No mobile version detected.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.154
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.10.154:80/
+|     Form id: 
+|     Form action: login.php
+|     
+|     Path: http://10.10.10.154:80/
+|     Form id: 
+|     Form action: register.php
+|     
+|     Path: http://10.10.10.154:80/
+|     Form id: 
+|_    Form action: #
+|_http-feed: Couldn't find any feeds.
+|_http-malware-host: Host appears to be clean
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-errors: ERROR: Script execution failed (use -d to debug)
+| http-useragent-tester: 
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.154
+|   url                      method
+|_  http://10.10.10.154:80/  FORM
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+| http-vhosts: 
+| images : 200
+| mgmt : 200
+| firewall : 200
+| blog : 200
+| internet : 200
+| devel : 200
+| ftp0 : 200
+| citrix : 200
+| pbx : 200
+| apps : 200
+|_118 names had status ERROR
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 14 16:02:01 2022 -- 1 IP address (1 host up) scanned in 852.61 seconds

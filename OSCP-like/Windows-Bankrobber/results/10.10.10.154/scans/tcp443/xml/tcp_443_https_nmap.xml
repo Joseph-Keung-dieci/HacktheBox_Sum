@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Mon Nov 14 15:59:11 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.154 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Bankrobber/results/10.10.10.154/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.154" start="1668401951" startstr="Mon Nov 14 15:59:11 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668401951"/>
+<taskend task="NSE" time="1668401951"/>
+<taskbegin task="NSE" time="1668401951"/>
+<taskend task="NSE" time="1668401951"/>
+<taskbegin task="NSE" time="1668401951"/>
+<taskend task="NSE" time="1668401951"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668401951"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668401957"/>
+<taskbegin task="Connect Scan" time="1668401957"/>
+<taskend task="Connect Scan" time="1668401957" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668401958"/>
+<taskend task="Service scan" time="1668402130" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668402130"/>
+<taskprogress task="NSE" time="1668402161" percent="58.33" remaining="23" etc="1668402183"/>
+<taskprogress task="NSE" time="1668402191" percent="82.13" remaining="14" etc="1668402204"/>
+<taskprogress task="NSE" time="1668402221" percent="81.97" remaining="21" etc="1668402241"/>
+<taskprogress task="NSE" time="1668402251" percent="83.05" remaining="25" etc="1668402276"/>
+<taskprogress task="NSE" time="1668402281" percent="82.21" remaining="33" etc="1668402314"/>
+<taskprogress task="NSE" time="1668402311" percent="82.33" remaining="39" etc="1668402350"/>
+<taskprogress task="NSE" time="1668402341" percent="83.06" remaining="44" etc="1668402384"/>
+<taskprogress task="NSE" time="1668402371" percent="82.84" remaining="50" etc="1668402421"/>
+<taskprogress task="NSE" time="1668402401" percent="83.83" remaining="53" etc="1668402453"/>
+<taskprogress task="NSE" time="1668402431" percent="84.21" remaining="57" etc="1668402487"/>
+<taskprogress task="NSE" time="1668402461" percent="84.54" remaining="61" etc="1668402522"/>
+<taskprogress task="NSE" time="1668402491" percent="99.02" remaining="4" etc="1668402495"/>
+<taskprogress task="NSE" time="1668402521" percent="99.02" remaining="4" etc="1668402525"/>
+<taskprogress task="NSE" time="1668402551" percent="99.02" remaining="5" etc="1668402555"/>
+<taskprogress task="NSE" time="1668402581" percent="99.35" remaining="3" etc="1668402584"/>
+<taskend task="NSE" time="1668402608"/>
+<taskbegin task="NSE" time="1668402608"/>
+<taskprogress task="NSE" time="1668402639" percent="64.71" remaining="17" etc="1668402656"/>
+<taskprogress task="NSE" time="1668402669" percent="94.12" remaining="4" etc="1668402673"/>
+<taskend task="NSE" time="1668402690"/>
+<taskbegin task="NSE" time="1668402690"/>
+<taskend task="NSE" time="1668402713"/>
+<host starttime="1668401957" endtime="1668402713"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.154" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-useragent-tester" output="&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Mon, 14 Nov 2022 05:07:40 GMT&#xa;  Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.4&#xa;  Vary: accept-language,accept-charset&#xa;  Accept-Ranges: bytes&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Content-Language: en&#xa;  Expires: Mon, 14 Nov 2022 05:07:40 GMT&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="ssl-ccs-injection" output="No reply from server (TIMEOUT)"/><script id="http-chrono" output="Request times for /; avg: 22199.26ms; min: 22107.76ms; max: 22325.58ms"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.154&#xa;    &#xa;    Path: http://10.10.10.154:443/&#xa;    Line number: 13&#xa;    Comment: &#xa;        /*]]&gt;*/&#xa;    &#xa;    Path: http://10.10.10.154:443/&#xa;    Line number: 8&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        /*]]&gt;*/-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.154:443/&#xa;    Line number: 8&#xa;    Comment: &#xa;        &lt;!-&#45;/*-&#45;&gt;&#xa;    &#xa;    Path: http://10.10.10.154:443/&#xa;    Line number: 8&#xa;    Comment: &#xa;        /*-&#45;&gt;&lt;![CDATA[/*&gt;&lt;!-&#45;*/&#xa;"/><script id="http-malware-host" output="Host appears to be clean"/><script id="ssl-cert" output="Subject: commonName=localhost&#xa;Issuer: commonName=localhost&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2009-11-10T23:48:47&#xa;Not valid after:  2019-11-08T23:48:47&#xa;MD5:   a0a44cc99e84b26f9e639f9ed229dee0&#xa;SHA-1: b0238c547a905bfa119c4e8baccaeacf36491ff6&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls&#xa;b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD&#xa;VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj&#xa;7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o&#xa;J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT&#xa;gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD&#xa;gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd&#xa;aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL&#xa;vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">C125D327E3ECAD0D836A6DE75F9A751023E2909DA063958F1D419A58D59C638C5B73869079CCC3D6A389B875BC1E947C7C6EE3ADE8275C0BC60C6AF90F32FEB3C47A1023042B2928D4AAF9B32F6610F8A7C1CD60C46B2857E3673BF79ECD4822DC38EA4813803A4097570C4735463D71629AEE539D630E677A28C9A434FF19ED</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2009-11-10T23:48:47</elem>
+<elem key="notAfter">2019-11-08T23:48:47</elem>
+</table>
+<elem key="md5">a0a44cc99e84b26f9e639f9ed229dee0</elem>
+<elem key="sha1">b0238c547a905bfa119c4e8baccaeacf36491ff6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls&#xa;b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD&#xa;VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj&#xa;7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o&#xa;J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT&#xa;gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD&#xa;gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd&#xa;aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL&#xa;vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    &#xa;"/><script id="http-grep" output="&#xa;  (1) http://10.10.10.154:443/: &#xa;    (1) email: &#xa;      + admin@example.com"><table key="(1) http://10.10.10.154:443/">
+<table key="(1) email">
+<elem>+ admin@example.com</elem>
+</table>
+</table>
+</script><script id="http-errors" output="&#xa;Spidering limited to: maxpagecount=40; withinhost=10.10.10.154&#xa;  Found the following error pages: &#xa;  &#xa;  Error Code: 400&#xa;  &#x9;http://10.10.10.154:443/&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+</script><script id="http-vuln-cve2014-3704" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-aspnet-debug" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-vhosts" output="&#xa;128 names had status ERROR"/></port>
+</ports>
+<times srtt="51187" rttvar="51187" to="255935"/>
+</host>
+<taskbegin task="NSE" time="1668402713"/>
+<taskend task="NSE" time="1668402713"/>
+<taskbegin task="NSE" time="1668402713"/>
+<taskend task="NSE" time="1668402713"/>
+<taskbegin task="NSE" time="1668402713"/>
+<taskend task="NSE" time="1668402713"/>
+<runstats><finished time="1668402713" timestr="Mon Nov 14 16:11:53 2022" summary="Nmap done at Mon Nov 14 16:11:53 2022; 1 IP address (1 host up) scanned in 761.88 seconds" elapsed="761.88" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
