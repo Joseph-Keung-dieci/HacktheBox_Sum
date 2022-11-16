@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Nov 15 16:47:34 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.17 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.17" start="1668491254" startstr="Tue Nov 15 16:47:34 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668491254"/>
+<taskend task="NSE" time="1668491254"/>
+<taskbegin task="NSE" time="1668491254"/>
+<taskend task="NSE" time="1668491254"/>
+<taskbegin task="NSE" time="1668491254"/>
+<taskend task="NSE" time="1668491254"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668491254"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668491261"/>
+<taskbegin task="Connect Scan" time="1668491261"/>
+<taskend task="Connect Scan" time="1668491261" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668491261"/>
+<taskend task="Service scan" time="1668491275" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668491275"/>
+<taskprogress task="NSE" time="1668491306" percent="81.19" remaining="8" etc="1668491313"/>
+<taskprogress task="NSE" time="1668491336" percent="98.04" remaining="2" etc="1668491337"/>
+<taskprogress task="NSE" time="1668491366" percent="99.35" remaining="1" etc="1668491367"/>
+<taskprogress task="NSE" time="1668491396" percent="99.35" remaining="1" etc="1668491397"/>
+<taskprogress task="NSE" time="1668491426" percent="99.67" remaining="1" etc="1668491426"/>
+<taskprogress task="NSE" time="1668491456" percent="99.67" remaining="1" etc="1668491457"/>
+<taskprogress task="NSE" time="1668491486" percent="99.67" remaining="1" etc="1668491487"/>
+<taskend task="NSE" time="1668491496"/>
+<taskbegin task="NSE" time="1668491496"/>
+<taskend task="NSE" time="1668491525"/>
+<taskbegin task="NSE" time="1668491525"/>
+<taskend task="NSE" time="1668491538"/>
+<host starttime="1668491261" endtime="1668491538"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="ssl-cert" output="Subject: commonName=brainfuck.htb/organizationName=Brainfuck Ltd./stateOrProvinceName=Attica/countryName=GR/localityName=Athens/emailAddress=orestis@brainfuck.htb/organizationalUnitName=IT&#xa;Subject Alternative Name: DNS:www.brainfuck.htb, DNS:sup3rs3cr3t.brainfuck.htb&#xa;Issuer: commonName=brainfuck.htb/organizationName=Brainfuck Ltd./stateOrProvinceName=Attica/countryName=GR/localityName=Athens/emailAddress=orestis@brainfuck.htb/organizationalUnitName=IT&#xa;Public Key type: rsa&#xa;Public Key bits: 3072&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2017-04-13T11:19:29&#xa;Not valid after:  2027-04-11T11:19:29&#xa;MD5:   cbf1689996aaf7a005650fc094917f20&#xa;SHA-1: f448e798a8175580879c8fb8ef0e2d3dc656cb66&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFQzCCA6ugAwIBAgIJAI24F5h8eY+HMA0GCSqGSIb3DQEBCwUAMIGTMQswCQYD&#xa;VQQGEwJHUjEPMA0GA1UECAwGQXR0aWNhMQ8wDQYDVQQHDAZBdGhlbnMxFzAVBgNV&#xa;BAoMDkJyYWluZnVjayBMdGQuMQswCQYDVQQLDAJJVDEWMBQGA1UEAwwNYnJhaW5m&#xa;dWNrLmh0YjEkMCIGCSqGSIb3DQEJARYVb3Jlc3Rpc0BicmFpbmZ1Y2suaHRiMB4X&#xa;DTE3MDQxMzExMTkyOVoXDTI3MDQxMTExMTkyOVowgZMxCzAJBgNVBAYTAkdSMQ8w&#xa;DQYDVQQIDAZBdHRpY2ExDzANBgNVBAcMBkF0aGVuczEXMBUGA1UECgwOQnJhaW5m&#xa;dWNrIEx0ZC4xCzAJBgNVBAsMAklUMRYwFAYDVQQDDA1icmFpbmZ1Y2suaHRiMSQw&#xa;IgYJKoZIhvcNAQkBFhVvcmVzdGlzQGJyYWluZnVjay5odGIwggGiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBjwAwggGKAoIBgQCjBI0m6FWgcLYONyxVeMgc+PuTFJMnMUjMb8BF&#xa;t0PIDSCt10grCCfzBNDIqfU9byiokyYVvvD+sRoWJQfMjd3I3NXMxHwpcLM6X9oR&#xa;Twt1iBBJRQkTnHOs1hyCmkiM+kn2W1xdL+mwBylAUlvUReLIDdS5anE7u95ApWsD&#xa;TTUt/mMUl1DwnCqrNkt3czQzCNfCIwIhbaLjsoXsiVo1fFEr6UpsyiaXad9eTTsl&#xa;EF9k3rByXrmP1WrkaFLqGhqS4v+rYtsyKGPngjAB664aAvB2sSI0/EuOTa7WOPcV&#xa;NP3Tga+zx55qXPeo6nqCttOlAKKwiZqba5AgDAjSFdB6Q60dghWSuRYU999Ku6zA&#xa;DdwP0BoT5+kcZJENY7wx1uzysSMrtCoi8E6bfx42UwNQe/UCDDXErXat90hTB+vV&#xa;h2vaSdyR0tz3w1iIHBZH5/3rY3f+LyfE9fSg2TbGFgZNDq6O/iykVWb9SG+tl1fA&#xa;RB208Y1/mOw0+84G9RIjLVMLb0kCAwEAAaOBlzCBlDAdBgNVHQ4EFgQUj12KscJg&#xa;/6gSHzm+kzSN/psvik8wHwYDVR0jBBgwFoAUj12KscJg/6gSHzm+kzSN/psvik8w&#xa;DAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMCBeAwNwYDVR0RBDAwLoIRd3d3LmJyYWlu&#xa;ZnVjay5odGKCGXN1cDNyczNjcjN0LmJyYWluZnVjay5odGIwDQYJKoZIhvcNAQEL&#xa;BQADggGBAJ11TuRhhSQfq5NHXU5fV5VkCOPUx3yKsWjt93Qm8WDD2rJcZAq8jW59&#xa;NHDWhzDlKZMyNYv8gKJ8k6HuG3f20yeifKZulGw/YsY6dDtTzO+tooBqzjWb9irh&#xa;bpMIVXv1xBSuz+f5YGdzpvlMK/Ltt1nEQNjKXaTnjy7OGfp4isMZCzBZeKAKnjdn&#xa;+s6TgFrFA94B56naXNaNLHvv9WcFKviwDTP2PtDz0fc9hbnZz8oxE5Q6/l50NGUK&#xa;6bGCVIjDJfM/SsWPLHb4J6chkJxlZZLmpid+s5PsKSdY0ZZ1Oxb20O2mla77hDSJ&#xa;d43t/sZRBwWPEWxAHUR8Dj5pcrbCFyi57Qu4ENc5w7H0RhRyd0/OWs6ahn2ef4Qy&#xa;DSWfdpd5CVBGdSLVlVSjzLcBDmWuyy8q5CTgJ3VzIzOreg93F2mVAF+tlNZRX9rc&#xa;dFjsS0lwXWRZqd6642VuAtf4HoAFBh9PfBtUx+t1DxCXyY7OTwnvMsnNFg9fw11v&#xa;krhc81zFeg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">brainfuck.htb</elem>
+<elem key="countryName">GR</elem>
+<elem key="emailAddress">orestis@brainfuck.htb</elem>
+<elem key="localityName">Athens</elem>
+<elem key="organizationName">Brainfuck Ltd.</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Attica</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">brainfuck.htb</elem>
+<elem key="countryName">GR</elem>
+<elem key="emailAddress">orestis@brainfuck.htb</elem>
+<elem key="localityName">Athens</elem>
+<elem key="organizationName">Brainfuck Ltd.</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Attica</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="modulus">A3048D26E855A070B60E372C5578C81CF8FB931493273148CC6FC045B743C80D20ADD7482B0827F304D0C8A9F53D6F28A8932615BEF0FEB11A162507CC8DDDC8DCD5CCC47C2970B33A5FDA114F0B758810494509139C73ACD61C829A488CFA49F65B5C5D2FE9B0072940525BD445E2C80DD4B96A713BBBDE40A56B034D352DFE63149750F09C2AAB364B7773343308D7C22302216DA2E3B285EC895A357C512BE94A6CCA269769DF5E4D3B25105F64DEB0725EB98FD56AE46852EA1A1A92E2FFAB62DB322863E7823001EBAE1A02F076B12234FC4B8E4DAED638F71534FDD381AFB3C79E6A5CF7A8EA7A82B6D3A500A2B0899A9B6B90200C08D215D07A43AD1D821592B91614F7DF4ABBACC00DDC0FD01A13E7E91C64910D63BC31D6ECF2B1232BB42A22F04E9B7F1E365303507BF5020C35C4AD76ADF7485307EBD5876BDA49DC91D2DCF7C358881C1647E7FDEB6377FE2F27C4F5F4A0D936C616064D0EAE8EFE2CA45566FD486FAD9757C0441DB4F18D7F98EC34FBCE06F512232D530B6F49</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">8F:5D:8A:B1:C2:60:FF:A8:12:1F:39:BE:93:34:8D:FE:9B:2F:8A:4F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">8F:5D:8A:B1:C2:60:FF:A8:12:1F:39:BE:93:34:8D:FE:9B:2F:8A:4F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:www.brainfuck.htb, DNS:sup3rs3cr3t.brainfuck.htb</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-04-13T11:19:29</elem>
+<elem key="notAfter">2027-04-11T11:19:29</elem>
+</table>
+<elem key="md5">cbf1689996aaf7a005650fc094917f20</elem>
+<elem key="sha1">f448e798a8175580879c8fb8ef0e2d3dc656cb66</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFQzCCA6ugAwIBAgIJAI24F5h8eY+HMA0GCSqGSIb3DQEBCwUAMIGTMQswCQYD&#xa;VQQGEwJHUjEPMA0GA1UECAwGQXR0aWNhMQ8wDQYDVQQHDAZBdGhlbnMxFzAVBgNV&#xa;BAoMDkJyYWluZnVjayBMdGQuMQswCQYDVQQLDAJJVDEWMBQGA1UEAwwNYnJhaW5m&#xa;dWNrLmh0YjEkMCIGCSqGSIb3DQEJARYVb3Jlc3Rpc0BicmFpbmZ1Y2suaHRiMB4X&#xa;DTE3MDQxMzExMTkyOVoXDTI3MDQxMTExMTkyOVowgZMxCzAJBgNVBAYTAkdSMQ8w&#xa;DQYDVQQIDAZBdHRpY2ExDzANBgNVBAcMBkF0aGVuczEXMBUGA1UECgwOQnJhaW5m&#xa;dWNrIEx0ZC4xCzAJBgNVBAsMAklUMRYwFAYDVQQDDA1icmFpbmZ1Y2suaHRiMSQw&#xa;IgYJKoZIhvcNAQkBFhVvcmVzdGlzQGJyYWluZnVjay5odGIwggGiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBjwAwggGKAoIBgQCjBI0m6FWgcLYONyxVeMgc+PuTFJMnMUjMb8BF&#xa;t0PIDSCt10grCCfzBNDIqfU9byiokyYVvvD+sRoWJQfMjd3I3NXMxHwpcLM6X9oR&#xa;Twt1iBBJRQkTnHOs1hyCmkiM+kn2W1xdL+mwBylAUlvUReLIDdS5anE7u95ApWsD&#xa;TTUt/mMUl1DwnCqrNkt3czQzCNfCIwIhbaLjsoXsiVo1fFEr6UpsyiaXad9eTTsl&#xa;EF9k3rByXrmP1WrkaFLqGhqS4v+rYtsyKGPngjAB664aAvB2sSI0/EuOTa7WOPcV&#xa;NP3Tga+zx55qXPeo6nqCttOlAKKwiZqba5AgDAjSFdB6Q60dghWSuRYU999Ku6zA&#xa;DdwP0BoT5+kcZJENY7wx1uzysSMrtCoi8E6bfx42UwNQe/UCDDXErXat90hTB+vV&#xa;h2vaSdyR0tz3w1iIHBZH5/3rY3f+LyfE9fSg2TbGFgZNDq6O/iykVWb9SG+tl1fA&#xa;RB208Y1/mOw0+84G9RIjLVMLb0kCAwEAAaOBlzCBlDAdBgNVHQ4EFgQUj12KscJg&#xa;/6gSHzm+kzSN/psvik8wHwYDVR0jBBgwFoAUj12KscJg/6gSHzm+kzSN/psvik8w&#xa;DAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMCBeAwNwYDVR0RBDAwLoIRd3d3LmJyYWlu&#xa;ZnVjay5odGKCGXN1cDNyczNjcjN0LmJyYWluZnVjay5odGIwDQYJKoZIhvcNAQEL&#xa;BQADggGBAJ11TuRhhSQfq5NHXU5fV5VkCOPUx3yKsWjt93Qm8WDD2rJcZAq8jW59&#xa;NHDWhzDlKZMyNYv8gKJ8k6HuG3f20yeifKZulGw/YsY6dDtTzO+tooBqzjWb9irh&#xa;bpMIVXv1xBSuz+f5YGdzpvlMK/Ltt1nEQNjKXaTnjy7OGfp4isMZCzBZeKAKnjdn&#xa;+s6TgFrFA94B56naXNaNLHvv9WcFKviwDTP2PtDz0fc9hbnZz8oxE5Q6/l50NGUK&#xa;6bGCVIjDJfM/SsWPLHb4J6chkJxlZZLmpid+s5PsKSdY0ZZ1Oxb20O2mla77hDSJ&#xa;d43t/sZRBwWPEWxAHUR8Dj5pcrbCFyi57Qu4ENc5w7H0RhRyd0/OWs6ahn2ef4Qy&#xa;DSWfdpd5CVBGdSLVlVSjzLcBDmWuyy8q5CTgJ3VzIzOreg93F2mVAF+tlNZRX9rc&#xa;dFjsS0lwXWRZqd6642VuAtf4HoAFBh9PfBtUx+t1DxCXyY7OTwnvMsnNFg9fw11v&#xa;krhc81zFeg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-chrono" output="Request times for /; avg: 7156.66ms; min: 1486.78ms; max: 16056.72ms"/><script id="ssl-dh-params" output="&#xa;  VULNERABLE:&#xa;  Diffie-Hellman Key Exchange Insufficient Group Strength&#xa;    State: VULNERABLE&#xa;      Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;      of insufficient strength, especially those using one of a few commonly&#xa;      shared groups, may be susceptible to passive eavesdropping attacks.&#xa;    Check results:&#xa;      WEAK DH GROUP 1&#xa;            Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA&#xa;            Modulus Type: Safe prime&#xa;            Modulus Source: nginx/1024-bit MODP group with safe prime modulus&#xa;            Modulus Length: 1024&#xa;            Generator Length: 8&#xa;            Public Key Length: 1024&#xa;    References:&#xa;      https://weakdh.org&#xa;"><table key="NMAP-9">
+<elem key="title">Diffie-Hellman Key Exchange Insufficient Group Strength</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;of insufficient strength, especially those using one of a few commonly&#xa;shared groups, may be susceptible to passive eavesdropping attacks.</elem>
+</table>
+<table key="check_results">
+<elem>WEAK DH GROUP 1&#xa;      Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA&#xa;      Modulus Type: Safe prime&#xa;      Modulus Source: nginx/1024-bit MODP group with safe prime modulus&#xa;      Modulus Length: 1024&#xa;      Generator Length: 8&#xa;      Public Key Length: 1024</elem>
+</table>
+<table key="refs">
+<elem>https://weakdh.org</elem>
+</table>
+</table>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-server-header" output="nginx/1.10.0 (Ubuntu)"><elem>nginx/1.10.0 (Ubuntu)</elem>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1&#xa;"/><script id="http-useragent-tester" output="&#xa;  Allowed User Agents: &#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    URI::Fetch&#xa;    PECL::HTTP&#xa;  Change in Status Code: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html): 400&#xa;    WWW-Mechanize/1.34: 400&#xa;    Zend_Http_Client: 400&#xa;    HTTP::Lite: 200&#xa;    libwww: 400&#xa;    http client: 400&#xa;    PHPCrawl: 400&#xa;    Wget/1.13.4 (linux-gnu): 200"><table key="Allowed User Agents">
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>URI::Fetch</elem>
+<elem>PECL::HTTP</elem>
+</table>
+<table key="Change in Status Code">
+<elem key="Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)">400</elem>
+<elem key="WWW-Mechanize/1.34">400</elem>
+<elem key="Zend_Http_Client">400</elem>
+<elem key="HTTP::Lite">200</elem>
+<elem key="libwww">400</elem>
+<elem key="http client">400</elem>
+<elem key="PHPCrawl">400</elem>
+<elem key="Wget/1.13.4 (linux-gnu)">200</elem>
+</table>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-vhosts" output="&#xa;svn : 200&#xa;24 names had status 400&#xa;103 names had status ERROR"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-traceroute" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-aspnet-debug" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-headers" output="&#xa;  Server: nginx/1.10.0 (Ubuntu)&#xa;  Date: Tue, 15 Nov 2022 05:48:35 GMT&#xa;  Content-Type: text/html&#xa;  Content-Length: 612&#xa;  Last-Modified: Thu, 13 Apr 2017 10:20:10 GMT&#xa;  Connection: close&#xa;  ETag: &quot;58ef50da-264&quot;&#xa;  Accept-Ranges: bytes&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-date" output="Tue, 15 Nov 2022 05:48:11 GMT; -5s from local time."><elem key="date">2022-11-15T05:48:11+00:00</elem>
+<elem key="delta">-5.0</elem>
+</script><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: HEAD POST"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-malware-host" output="Host appears to be clean"/><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="32851" rttvar="32851" to="164255"/>
+</host>
+<taskbegin task="NSE" time="1668491538"/>
+<taskend task="NSE" time="1668491538"/>
+<taskbegin task="NSE" time="1668491538"/>
+<taskend task="NSE" time="1668491538"/>
+<taskbegin task="NSE" time="1668491538"/>
+<taskend task="NSE" time="1668491538"/>
+<runstats><finished time="1668491538" timestr="Tue Nov 15 16:52:18 2022" summary="Nmap done at Tue Nov 15 16:52:18 2022; 1 IP address (1 host up) scanned in 284.00 seconds" elapsed="284.00" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

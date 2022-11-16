@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Nov 15 16:45:40 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 143 &quot;-&#45;script=banner,(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp143/tcp_143_imap_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp143/xml/tcp_143_imap_nmap.xml 10.10.10.17 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 143 &quot;-&#45;script=banner,(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp143/tcp_143_imap_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp143/xml/tcp_143_imap_nmap.xml 10.10.10.17" start="1668491140" startstr="Tue Nov 15 16:45:40 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="143"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491141"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491141"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491141"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668491141"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668491141"/>
+<taskbegin task="Connect Scan" time="1668491141"/>
+<taskend task="Connect Scan" time="1668491141" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668491141"/>
+<taskend task="Service scan" time="1668491141" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491141"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491142"/>
+<taskbegin task="NSE" time="1668491142"/>
+<taskend task="NSE" time="1668491142"/>
+<host starttime="1668491141" endtime="1668491142"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="have more IDLE ID post-login LITERAL+ Pre-login IMAP4rev1 listed SASL-IR OK AUTH=PLAINA0001 ENABLE LOGIN-REFERRALS capabilities"/><script id="banner" output="* OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID &#xa;ENABLE IDLE AUTH=PLAIN] Dovecot ready."/></port>
+</ports>
+<times srtt="29108" rttvar="29108" to="145540"/>
+</host>
+<taskbegin task="NSE" time="1668491142"/>
+<taskend task="NSE" time="1668491142"/>
+<taskbegin task="NSE" time="1668491142"/>
+<taskend task="NSE" time="1668491142"/>
+<taskbegin task="NSE" time="1668491142"/>
+<taskend task="NSE" time="1668491142"/>
+<runstats><finished time="1668491142" timestr="Tue Nov 15 16:45:42 2022" summary="Nmap done at Tue Nov 15 16:45:42 2022; 1 IP address (1 host up) scanned in 1.58 seconds" elapsed="1.58" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

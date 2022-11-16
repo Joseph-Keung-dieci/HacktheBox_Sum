@@ -1,0 +1,14 @@
+# Nmap 7.93 scan initiated Tue Nov 15 16:45:40 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 143 "--script=banner,(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp143/tcp_143_imap_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp143/xml/tcp_143_imap_nmap.xml 10.10.10.17
+Nmap scan report for 10.10.10.17
+Host is up, received user-set (0.029s latency).
+Scanned at 2022-11-15 16:45:41 AEDT for 1s
+
+PORT    STATE SERVICE REASON  VERSION
+143/tcp open  imap    syn-ack Dovecot imapd
+|_imap-capabilities: have more IDLE ID post-login LITERAL+ Pre-login IMAP4rev1 listed SASL-IR OK AUTH=PLAINA0001 ENABLE LOGIN-REFERRALS capabilities
+| banner: * OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID 
+|_ENABLE IDLE AUTH=PLAIN] Dovecot ready.
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 15 16:45:42 2022 -- 1 IP address (1 host up) scanned in 1.58 seconds

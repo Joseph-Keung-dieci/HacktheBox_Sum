@@ -1,0 +1,140 @@
+# Nmap 7.93 scan initiated Tue Nov 15 18:19:27 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -oN /home/parallels/HacktheBox/OSCP-like/Linux-Pit/results/10.10.10.241/scans/_quick_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Pit/results/10.10.10.241/scans/xml/_quick_tcp_nmap.xml 10.10.10.241
+Nmap scan report for 10.10.10.241
+Host is up, received user-set (0.027s latency).
+Scanned at 2022-11-15 18:19:34 AEDT for 443s
+Not shown: 990 filtered tcp ports (no-response), 7 filtered tcp ports (host-unreach)
+PORT     STATE SERVICE         REASON  VERSION
+22/tcp   open  ssh             syn-ack OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 6fc3408f6950695a57d79c4e7b1b9496 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPRtC3Zd+DPBo1Raur/oVw/vz3BFbDkm6wmyb+E+0kBcgsDzm+UZqGn3u+rbI9L7PtNCIOTHa4j0Qs6fD9CvWa9xl1PXPQEI4X8UIfiDKduW+NhC0tRtfKzBSIR0XE+n2MjNCLM6pAR4xwhPZcpkXQmwurayT3OOHPV5QpOdSfzp0Zv56sBn3FmYe9j6fuhRFFL2x6Q8NfHOFkd4tAwkcCB1EebD0S/1ajB+TO6WeMOIHEU9HAAyg2LDzUKh0pzfFdK2MQHzKrGcFe3kOalz/dRJApa9wzUgq6iDbQvstDucPFLmvu8Y4YKFg1trKnf4Z2kopSUn0kKOxBROddoKOBdTyE309PF1b/Jo4ziDVVkRvPIHh06Se7NRVzbRtO8mBTFbi/Efag8QtLHeLDnF5SJj5SdTBiMiLvyGNWs3UySweOazyijw5bQtlgKbZHy0tLsjOCWjTuXGHAS3pHkkgSYKfr/NwWDsVQwHgCf1M7EZ23Uxww/qE6vRWbHStc6gM=
+|   256 c26ff8aba12083d160abcf632dc865b7 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBASBJvHyFZwgmAuf2qWsMHborC5pS152XK8TVyTESkcPGWHqVAa/9rmFNvMuiMvBTPWhPq2+b5apFURHdxW2S5Q=
+|   256 6b656ca692e5cc76175a2f9ae750c350 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJmDbvdFwHALNAnJDXuRD6aO9yppoVnKbTLbUmn6CWUn
+80/tcp   open  http            syn-ack nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+|_http-title: Test Page for the Nginx HTTP Server on Red Hat Enterprise Linux
+| http-methods: 
+|_  Supported Methods: GET HEAD
+9090/tcp open  ssl/zeus-admin? syn-ack
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=dms-pit.htb/organizationName=4cd9329523184b0ea52ba0d20a1a6f92/countryName=US
+| Subject Alternative Name: DNS:dms-pit.htb, DNS:localhost, IP Address:127.0.0.1
+| Issuer: commonName=dms-pit.htb/organizationName=4cd9329523184b0ea52ba0d20a1a6f92/countryName=US/organizationalUnitName=ca-5763051739999573755
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-04-16T23:29:12
+| Not valid after:  2030-06-04T16:09:12
+| MD5:   01464fba4de85bef0331e57e41b4a8ae
+| SHA-1: 29f2edc37ae90c252a9d3feb3d90bde6dfd3eee5
+| -----BEGIN CERTIFICATE-----
+| MIIEpjCCAo6gAwIBAgIISl2h4yex5dEwDQYJKoZIhvcNAQELBQAwbzELMAkGA1UE
+| BhMCVVMxKTAnBgNVBAoMIDRjZDkzMjk1MjMxODRiMGVhNTJiYTBkMjBhMWE2Zjky
+| MR8wHQYDVQQLDBZjYS01NzYzMDUxNzM5OTk5NTczNzU1MRQwEgYDVQQDDAtkbXMt
+| cGl0Lmh0YjAeFw0yMDA0MTYyMzI5MTJaFw0zMDA2MDQxNjA5MTJaME4xCzAJBgNV
+| BAYTAlVTMSkwJwYDVQQKDCA0Y2Q5MzI5NTIzMTg0YjBlYTUyYmEwZDIwYTFhNmY5
+| MjEUMBIGA1UEAwwLZG1zLXBpdC5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+| ggEKAoIBAQDZLaNRUf3BXYCd+Df9XZwMBmIwGzy/yX+9fPY6zGXYEYS7SeH9xZ7p
+| GTUQMfk30Olb7rzftCKx9xSMHyoCJIAWFeVDV9vxJbGaEqFRvKHPeqcpQbRAKoqL
+| xWaqbDZCXsBtTVYEwpRHvJ/GoGEWAQSbP1zkHzvVBkHuXE7Sj0zlW5NaBjvG/wEe
+| wAB6crwnIYoqC550cMPritvjLwijk9nhwaPJ462anhJR5vFBvkR4nqD3mhIytUOb
+| YMsfVoI0FiXtlBdu1ApABxtIdQgkY94eRAaMTkQ4Je0a8G5PlRZ20xCdqHb3xIZV
+| 1mphZehkUeN0MzgEloL5TX8Zab+LZW+ZAgMBAAGjZzBlMA4GA1UdDwEB/wQEAwIF
+| oDAJBgNVHRMEAjAAMCcGA1UdEQQgMB6CC2Rtcy1waXQuaHRigglsb2NhbGhvc3SH
+| BH8AAAEwHwYDVR0jBBgwFoAUc8ssOet8O2a3+F2If4eQixSV7PwwDQYJKoZIhvcN
+| AQELBQADggIBAG8kou51q78wdzxiPejMv9qhWlBWW3Ly5TvAav07ATx8haldEHvT
+| LlFNGPDFAvJvcKguiHnGrEL9Im5GDuzi31V4fE5xjzWJdkepXasK7NzIciC0IwgP
+| 7G1j11OUJOt9pmDRu2FkTHsSdr5b57P4uXS8rRF5lLCEafuemk6ORXa07b9xSrhC
+| 3pWl22RtVlTFQ3wX8OsY0O3w5UUz8T/ezhKYUoM/mYQu+ICTAltlX4xae6PGauCh
+| uaOY+/dPtM17KfHSbnCS1ZnR0oQ4BXJuYNfOR/C59L5B7TWzaOx5n1TD6JHOzrDu
+| LxjO0OTeFaBRXL/s2Z5zNPTpZVnHyKEmHr5ZObjR6drDGqXfShPq5y70RfE28Pxm
+| VTCdK4MCqDkELIlXrxzHQ/IPC8pxho6WEQsY80xZ1nXbLshlymh6clgblOetToZT
+| HObIkEoPBtszUssFmWSN5hd4JcuyqSbJhichYtFQRASb2I4jWdP831LPir+MCGQv
+| iAnieBF8zYus7kboTwfXmBGUt6r6eNE1yr4ZXPxOZoWq2ob6aAeLp2mqif+jgUSk
+| fiG9oiAoyXWxw5pLfYHxVQGY+rGbjOs8gCAxBaTPt6dCkHZy/nU8PNZtV6QC4OME
+| LI/sYtmG8XENdQhsLM2sewOMvv5rgsZ8SlX05Bw8C1xuq5Rg1KewCjlY
+|_-----END CERTIFICATE-----
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 400 Bad request
+|     Content-Type: text/html; charset=utf8
+|     Transfer-Encoding: chunked
+|     X-DNS-Prefetch-Control: off
+|     Referrer-Policy: no-referrer
+|     X-Content-Type-Options: nosniff
+|     Cross-Origin-Resource-Policy: same-origin
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <title>
+|     request
+|     </title>
+|     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <style>
+|     body {
+|     margin: 0;
+|     font-family: "RedHatDisplay", "Open Sans", Helvetica, Arial, sans-serif;
+|     font-size: 12px;
+|     line-height: 1.66666667;
+|     color: #333333;
+|     background-color: #f5f5f5;
+|     border: 0;
+|     vertical-align: middle;
+|     font-weight: 300;
+|_    margin: 0 0 10p
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9090-TCP:V=7.93%T=SSL%I=9%D=11/15%Time=63733DC7%P=aarch64-unknown-l
+SF:inux-gnu%r(GetRequest,E70,"HTTP/1\.1\x20400\x20Bad\x20request\r\nConten
+SF:t-Type:\x20text/html;\x20charset=utf8\r\nTransfer-Encoding:\x20chunked\
+SF:r\nX-DNS-Prefetch-Control:\x20off\r\nReferrer-Policy:\x20no-referrer\r\
+SF:nX-Content-Type-Options:\x20nosniff\r\nCross-Origin-Resource-Policy:\x2
+SF:0same-origin\r\n\r\n29\r\n<!DOCTYPE\x20html>\n<html>\n<head>\n\x20\x20\
+SF:x20\x20<title>\r\nb\r\nBad\x20request\r\nd08\r\n</title>\n\x20\x20\x20\
+SF:x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20char
+SF:set=utf-8\">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"w
+SF:idth=device-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<style>\n\
+SF:tbody\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x20
+SF:0;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\"R
+SF:edHatDisplay\",\x20\"Open\x20Sans\",\x20Helvetica,\x20Arial,\x20sans-se
+SF:rif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012p
+SF:x;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.
+SF:66666667;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#3
+SF:33333;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-colo
+SF:r:\x20#f5f5f5;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20
+SF:\x20\x20\x20img\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20b
+SF:order:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20vertical-
+SF:align:\x20middle;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\
+SF:x20\x20\x20\x20h1\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0font-weight:\x20300;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20p\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20margin:\x200\x200\x2010p")%r(HTTPOptions,E70,"HTTP/1\.1\x20400\x20B
+SF:ad\x20request\r\nContent-Type:\x20text/html;\x20charset=utf8\r\nTransfe
+SF:r-Encoding:\x20chunked\r\nX-DNS-Prefetch-Control:\x20off\r\nReferrer-Po
+SF:licy:\x20no-referrer\r\nX-Content-Type-Options:\x20nosniff\r\nCross-Ori
+SF:gin-Resource-Policy:\x20same-origin\r\n\r\n29\r\n<!DOCTYPE\x20html>\n<h
+SF:tml>\n<head>\n\x20\x20\x20\x20<title>\r\nb\r\nBad\x20request\r\nd08\r\n
+SF:</title>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20conte
+SF:nt=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20name=\"vi
+SF:ewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0\">\n\x2
+SF:0\x20\x20\x20<style>\n\tbody\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20font-family:\x20\"RedHatDisplay\",\x20\"Open\x20Sans\",\x20Helvetic
+SF:a,\x20Arial,\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20font-size:\x2012px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20line-height:\x201\.66666667;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20color:\x20#333333;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20background-color:\x20#f5f5f5;\n\x20\x20\x20\x20\x20\x20\x20\x20
+SF:}\n\x20\x20\x20\x20\x20\x20\x20\x20img\x20{\n\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20border:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20vertical-align:\x20middle;\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20}\n\x20\x20\x20\x20\x20\x20\x20\x20h1\x20{\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20font-weight:\x20300;\n\x20\x20\x20\x20\x20\x20\
+SF:x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20p\x20{\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20margin:\x200\x200\x2010p");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 15 18:26:57 2022 -- 1 IP address (1 host up) scanned in 450.30 seconds

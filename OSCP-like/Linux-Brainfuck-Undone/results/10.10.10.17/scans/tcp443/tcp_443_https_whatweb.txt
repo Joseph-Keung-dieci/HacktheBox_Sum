@@ -1,0 +1,40 @@
+WhatWeb report for https://10.10.10.17:443
+Status    : 200 OK
+Title     : Welcome to nginx!
+IP        : 10.10.10.17
+Country   : RESERVED, ZZ
+
+Summary   : HTML5, HTTPServer[Ubuntu Linux][nginx/1.10.0 (Ubuntu)], nginx[1.10.0]
+
+Detected Plugins:
+[ HTML5 ]
+	HTML version 5, detected by the doctype declaration
+
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to
+	identify the operating system from the server header.
+
+	OS           : Ubuntu Linux
+	String       : nginx/1.10.0 (Ubuntu) (from server string)
+
+[ nginx ]
+	Nginx (Engine-X) is a free, open-source, high-performance
+	HTTP server and reverse proxy, as well as an IMAP/POP3
+	proxy server.
+
+	Version      : 1.10.0
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Server: nginx/1.10.0 (Ubuntu)
+	Date: Tue, 15 Nov 2022 05:47:43 GMT
+	Content-Type: text/html
+	Last-Modified: Thu, 13 Apr 2017 10:20:10 GMT
+	Transfer-Encoding: chunked
+	Connection: close
+	ETag: W/"58ef50da-264"
+	Content-Encoding: gzip
+
+

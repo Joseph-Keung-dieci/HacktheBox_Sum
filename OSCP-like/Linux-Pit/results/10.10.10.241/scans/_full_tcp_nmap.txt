@@ -1,0 +1,23 @@
+# Nmap 7.93 scan initiated Tue Nov 15 18:19:27 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Linux-Pit/results/10.10.10.241/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Pit/results/10.10.10.241/scans/xml/_full_tcp_nmap.xml 10.10.10.241
+Nmap scan report for 10.10.10.241
+Host is up, received user-set (0.14s latency).
+Scanned at 2022-11-15 18:19:34 AEDT for 141s
+Not shown: 65426 filtered tcp ports (no-response), 107 filtered tcp ports (host-unreach)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 6fc3408f6950695a57d79c4e7b1b9496 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPRtC3Zd+DPBo1Raur/oVw/vz3BFbDkm6wmyb+E+0kBcgsDzm+UZqGn3u+rbI9L7PtNCIOTHa4j0Qs6fD9CvWa9xl1PXPQEI4X8UIfiDKduW+NhC0tRtfKzBSIR0XE+n2MjNCLM6pAR4xwhPZcpkXQmwurayT3OOHPV5QpOdSfzp0Zv56sBn3FmYe9j6fuhRFFL2x6Q8NfHOFkd4tAwkcCB1EebD0S/1ajB+TO6WeMOIHEU9HAAyg2LDzUKh0pzfFdK2MQHzKrGcFe3kOalz/dRJApa9wzUgq6iDbQvstDucPFLmvu8Y4YKFg1trKnf4Z2kopSUn0kKOxBROddoKOBdTyE309PF1b/Jo4ziDVVkRvPIHh06Se7NRVzbRtO8mBTFbi/Efag8QtLHeLDnF5SJj5SdTBiMiLvyGNWs3UySweOazyijw5bQtlgKbZHy0tLsjOCWjTuXGHAS3pHkkgSYKfr/NwWDsVQwHgCf1M7EZ23Uxww/qE6vRWbHStc6gM=
+|   256 c26ff8aba12083d160abcf632dc865b7 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBASBJvHyFZwgmAuf2qWsMHborC5pS152XK8TVyTESkcPGWHqVAa/9rmFNvMuiMvBTPWhPq2+b5apFURHdxW2S5Q=
+|   256 6b656ca692e5cc76175a2f9ae750c350 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJmDbvdFwHALNAnJDXuRD6aO9yppoVnKbTLbUmn6CWUn
+80/tcp open  http    syn-ack nginx 1.14.1
+|_http-title: Test Page for the Nginx HTTP Server on Red Hat Enterprise Linux
+|_http-server-header: nginx/1.14.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 15 18:21:55 2022 -- 1 IP address (1 host up) scanned in 147.71 seconds

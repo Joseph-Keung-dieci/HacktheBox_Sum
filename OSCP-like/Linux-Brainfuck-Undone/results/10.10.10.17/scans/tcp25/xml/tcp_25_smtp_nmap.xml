@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Nov 15 16:45:40 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 25 &quot;-&#45;script=banner,(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp25/tcp_25_smtp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp25/xml/tcp_25_smtp_nmap.xml 10.10.10.17 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 25 &quot;-&#45;script=banner,(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp25/tcp_25_smtp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Brainfuck/results/10.10.10.17/scans/tcp25/xml/tcp_25_smtp_nmap.xml 10.10.10.17" start="1668491140" startstr="Tue Nov 15 16:45:40 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="25"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491141"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491141"/>
+<taskbegin task="NSE" time="1668491141"/>
+<taskend task="NSE" time="1668491141"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668491141"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668491141"/>
+<taskbegin task="Connect Scan" time="1668491141"/>
+<taskend task="Connect Scan" time="1668491141" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668491141"/>
+<taskend task="Service scan" time="1668491151" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668491151"/>
+<taskend task="NSE" time="1668491167"/>
+<taskbegin task="NSE" time="1668491167"/>
+<taskprogress task="NSE" time="1668491198" percent="50.00" remaining="32" etc="1668491229"/>
+<taskprogress task="NSE" time="1668491228" percent="68.75" remaining="28" etc="1668491256"/>
+<taskprogress task="NSE" time="1668491258" percent="87.50" remaining="14" etc="1668491271"/>
+<taskend task="NSE" time="1668491273"/>
+<taskbegin task="NSE" time="1668491273"/>
+<taskend task="NSE" time="1668491302"/>
+<host starttime="1668491141" endtime="1668491302"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" brainfuck" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-vuln-cve2010-4344" output="&#xa;  The SMTP server is not Exim: NOT VULNERABLE&#xa;"/><script id="smtp-commands" output="brainfuck, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN"/></port>
+</ports>
+<times srtt="27337" rttvar="27337" to="136685"/>
+</host>
+<taskbegin task="NSE" time="1668491302"/>
+<taskend task="NSE" time="1668491302"/>
+<taskbegin task="NSE" time="1668491302"/>
+<taskend task="NSE" time="1668491302"/>
+<taskbegin task="NSE" time="1668491302"/>
+<taskend task="NSE" time="1668491302"/>
+<runstats><finished time="1668491302" timestr="Tue Nov 15 16:48:22 2022" summary="Nmap done at Tue Nov 15 16:48:22 2022; 1 IP address (1 host up) scanned in 161.72 seconds" elapsed="161.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
