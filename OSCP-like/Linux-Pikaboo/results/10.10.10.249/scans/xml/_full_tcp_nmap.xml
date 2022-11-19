@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu Nov 17 08:54:44 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Linux-Pikaboo/results/10.10.10.249/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Pikaboo/results/10.10.10.249/scans/xml/_full_tcp_nmap.xml 10.10.10.249 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/Linux-Pikaboo/results/10.10.10.249/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Linux-Pikaboo/results/10.10.10.249/scans/xml/_full_tcp_nmap.xml 10.10.10.249" start="1668635684" startstr="Thu Nov 17 08:54:44 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668635684"/>
+<taskend task="NSE" time="1668635684"/>
+<taskbegin task="NSE" time="1668635684"/>
+<taskend task="NSE" time="1668635684"/>
+<taskbegin task="NSE" time="1668635684"/>
+<taskend task="NSE" time="1668635684"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668635684"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668635684"/>
+<taskbegin task="Connect Scan" time="1668635684"/>
+<taskend task="Connect Scan" time="1668635698" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1668635698"/>
+<taskend task="Service scan" time="1668635705" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1668635705"/>
+<taskend task="NSE" time="1668635707"/>
+<taskbegin task="NSE" time="1668635707"/>
+<taskend task="NSE" time="1668635707"/>
+<taskbegin task="NSE" time="1668635707"/>
+<taskend task="NSE" time="1668635707"/>
+<host starttime="1668635684" endtime="1668635707"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.249" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="conn-refused" count="65532" proto="tcp" ports="1-20,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 17e113fe666d26b69068d030542ee29f (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAgG6pLBPMmXneLGYurX9xbt6cE2IYdEN9J/ijCVrQbpUyVeTNWNoFnpB8+DIcppOtsJu0X3Iwpfb1eTmuop8q9nNlmyOcOTBHYOYLQwa+G4e90Bsku86ndqs+LU09sjqss5n3XdZoFqunNfZb7EirVVCgI80Lf8F+3XRRIX3ErqNrk2LiaQQY6fcAaNALaQy9ked7KydWDFYizO2dnu8ee2ncdXFMBeVDKGVfrlHAoRFoTmCEljCP1Vsjt69NDBudCGJBgU1MbItTF7DtbNQWGQmw8/9n9Jq8ic/YxOnIKRDDUuuWdE3sy2dPiw0ZVuG7V2GnkkMsGv0Qn3Uq9Qx7&#xa;  256 928654f7cc5a1a15fec609cce57c0dc3 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIJl6Z/XtGXJwSnO57P3CesJfRbmGNra4AuSSHCGUocKchdp3JnNE704lMnocAevDwi9HsAKARxCup18UpPHz+I=&#xa;  256 f4cd6f3b199ccf33c66da5136a610142 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyHVcrR4jjhBG5vZsvKRsKO4SnXj3GqeMtwvFSvd4B4"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">17e113fe666d26b69068d030542ee29f</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDAgG6pLBPMmXneLGYurX9xbt6cE2IYdEN9J/ijCVrQbpUyVeTNWNoFnpB8+DIcppOtsJu0X3Iwpfb1eTmuop8q9nNlmyOcOTBHYOYLQwa+G4e90Bsku86ndqs+LU09sjqss5n3XdZoFqunNfZb7EirVVCgI80Lf8F+3XRRIX3ErqNrk2LiaQQY6fcAaNALaQy9ked7KydWDFYizO2dnu8ee2ncdXFMBeVDKGVfrlHAoRFoTmCEljCP1Vsjt69NDBudCGJBgU1MbItTF7DtbNQWGQmw8/9n9Jq8ic/YxOnIKRDDUuuWdE3sy2dPiw0ZVuG7V2GnkkMsGv0Qn3Uq9Qx7</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">928654f7cc5a1a15fec609cce57c0dc3</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIJl6Z/XtGXJwSnO57P3CesJfRbmGNra4AuSSHCGUocKchdp3JnNE704lMnocAevDwi9HsAKARxCup18UpPHz+I=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">f4cd6f3b199ccf33c66da5136a610142</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINyHVcrR4jjhBG5vZsvKRsKO4SnXj3GqeMtwvFSvd4B4</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.2</cpe></service><script id="http-title" output="Pikaboo"><elem key="title">Pikaboo</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.2"><elem>nginx/1.14.2</elem>
+</script></port>
+</ports>
+<times srtt="29572" rttvar="1747" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1668635707"/>
+<taskend task="NSE" time="1668635707"/>
+<taskbegin task="NSE" time="1668635707"/>
+<taskend task="NSE" time="1668635707"/>
+<taskbegin task="NSE" time="1668635707"/>
+<taskend task="NSE" time="1668635707"/>
+<runstats><finished time="1668635707" timestr="Thu Nov 17 08:55:07 2022" summary="Nmap done at Thu Nov 17 08:55:07 2022; 1 IP address (1 host up) scanned in 23.58 seconds" elapsed="23.58" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

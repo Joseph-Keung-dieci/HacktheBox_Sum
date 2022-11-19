@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri Nov 18 15:55:03 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/AD-Cascade/results/10.10.10.182/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Cascade/results/10.10.10.182/scans/xml/_full_tcp_nmap.xml 10.10.10.182 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/OSCP-like/AD-Cascade/results/10.10.10.182/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/AD-Cascade/results/10.10.10.182/scans/xml/_full_tcp_nmap.xml 10.10.10.182" start="1668747303" startstr="Fri Nov 18 15:55:03 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668747303"/>
+<taskend task="NSE" time="1668747303"/>
+<taskbegin task="NSE" time="1668747303"/>
+<taskend task="NSE" time="1668747303"/>
+<taskbegin task="NSE" time="1668747303"/>
+<taskend task="NSE" time="1668747303"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668747303"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668747310"/>
+<taskbegin task="Connect Scan" time="1668747310"/>
+<taskprogress task="Connect Scan" time="1668747341" percent="26.47" remaining="87" etc="1668747427"/>
+<taskprogress task="Connect Scan" time="1668747371" percent="63.60" remaining="35" etc="1668747406"/>
+<taskend task="Connect Scan" time="1668747395" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1668747395"/>
+<taskend task="Service scan" time="1668747456" extrainfo="15 services on 1 host"/>
+<taskbegin task="NSE" time="1668747456"/>
+<taskprogress task="NSE" time="1668747487" percent="99.95" remaining="1" etc="1668747487"/>
+<taskend task="NSE" time="1668747497"/>
+<taskbegin task="NSE" time="1668747497"/>
+<taskend task="NSE" time="1668747497"/>
+<taskbegin task="NSE" time="1668747497"/>
+<taskend task="NSE" time="1668747497"/>
+<host starttime="1668747310" endtime="1668747497"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.182" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65520">
+<extrareasons reason="no-response" count="65520" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-635,637-3267,3270-5984,5986-49153,49156,49159-49169,49171-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="Microsoft DNS" version="6.1.7601 (1DB15D39)" extrainfo="Windows Server 2008 R2 SP1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:dns</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: Microsoft DNS 6.1.7601 (1DB15D39)"><elem key="bind.version">Microsoft DNS 6.1.7601 (1DB15D39)</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2022-11-18 04:56:41Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cascade.local, Site: Default-First-Site-Name" hostname="CASC-DC1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: cascade.local, Site: Default-First-Site-Name" hostname="CASC-DC1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49158"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49170"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  210: &#xa;    Message signing enabled and required"><table key="210">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2022-11-18T04:57:41&#xa;  start_date: 2022-11-18T04:53:54"><elem key="date">2022-11-18T04:57:41</elem>
+<elem key="start_date">2022-11-18T04:53:54</elem>
+</script><script id="clock-skew" output="0s"><elem key="median">0</elem>
+<elem key="mean">0</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 8467/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 51409/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 10882/udp): CLEAN (Timeout)&#xa;  Check 4 (port 14118/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/></hostscript><times srtt="24140" rttvar="2063" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1668747497"/>
+<taskend task="NSE" time="1668747497"/>
+<taskbegin task="NSE" time="1668747497"/>
+<taskend task="NSE" time="1668747497"/>
+<taskbegin task="NSE" time="1668747497"/>
+<taskend task="NSE" time="1668747497"/>
+<runstats><finished time="1668747497" timestr="Fri Nov 18 15:58:17 2022" summary="Nmap done at Fri Nov 18 15:58:17 2022; 1 IP address (1 host up) scanned in 194.40 seconds" elapsed="194.40" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
