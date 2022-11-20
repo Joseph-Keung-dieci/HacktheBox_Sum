@@ -1,0 +1,42 @@
+# Nmap 7.93 scan initiated Sun Nov 20 11:51:05 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -oN /home/parallels/HacktheBox/OSCP-like/Windows-Jeeves/results/10.10.10.63/scans/_quick_tcp_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Windows-Jeeves/results/10.10.10.63/scans/xml/_quick_tcp_nmap.xml 10.10.10.63
+Nmap scan report for 10.10.10.63
+Host is up, received user-set (0.026s latency).
+Scanned at 2022-11-20 11:51:05 AEDT for 49s
+Not shown: 996 filtered tcp ports (no-response)
+PORT      STATE SERVICE      REASON  VERSION
+80/tcp    open  http         syn-ack Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: Ask Jeeves
+135/tcp   open  msrpc        syn-ack Microsoft Windows RPC
+445/tcp   open  microsoft-ds syn-ack Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+50000/tcp open  http         syn-ack Jetty 9.4.z-SNAPSHOT
+|_http-server-header: Jetty(9.4.z-SNAPSHOT)
+|_http-title: Error 404 Not Found
+Service Info: Host: JEEVES; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2022-11-20T05:51:16
+|_  start_date: 2022-11-20T05:49:14
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 55172/tcp): CLEAN (Timeout)
+|   Check 2 (port 50450/tcp): CLEAN (Timeout)
+|   Check 3 (port 12952/udp): CLEAN (Timeout)
+|   Check 4 (port 48293/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_clock-skew: mean: 4h59m59s, deviation: 0s, median: 4h59m59s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 20 11:51:54 2022 -- 1 IP address (1 host up) scanned in 49.30 seconds

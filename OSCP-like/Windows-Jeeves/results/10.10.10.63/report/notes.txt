@@ -1,0 +1,16 @@
+[*] http found on tcp/80.
+
+
+
+[*] msrpc found on tcp/135.
+
+
+
+[*] microsoft-ds found on tcp/445.
+
+
+
+[*] http found on tcp/50000.
+
+
+

@@ -1,0 +1,80 @@
+WhatWeb report for https://10.10.10.60:443
+Status    : 200 OK
+Title     : Login
+IP        : 10.10.10.60
+Country   : RESERVED, ZZ
+
+Summary   : Cookies[PHPSESSID,cookie_test], HTTPServer[lighttpd/1.4.35], HttpOnly[PHPSESSID], JQuery, lighttpd[1.4.35], PasswordField[passwordfld], Script[text/javascript], X-Frame-Options[SAMEORIGIN]
+
+Detected Plugins:
+[ Cookies ]
+	Display the names of cookies in the HTTP headers. The
+	values are not returned to save on space.
+
+	String       : PHPSESSID
+	String       : cookie_test
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to
+	identify the operating system from the server header.
+
+	String       : lighttpd/1.4.35 (from server string)
+
+[ HttpOnly ]
+	If the HttpOnly flag is included in the HTTP set-cookie
+	response header and the browser supports it then the cookie
+	cannot be accessed through client side script - More Info:
+	http://en.wikipedia.org/wiki/HTTP_cookie
+
+	String       : PHPSESSID
+
+[ JQuery ]
+	A fast, concise, JavaScript that simplifies how to traverse
+	HTML documents, handle events, perform animations, and add
+	AJAX.
+
+	Website     : http://jquery.com/
+
+[ PasswordField ]
+	find password fields
+
+	String       : passwordfld (from field name)
+
+[ Script ]
+	This plugin detects instances of script HTML elements and
+	returns the script language/type.
+
+	String       : text/javascript
+
+[ X-Frame-Options ]
+	This plugin retrieves the X-Frame-Options value from the
+	HTTP header. - More Info:
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : SAMEORIGIN
+
+[ lighttpd ]
+	Lightweight open-source web server.
+
+	Version      : 1.4.35
+	Website     : http://www.lighttpd.net/
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Expires: Mon, 21 Nov 2022 06:51:53 GMT
+	Expires: Thu, 19 Nov 1981 08:52:00 GMT
+	Cache-Control: max-age=180000
+	Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+	Last-Modified: Sat, 19 Nov 2022 04:51:53 GMT
+	X-Frame-Options: SAMEORIGIN
+	Set-Cookie: PHPSESSID=b80668b4a87b8ea17e7c81563a04cfbd; path=/; secure; HttpOnly
+	Set-Cookie: cookie_test=1668837113
+	Pragma: no-cache
+	Content-type: text/html
+	Connection: close
+	Transfer-Encoding: chunked
+	Date: Sat, 19 Nov 2022 04:51:53 GMT
+	Server: lighttpd/1.4.35
+
+

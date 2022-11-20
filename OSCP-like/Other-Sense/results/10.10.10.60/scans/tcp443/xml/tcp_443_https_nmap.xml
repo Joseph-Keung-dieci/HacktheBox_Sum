@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat Nov 19 15:51:52 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Other-Sense/results/10.10.10.60/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Other-Sense/results/10.10.10.60/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.60 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/parallels/HacktheBox/OSCP-like/Other-Sense/results/10.10.10.60/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Other-Sense/results/10.10.10.60/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.60" start="1668833512" startstr="Sat Nov 19 15:51:52 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1668833513"/>
+<taskend task="NSE" time="1668833513"/>
+<taskbegin task="NSE" time="1668833513"/>
+<taskend task="NSE" time="1668833513"/>
+<taskbegin task="NSE" time="1668833513"/>
+<taskend task="NSE" time="1668833513"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1668833513"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1668833519"/>
+<taskbegin task="Connect Scan" time="1668833519"/>
+<taskend task="Connect Scan" time="1668833519" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1668833520"/>
+<taskend task="Service scan" time="1668833532" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1668833532"/>
+<taskprogress task="NSE" time="1668833563" percent="99.35" remaining="1" etc="1668833563"/>
+<taskend task="NSE" time="1668833585"/>
+<taskbegin task="NSE" time="1668833585"/>
+<taskend task="NSE" time="1668833601"/>
+<taskbegin task="NSE" time="1668833601"/>
+<taskend task="NSE" time="1668833601"/>
+<host starttime="1668833519" endtime="1668833601"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" version="1.4.35" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.60&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 70&#xa;    Comment: &#xa;        /* somehow we have been fed an html page! */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1115&#xa;    Comment: &#xa;        /* loginerror box follows */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 541&#xa;    Comment: &#xa;        /* background: url(&apos;/themes/nione/images/icons/icon_wzd_nsaved.png&apos;) no-repeat 0 1px #FFFFFF; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js&#xa;    Line number: 134&#xa;    Comment: &#xa;         //id selector like &quot;tag#id&quot;&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 352&#xa;    Comment: &#xa;        /* width: 7.5em; */&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 67&#xa;    Comment: &#xa;         // alert(responseText);&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 384&#xa;    Comment: &#xa;        /* Show initial drop down upon mouse over, but do not show */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 376&#xa;    Comment: &#xa;        /* to override top and left in browsers other than IE */&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 78&#xa;    Comment: &#xa;        /* this function will be called if an HTTP error will be triggered */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 44&#xa;    Comment: &#xa;        /* please adjust the bgcolor to be used together with niftycorners! */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js&#xa;    Line number: 126&#xa;    Comment: &#xa;         //descendant selector like &quot;tag#id tag&quot;&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js&#xa;    Line number: 149&#xa;    Comment: &#xa;         // tag selector like &quot;tag&quot;&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js&#xa;    Line number: 144&#xa;    Comment: &#xa;         //class selector like &quot;tag.class&quot;&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1097&#xa;    Comment: &#xa;        /*&#x9;text-indent: 10px;&#xa;        &#x9;position: relative;&#xa;          left: 10px;&#xa;        &#x9;top: -300px; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 944&#xa;    Comment: &#xa;        /* Nifty Corners Crap */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1067&#xa;    Comment: &#xa;        /*&#x9;text-indent: 10px; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 360&#xa;    Comment: &#xa;        /* initially hidden with absolute position */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 844&#xa;    Comment: &#xa;        /* MISC CSS Definitions */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 59&#xa;    Comment: &#xa;        /* DOM Tooltip CSS definitions */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 368&#xa;    Comment: &#xa;        /* This is key to making the menu maintain visibility when not on a link */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 359&#xa;    Comment: &#xa;        /* Make the List inside the List Elements */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 385&#xa;    Comment: &#xa;        /* nested side drop menus within listed elements */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1054&#xa;    Comment: &#xa;        /*&#x9;background: #ffffff; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 941&#xa;    Comment: &#xa;        /* End Auto Complete Suggestions */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1046&#xa;    Comment: &#xa;        /*&#x9;filter:alpha(opacity=60);&#xa;        &#x9;-moz-opacity:0.6;&#xa;        &#x9;-khtml-opacity: 0.6;&#xa;        &#x9;opacity: 0.6;&#x9;*/&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 60&#xa;    Comment: &#xa;         // submit the form using Ajax&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 44&#xa;    Comment: &#xa;         //alert(Form.serialize($(&apos;iform&apos;)));&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 920&#xa;    Comment: &#xa;        /* Auto Complete Suggestions */&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 32&#xa;    Comment: &#xa;         // debugging helper&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 537&#xa;    Comment: &#xa;        /* background: url(&apos;/themes/nione/images/icons/icon_wzd_saved.png&apos;) no-repeat 0 1px #FFFFFF; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 923&#xa;    Comment: &#xa;        /* box-sizing: border-box; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 182&#xa;    Comment: &#xa;        /* background: url(&apos;images/alert.gif&apos;) no-repeat; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 971&#xa;    Comment: &#xa;        /* Author: Erik Kristensen    */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /* Element CSS Definitions */&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 71&#xa;    Comment: &#xa;         //alert(&apos;Somehow we have been fed an html page! Forwarding to /.&apos;);&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 970&#xa;    Comment: &#xa;        /* CSS for Dynamic Log Viewer */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 325&#xa;    Comment: &#xa;        /* Style the List */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 966&#xa;    Comment: &#xa;        /* End Nifty Corners Crap */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1040&#xa;    Comment: &#xa;        /*&#x9;background: #cccccc; */&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 49&#xa;    Comment: &#xa;        /* dsh: Introduced because pkg_edit tries to set some hidden fields&#xa;               *      if executing submit&apos;s onclick event. The click gets deleted&#xa;               *      by Ajax. Hence using onkeydown instead.&#xa;               */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1087&#xa;    Comment: &#xa;        /*&#x9;text-indent: 10px;&#xa;        &#x9;position: relative;&#xa;        &#x9;top: -300px; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 348&#xa;    Comment: &#xa;        /* Style the List Elements */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 1036&#xa;    Comment: &#xa;        /* END CSS FOR DYNAMIC LOG VIEWER */&#xa;    &#xa;    Path: https://10.10.10.60:443/index.php&#xa;    Line number: 33&#xa;    Comment: &#xa;         //alert(&apos;adding observe event for submit button&apos;);&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 965&#xa;    Comment: &#xa;        /**/&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 160&#xa;    Comment: &#xa;        /* background: url(&apos;images/logo.gif&apos;) no-repeat; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 507&#xa;    Comment: &#xa;        /* Class Based CSS Definitions */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 327&#xa;    Comment: &#xa;        /* background: url(&apos;images/menu.gif&apos;) no-repeat; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 377&#xa;    Comment: &#xa;        /* which will position to the top right of the containing */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 378&#xa;    Comment: &#xa;        /* li, rather than bottom left */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 369&#xa;    Comment: &#xa;        /* background-color: #202020;&#xa;        &#x9;background: url(&quot;images/menu_footer.gif&quot;) no-repeat;&#xa;        &#x9;background-position: bottom;&#xa;        &#x9;*/&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 174&#xa;    Comment: &#xa;        /* background: url(&apos;images/header.gif&apos;) no-repeat; */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 144&#xa;    Comment: &#xa;        /* ID Based CSS Definitions */&#xa;    &#xa;    Path: https://10.10.10.60:443/themes/pfsense_ng/login.css&#xa;    Line number: 328&#xa;    Comment: &#xa;        /* width: 693px; */&#xa;"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-server-header" output="lighttpd/1.4.35"><elem>lighttpd/1.4.35</elem>
+</script><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-enum" output="&#xa;  /javascript/sorttable.js: Secunia NSI&#xa;  /changelog.txt: Interesting, a changelog.&#xa;  /tree/: Potentially interesting folder&#xa;"/><script id="ssl-ccs-injection" output="&#xa;  VULNERABLE:&#xa;  SSL/TLS MITM vulnerability (CCS Injection)&#xa;    State: VULNERABLE&#xa;    Risk factor: High&#xa;      OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h&#xa;      does not properly restrict processing of ChangeCipherSpec messages,&#xa;      which allows man-in-the-middle attackers to trigger use of a zero&#xa;      length master key in certain OpenSSL-to-OpenSSL communications, and&#xa;      consequently hijack sessions or obtain sensitive information, via&#xa;      a crafted TLS handshake, aka the &quot;CCS Injection&quot; vulnerability.&#xa;          &#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224&#xa;      http://www.cvedetails.com/cve/2014-0224&#xa;      http://www.openssl.org/news/secadv_20140605.txt&#xa;"><table key="NMAP-6">
+<elem key="title">SSL/TLS MITM vulnerability (CCS Injection)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h&#xa;does not properly restrict processing of ChangeCipherSpec messages,&#xa;which allows man-in-the-middle attackers to trigger use of a zero&#xa;length master key in certain OpenSSL-to-OpenSSL communications, and&#xa;consequently hijack sessions or obtain sensitive information, via&#xa;a crafted TLS handshake, aka the &quot;CCS Injection&quot; vulnerability.&#xa;    </elem>
+</table>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224</elem>
+<elem>http://www.cvedetails.com/cve/2014-0224</elem>
+<elem>http://www.openssl.org/news/secadv_20140605.txt</elem>
+</table>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US/emailAddress=Email Address/organizationalUnitName=Organizational Unit Name (eg, section)/localityName=Somecity&#xa;Issuer: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US/emailAddress=Email Address/organizationalUnitName=Organizational Unit Name (eg, section)/localityName=Somecity&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2017-10-14T19:21:35&#xa;Not valid after:  2023-04-06T19:21:35&#xa;MD5:   65f8b00f57d234682c520f448110c622&#xa;SHA-1: 4f7c9a75cb7f70d3808708cb8c2720dc05f1bb02&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEKDCCA5GgAwIBAgIJALChaIpiwz41MA0GCSqGSIb3DQEBCwUAMIG/MQswCQYD&#xa;VQQGEwJVUzESMBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEU&#xa;MBIGA1UEChMLQ29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVu&#xa;aXQgTmFtZSAoZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcs&#xa;IFlPVVIgbmFtZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3MwHhcNMTcx&#xa;MDE0MTkyMTM1WhcNMjMwNDA2MTkyMTM1WjCBvzELMAkGA1UEBhMCVVMxEjAQBgNV&#xa;BAgTCVNvbWV3aGVyZTERMA8GA1UEBxMIU29tZWNpdHkxFDASBgNVBAoTC0NvbXBh&#xa;bnlOYW1lMS8wLQYDVQQLEyZPcmdhbml6YXRpb25hbCBVbml0IE5hbWUgKGVnLCBz&#xa;ZWN0aW9uKTEkMCIGA1UEAxMbQ29tbW9uIE5hbWUgKGVnLCBZT1VSIG5hbWUpMRww&#xa;GgYJKoZIhvcNAQkBFg1FbWFpbCBBZGRyZXNzMIGfMA0GCSqGSIb3DQEBAQUAA4GN&#xa;ADCBiQKBgQC/sWU6By08lGbvttAfx47SWksgA7FavNrEoW9IRp0W/RF9Fp5BQesL&#xa;L3FMJ0MHyGcfRhnL5VwDCL0E+1Y05az8PY8kUmjvxSvxQCLn6Mh3nTZkiAJ8vpB0&#xa;WAnjltrTCEsv7Dnz2OofkpqaUnoNGfO3uKWPvRXl9OlSe/BcDStffQIDAQABo4IB&#xa;KDCCASQwHQYDVR0OBBYEFDK5DS/hTsi9SHxT749Od/p3Lq05MIH0BgNVHSMEgeww&#xa;gemAFDK5DS/hTsi9SHxT749Od/p3Lq05oYHFpIHCMIG/MQswCQYDVQQGEwJVUzES&#xa;MBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEUMBIGA1UEChML&#xa;Q29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVuaXQgTmFtZSAo&#xa;ZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcsIFlPVVIgbmFt&#xa;ZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3OCCQCwoWiKYsM+NTAMBgNV&#xa;HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAHNn+1AX2qwJ9zhgN3I4ES1Vq84l&#xa;n6p7OoBefxcf31Pn3VDnbvJJFFcZdplDxbIWh5lyjpTHRJQyHECtEMW677rFXJAl&#xa;/cEYWHDndn9Gwaxn7JyffK5lUAPMPEDtudQb3cxrevP/iFZwefi2d5p3jFkDCcGI&#xa;+Y0tZRIRzHWgQHa/&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">Common Name (eg, YOUR name)</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">Email Address</elem>
+<elem key="localityName">Somecity</elem>
+<elem key="organizationName">CompanyName</elem>
+<elem key="organizationalUnitName">Organizational Unit Name (eg, section)</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Common Name (eg, YOUR name)</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">Email Address</elem>
+<elem key="localityName">Somecity</elem>
+<elem key="organizationName">CompanyName</elem>
+<elem key="organizationalUnitName">Organizational Unit Name (eg, section)</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">BFB1653A072D3C9466EFB6D01FC78ED25A4B2003B15ABCDAC4A16F48469D16FD117D169E4141EB0B2F714C274307C8671F4619CBE55C0308BD04FB5634E5ACFC3D8F245268EFC52BF14022E7E8C8779D366488027CBE90745809E396DAD3084B2FEC39F3D8EA1F929A9A527A0D19F3B7B8A58FBD15E5F4E9527BF05C0D2B5F7D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">32:B9:0D:2F:E1:4E:C8:BD:48:7C:53:EF:8F:4E:77:FA:77:2E:AD:39</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:32:B9:0D:2F:E1:4E:C8:BD:48:7C:53:EF:8F:4E:77:FA:77:2E:AD:39&#xa;DirName:/C=US/ST=Somewhere/L=Somecity/O=CompanyName/OU=Organizational Unit Name (eg, section)/CN=Common Name (eg, YOUR name)/emailAddress=Email Address&#xa;serial:B0:A1:68:8A:62:C3:3E:35</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-10-14T19:21:35</elem>
+<elem key="notAfter">2023-04-06T19:21:35</elem>
+</table>
+<elem key="md5">65f8b00f57d234682c520f448110c622</elem>
+<elem key="sha1">4f7c9a75cb7f70d3808708cb8c2720dc05f1bb02</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEKDCCA5GgAwIBAgIJALChaIpiwz41MA0GCSqGSIb3DQEBCwUAMIG/MQswCQYD&#xa;VQQGEwJVUzESMBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEU&#xa;MBIGA1UEChMLQ29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVu&#xa;aXQgTmFtZSAoZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcs&#xa;IFlPVVIgbmFtZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3MwHhcNMTcx&#xa;MDE0MTkyMTM1WhcNMjMwNDA2MTkyMTM1WjCBvzELMAkGA1UEBhMCVVMxEjAQBgNV&#xa;BAgTCVNvbWV3aGVyZTERMA8GA1UEBxMIU29tZWNpdHkxFDASBgNVBAoTC0NvbXBh&#xa;bnlOYW1lMS8wLQYDVQQLEyZPcmdhbml6YXRpb25hbCBVbml0IE5hbWUgKGVnLCBz&#xa;ZWN0aW9uKTEkMCIGA1UEAxMbQ29tbW9uIE5hbWUgKGVnLCBZT1VSIG5hbWUpMRww&#xa;GgYJKoZIhvcNAQkBFg1FbWFpbCBBZGRyZXNzMIGfMA0GCSqGSIb3DQEBAQUAA4GN&#xa;ADCBiQKBgQC/sWU6By08lGbvttAfx47SWksgA7FavNrEoW9IRp0W/RF9Fp5BQesL&#xa;L3FMJ0MHyGcfRhnL5VwDCL0E+1Y05az8PY8kUmjvxSvxQCLn6Mh3nTZkiAJ8vpB0&#xa;WAnjltrTCEsv7Dnz2OofkpqaUnoNGfO3uKWPvRXl9OlSe/BcDStffQIDAQABo4IB&#xa;KDCCASQwHQYDVR0OBBYEFDK5DS/hTsi9SHxT749Od/p3Lq05MIH0BgNVHSMEgeww&#xa;gemAFDK5DS/hTsi9SHxT749Od/p3Lq05oYHFpIHCMIG/MQswCQYDVQQGEwJVUzES&#xa;MBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEUMBIGA1UEChML&#xa;Q29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVuaXQgTmFtZSAo&#xa;ZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcsIFlPVVIgbmFt&#xa;ZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3OCCQCwoWiKYsM+NTAMBgNV&#xa;HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAHNn+1AX2qwJ9zhgN3I4ES1Vq84l&#xa;n6p7OoBefxcf31Pn3VDnbvJJFFcZdplDxbIWh5lyjpTHRJQyHECtEMW677rFXJAl&#xa;/cEYWHDndn9Gwaxn7JyffK5lUAPMPEDtudQb3cxrevP/iFZwefi2d5p3jFkDCcGI&#xa;+Y0tZRIRzHWgQHa/&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1; php: 1&#xa;    /themes/pfsense_ng/&#xa;      css: 1&#xa;    /themes/pfsense_ng/javascript/&#xa;      js: 1&#xa;  Longest directory structure:&#xa;    Depth: 3&#xa;    Dir: /themes/pfsense_ng/javascript/&#xa;  Total files found (by extension):&#xa;    Other: 1; css: 1; js: 1; php: 1&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-chrono" output="Request times for /; avg: 337.08ms; min: 294.02ms; max: 394.75ms"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server&#xa;  X_Frame_Options: &#xa;    Header: X-Frame-Options: SAMEORIGIN&#xa;    Description: The browser must not display this content in any frame from a page of different origin than the content itself.&#xa;  Cookie: &#xa;    Cookies are secured with Secure Flag in HTTPS Connection&#xa;  Cache_Control: &#xa;    Header: Cache-Control: max-age=180000, no-store, no-cache, must-revalidate, post-check=0, pre-check=0&#xa;  Pragma: &#xa;    Header: Pragma: no-cache&#xa;  Expires: &#xa;    Header: Expires: Mon, 21 Nov 2022 06:52:29 GMT, Thu, 19 Nov 1981 08:52:00 GMT"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+<table key="X_Frame_Options">
+<elem>Header: X-Frame-Options: SAMEORIGIN</elem>
+<elem>Description: The browser must not display this content in any frame from a page of different origin than the content itself.</elem>
+</table>
+<table key="Cookie">
+<elem>Cookies are secured with Secure Flag in HTTPS Connection</elem>
+</table>
+<table key="Cache_Control">
+<elem>Header: Cache-Control: max-age=180000, no-store, no-cache, must-revalidate, post-check=0, pre-check=0</elem>
+</table>
+<table key="Pragma">
+<elem>Header: Pragma: no-cache</elem>
+</table>
+<table key="Expires">
+<elem>Header: Expires: Mon, 21 Nov 2022 06:52:29 GMT, Thu, 19 Nov 1981 08:52:00 GMT</elem>
+</table>
+</script><script id="ssl-enum-ciphers" output="&#xa;  SSLv3: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Broken cipher RC4 is deprecated by RFC 7465&#xa;      CBC-mode cipher in SSLv3 (CVE-2014-3566)&#xa;      Ciphersuite uses MD5 for message integrity&#xa;  TLSv1.0: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Broken cipher RC4 is deprecated by RFC 7465&#xa;      Ciphersuite uses MD5 for message integrity&#xa;  TLSv1.1: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Broken cipher RC4 is deprecated by RFC 7465&#xa;      Ciphersuite uses MD5 for message integrity&#xa;  TLSv1.2: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Broken cipher RC4 is deprecated by RFC 7465&#xa;      Ciphersuite uses MD5 for message integrity&#xa;  least strength: D"><table key="SSLv3">
+<table key="ciphers">
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_MD5</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Broken cipher RC4 is deprecated by RFC 7465</elem>
+<elem>CBC-mode cipher in SSLv3 (CVE-2014-3566)</elem>
+<elem>Ciphersuite uses MD5 for message integrity</elem>
+</table>
+</table>
+<table key="TLSv1.0">
+<table key="ciphers">
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_MD5</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Broken cipher RC4 is deprecated by RFC 7465</elem>
+<elem>Ciphersuite uses MD5 for message integrity</elem>
+</table>
+</table>
+<table key="TLSv1.1">
+<table key="ciphers">
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_MD5</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Broken cipher RC4 is deprecated by RFC 7465</elem>
+<elem>Ciphersuite uses MD5 for message integrity</elem>
+</table>
+</table>
+<table key="TLSv1.2">
+<table key="ciphers">
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_SHA</elem>
+</table>
+<table>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+<elem key="name">TLS_RSA_WITH_RC4_128_MD5</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Broken cipher RC4 is deprecated by RFC 7465</elem>
+<elem>Ciphersuite uses MD5 for message integrity</elem>
+</table>
+</table>
+<elem key="least strength">D</elem>
+</script><script id="ssl-poodle" output="&#xa;  VULNERABLE:&#xa;  SSL POODLE information leak&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2014-3566  BID:70574&#xa;          The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;          products, uses nondeterministic CBC padding, which makes it easier&#xa;          for man-in-the-middle attackers to obtain cleartext data via a&#xa;          padding-oracle attack, aka the &quot;POODLE&quot; issue.&#xa;    Disclosure date: 2014-10-14&#xa;    Check results:&#xa;      TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA&#xa;    References:&#xa;      https://www.securityfocus.com/bid/70574&#xa;      https://www.imperialviolet.org/2014/10/14/poodle.html&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566&#xa;      https://www.openssl.org/~bodo/ssl-poodle.pdf&#xa;"><table key="CVE-2014-3566">
+<elem key="title">SSL POODLE information leak</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2014-3566</elem>
+<elem>BID:70574</elem>
+</table>
+<table key="description">
+<elem>    The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;    products, uses nondeterministic CBC padding, which makes it easier&#xa;    for man-in-the-middle attackers to obtain cleartext data via a&#xa;    padding-oracle attack, aka the &quot;POODLE&quot; issue.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">10</elem>
+<elem key="day">14</elem>
+<elem key="year">2014</elem>
+</table>
+</table>
+<elem key="disclosure">2014-10-14</elem>
+<table key="check_results">
+<elem>TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+</table>
+<table key="refs">
+<elem>https://www.securityfocus.com/bid/70574</elem>
+<elem>https://www.imperialviolet.org/2014/10/14/poodle.html</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566</elem>
+<elem>https://www.openssl.org/~bodo/ssl-poodle.pdf</elem>
+</table>
+</table>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-date" output="Sat, 19 Nov 2022 04:52:12 GMT; -1s from local time."><elem key="date">2022-11-19T04:52:12+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script><script id="ssl-dh-params" output="&#xa;  VULNERABLE:&#xa;  Diffie-Hellman Key Exchange Insufficient Group Strength&#xa;    State: VULNERABLE&#xa;      Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;      of insufficient strength, especially those using one of a few commonly&#xa;      shared groups, may be susceptible to passive eavesdropping attacks.&#xa;    Check results:&#xa;      WEAK DH GROUP 1&#xa;            Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA&#xa;            Modulus Type: Non-safe prime&#xa;            Modulus Source: RFC5114/1024-bit DSA group with 160-bit prime order subgroup&#xa;            Modulus Length: 1024&#xa;            Generator Length: 1024&#xa;            Public Key Length: 1024&#xa;    References:&#xa;      https://weakdh.org&#xa;"><table key="NMAP-8">
+<elem key="title">Diffie-Hellman Key Exchange Insufficient Group Strength</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;of insufficient strength, especially those using one of a few commonly&#xa;shared groups, may be susceptible to passive eavesdropping attacks.</elem>
+</table>
+<table key="check_results">
+<elem>WEAK DH GROUP 1&#xa;      Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA&#xa;      Modulus Type: Non-safe prime&#xa;      Modulus Source: RFC5114/1024-bit DSA group with 160-bit prime order subgroup&#xa;      Modulus Length: 1024&#xa;      Generator Length: 1024&#xa;      Public Key Length: 1024</elem>
+</table>
+<table key="refs">
+<elem>https://weakdh.org</elem>
+</table>
+</table>
+</script><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-php-version" output="Logo query returned unknown hash a18377200647421635397b8b5494982a"/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-favicon" output="Unknown favicon MD5: 082559A7867CF27ACAB7E9867A8B320F"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.60&#xa;  url                                method&#xa;  https://10.10.10.60:443/           FORM&#xa;  https://10.10.10.60:443/index.php  FORM&#xa;"/><script id="http-traceroute" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-vuln-cve2017-1001000" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-config-backup" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-headers" output="&#xa;  Expires: Mon, 21 Nov 2022 06:52:25 GMT&#xa;  Expires: Thu, 19 Nov 1981 08:52:00 GMT&#xa;  Cache-Control: max-age=180000&#xa;  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0&#xa;  Last-Modified: Sat, 19 Nov 2022 04:52:25 GMT&#xa;  X-Frame-Options: SAMEORIGIN&#xa;  Set-Cookie: PHPSESSID=625b22d5b16ecad1e37b07f832333690; path=/; secure; HttpOnly&#xa;  Set-Cookie: cookie_test=1668837145&#xa;  Pragma: no-cache&#xa;  Content-type: text/html&#xa;  Connection: close&#xa;  Date: Sat, 19 Nov 2022 04:52:25 GMT&#xa;  Server: lighttpd/1.4.35&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="Login"><elem key="title">Login</elem>
+</script><script id="http-vhosts" output="&#xa;83 names had status 200&#xa;45 names had status ERROR"/></port>
+</ports>
+<times srtt="45921" rttvar="45921" to="229605"/>
+</host>
+<taskbegin task="NSE" time="1668833601"/>
+<taskend task="NSE" time="1668833601"/>
+<taskbegin task="NSE" time="1668833601"/>
+<taskend task="NSE" time="1668833601"/>
+<taskbegin task="NSE" time="1668833601"/>
+<taskend task="NSE" time="1668833601"/>
+<runstats><finished time="1668833601" timestr="Sat Nov 19 15:53:21 2022" summary="Nmap done at Sat Nov 19 15:53:21 2022; 1 IP address (1 host up) scanned in 88.82 seconds" elapsed="88.82" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

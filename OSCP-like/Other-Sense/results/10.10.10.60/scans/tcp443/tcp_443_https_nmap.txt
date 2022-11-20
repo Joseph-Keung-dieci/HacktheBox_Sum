@@ -1,0 +1,552 @@
+# Nmap 7.93 scan initiated Sat Nov 19 15:51:52 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -p 443 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/parallels/HacktheBox/OSCP-like/Other-Sense/results/10.10.10.60/scans/tcp443/tcp_443_https_nmap.txt -oX /home/parallels/HacktheBox/OSCP-like/Other-Sense/results/10.10.10.60/scans/tcp443/xml/tcp_443_https_nmap.xml 10.10.10.60
+Nmap scan report for 10.10.10.60
+Host is up, received user-set (0.046s latency).
+Scanned at 2022-11-19 15:51:59 AEDT for 82s
+
+PORT    STATE SERVICE  REASON  VERSION
+443/tcp open  ssl/http syn-ack lighttpd 1.4.35
+|_http-feed: Couldn't find any feeds.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.60
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 70
+|     Comment: 
+|         /* somehow we have been fed an html page! */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1115
+|     Comment: 
+|         /* loginerror box follows */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 541
+|     Comment: 
+|         /* background: url('/themes/nione/images/icons/icon_wzd_nsaved.png') no-repeat 0 1px #FFFFFF; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js
+|     Line number: 134
+|     Comment: 
+|          //id selector like "tag#id"
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 352
+|     Comment: 
+|         /* width: 7.5em; */
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 67
+|     Comment: 
+|          // alert(responseText);
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 384
+|     Comment: 
+|         /* Show initial drop down upon mouse over, but do not show */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 376
+|     Comment: 
+|         /* to override top and left in browsers other than IE */
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 78
+|     Comment: 
+|         /* this function will be called if an HTTP error will be triggered */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 44
+|     Comment: 
+|         /* please adjust the bgcolor to be used together with niftycorners! */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js
+|     Line number: 126
+|     Comment: 
+|          //descendant selector like "tag#id tag"
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js
+|     Line number: 149
+|     Comment: 
+|          // tag selector like "tag"
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/javascript/niftyjsCode.js
+|     Line number: 144
+|     Comment: 
+|          //class selector like "tag.class"
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1097
+|     Comment: 
+|         /*	text-indent: 10px;
+|         	position: relative;
+|           left: 10px;
+|         	top: -300px; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 944
+|     Comment: 
+|         /* Nifty Corners Crap */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1067
+|     Comment: 
+|         /*	text-indent: 10px; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 360
+|     Comment: 
+|         /* initially hidden with absolute position */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 844
+|     Comment: 
+|         /* MISC CSS Definitions */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 59
+|     Comment: 
+|         /* DOM Tooltip CSS definitions */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 368
+|     Comment: 
+|         /* This is key to making the menu maintain visibility when not on a link */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 359
+|     Comment: 
+|         /* Make the List inside the List Elements */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 385
+|     Comment: 
+|         /* nested side drop menus within listed elements */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1054
+|     Comment: 
+|         /*	background: #ffffff; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 941
+|     Comment: 
+|         /* End Auto Complete Suggestions */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1046
+|     Comment: 
+|         /*	filter:alpha(opacity=60);
+|         	-moz-opacity:0.6;
+|         	-khtml-opacity: 0.6;
+|         	opacity: 0.6;	*/
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 60
+|     Comment: 
+|          // submit the form using Ajax
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 44
+|     Comment: 
+|          //alert(Form.serialize($('iform')));
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 920
+|     Comment: 
+|         /* Auto Complete Suggestions */
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 32
+|     Comment: 
+|          // debugging helper
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 537
+|     Comment: 
+|         /* background: url('/themes/nione/images/icons/icon_wzd_saved.png') no-repeat 0 1px #FFFFFF; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 923
+|     Comment: 
+|         /* box-sizing: border-box; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 182
+|     Comment: 
+|         /* background: url('images/alert.gif') no-repeat; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 971
+|     Comment: 
+|         /* Author: Erik Kristensen    */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1
+|     Comment: 
+|         /* Element CSS Definitions */
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 71
+|     Comment: 
+|          //alert('Somehow we have been fed an html page! Forwarding to /.');
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 970
+|     Comment: 
+|         /* CSS for Dynamic Log Viewer */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 325
+|     Comment: 
+|         /* Style the List */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 966
+|     Comment: 
+|         /* End Nifty Corners Crap */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1040
+|     Comment: 
+|         /*	background: #cccccc; */
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 49
+|     Comment: 
+|         /* dsh: Introduced because pkg_edit tries to set some hidden fields
+|                *      if executing submit's onclick event. The click gets deleted
+|                *      by Ajax. Hence using onkeydown instead.
+|                */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1087
+|     Comment: 
+|         /*	text-indent: 10px;
+|         	position: relative;
+|         	top: -300px; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 348
+|     Comment: 
+|         /* Style the List Elements */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 1036
+|     Comment: 
+|         /* END CSS FOR DYNAMIC LOG VIEWER */
+|     
+|     Path: https://10.10.10.60:443/index.php
+|     Line number: 33
+|     Comment: 
+|          //alert('adding observe event for submit button');
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 965
+|     Comment: 
+|         /**/
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 160
+|     Comment: 
+|         /* background: url('images/logo.gif') no-repeat; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 507
+|     Comment: 
+|         /* Class Based CSS Definitions */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 327
+|     Comment: 
+|         /* background: url('images/menu.gif') no-repeat; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 377
+|     Comment: 
+|         /* which will position to the top right of the containing */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 378
+|     Comment: 
+|         /* li, rather than bottom left */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 369
+|     Comment: 
+|         /* background-color: #202020;
+|         	background: url("images/menu_footer.gif") no-repeat;
+|         	background-position: bottom;
+|         	*/
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 174
+|     Comment: 
+|         /* background: url('images/header.gif') no-repeat; */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 144
+|     Comment: 
+|         /* ID Based CSS Definitions */
+|     
+|     Path: https://10.10.10.60:443/themes/pfsense_ng/login.css
+|     Line number: 328
+|     Comment: 
+|_        /* width: 693px; */
+|_http-malware-host: Host appears to be clean
+|_http-server-header: lighttpd/1.4.35
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-enum: 
+|   /javascript/sorttable.js: Secunia NSI
+|   /changelog.txt: Interesting, a changelog.
+|_  /tree/: Potentially interesting folder
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+|       does not properly restrict processing of ChangeCipherSpec messages,
+|       which allows man-in-the-middle attackers to trigger use of a zero
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+|       consequently hijack sessions or obtain sensitive information, via
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+|           
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+|       http://www.cvedetails.com/cve/2014-0224
+|_      http://www.openssl.org/news/secadv_20140605.txt
+| ssl-cert: Subject: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US/emailAddress=Email Address/organizationalUnitName=Organizational Unit Name (eg, section)/localityName=Somecity
+| Issuer: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US/emailAddress=Email Address/organizationalUnitName=Organizational Unit Name (eg, section)/localityName=Somecity
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2017-10-14T19:21:35
+| Not valid after:  2023-04-06T19:21:35
+| MD5:   65f8b00f57d234682c520f448110c622
+| SHA-1: 4f7c9a75cb7f70d3808708cb8c2720dc05f1bb02
+| -----BEGIN CERTIFICATE-----
+| MIIEKDCCA5GgAwIBAgIJALChaIpiwz41MA0GCSqGSIb3DQEBCwUAMIG/MQswCQYD
+| VQQGEwJVUzESMBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEU
+| MBIGA1UEChMLQ29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVu
+| aXQgTmFtZSAoZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcs
+| IFlPVVIgbmFtZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3MwHhcNMTcx
+| MDE0MTkyMTM1WhcNMjMwNDA2MTkyMTM1WjCBvzELMAkGA1UEBhMCVVMxEjAQBgNV
+| BAgTCVNvbWV3aGVyZTERMA8GA1UEBxMIU29tZWNpdHkxFDASBgNVBAoTC0NvbXBh
+| bnlOYW1lMS8wLQYDVQQLEyZPcmdhbml6YXRpb25hbCBVbml0IE5hbWUgKGVnLCBz
+| ZWN0aW9uKTEkMCIGA1UEAxMbQ29tbW9uIE5hbWUgKGVnLCBZT1VSIG5hbWUpMRww
+| GgYJKoZIhvcNAQkBFg1FbWFpbCBBZGRyZXNzMIGfMA0GCSqGSIb3DQEBAQUAA4GN
+| ADCBiQKBgQC/sWU6By08lGbvttAfx47SWksgA7FavNrEoW9IRp0W/RF9Fp5BQesL
+| L3FMJ0MHyGcfRhnL5VwDCL0E+1Y05az8PY8kUmjvxSvxQCLn6Mh3nTZkiAJ8vpB0
+| WAnjltrTCEsv7Dnz2OofkpqaUnoNGfO3uKWPvRXl9OlSe/BcDStffQIDAQABo4IB
+| KDCCASQwHQYDVR0OBBYEFDK5DS/hTsi9SHxT749Od/p3Lq05MIH0BgNVHSMEgeww
+| gemAFDK5DS/hTsi9SHxT749Od/p3Lq05oYHFpIHCMIG/MQswCQYDVQQGEwJVUzES
+| MBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEUMBIGA1UEChML
+| Q29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVuaXQgTmFtZSAo
+| ZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcsIFlPVVIgbmFt
+| ZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3OCCQCwoWiKYsM+NTAMBgNV
+| HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAHNn+1AX2qwJ9zhgN3I4ES1Vq84l
+| n6p7OoBefxcf31Pn3VDnbvJJFFcZdplDxbIWh5lyjpTHRJQyHECtEMW677rFXJAl
+| /cEYWHDndn9Gwaxn7JyffK5lUAPMPEDtudQb3cxrevP/iFZwefi2d5p3jFkDCcGI
+| +Y0tZRIRzHWgQHa/
+|_-----END CERTIFICATE-----
+|_http-mobileversion-checker: No mobile version detected.
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; php: 1
+|     /themes/pfsense_ng/
+|       css: 1
+|     /themes/pfsense_ng/javascript/
+|       js: 1
+|   Longest directory structure:
+|     Depth: 3
+|     Dir: /themes/pfsense_ng/javascript/
+|   Total files found (by extension):
+|_    Other: 1; css: 1; js: 1; php: 1
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-errors: Couldn't find any error pages.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-chrono: Request times for /; avg: 337.08ms; min: 294.02ms; max: 394.75ms
+|_ssl-date: TLS randomness does not represent time
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     HSTS not configured in HTTPS Server
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   Cookie: 
+|     Cookies are secured with Secure Flag in HTTPS Connection
+|   Cache_Control: 
+|     Header: Cache-Control: max-age=180000, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Pragma: 
+|     Header: Pragma: no-cache
+|   Expires: 
+|_    Header: Expires: Mon, 21 Nov 2022 06:52:29 GMT, Thu, 19 Nov 1981 08:52:00 GMT
+| ssl-enum-ciphers: 
+|   SSLv3: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       CBC-mode cipher in SSLv3 (CVE-2014-3566)
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|_  least strength: D
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2014-3566  BID:70574
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+|     References:
+|       https://www.securityfocus.com/bid/70574
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|_      https://www.openssl.org/~bodo/ssl-poodle.pdf
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-date: Sat, 19 Nov 2022 04:52:12 GMT; -1s from local time.
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+|             Modulus Type: Non-safe prime
+|             Modulus Source: RFC5114/1024-bit DSA group with 160-bit prime order subgroup
+|             Modulus Length: 1024
+|             Generator Length: 1024
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-php-version: Logo query returned unknown hash a18377200647421635397b8b5494982a
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-favicon: Unknown favicon MD5: 082559A7867CF27ACAB7E9867A8B320F
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.60
+|   url                                method
+|   https://10.10.10.60:443/           FORM
+|_  https://10.10.10.60:443/index.php  FORM
+|_http-traceroute: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+|_http-config-backup: ERROR: Script execution failed (use -d to debug)
+| http-headers: 
+|   Expires: Mon, 21 Nov 2022 06:52:25 GMT
+|   Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|   Cache-Control: max-age=180000
+|   Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Last-Modified: Sat, 19 Nov 2022 04:52:25 GMT
+|   X-Frame-Options: SAMEORIGIN
+|   Set-Cookie: PHPSESSID=625b22d5b16ecad1e37b07f832333690; path=/; secure; HttpOnly
+|   Set-Cookie: cookie_test=1668837145
+|   Pragma: no-cache
+|   Content-type: text/html
+|   Connection: close
+|   Date: Sat, 19 Nov 2022 04:52:25 GMT
+|   Server: lighttpd/1.4.35
+|   
+|_  (Request type: HEAD)
+|_http-title: Login
+| http-vhosts: 
+| 83 names had status 200
+|_45 names had status ERROR
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 19 15:53:21 2022 -- 1 IP address (1 host up) scanned in 88.82 seconds
