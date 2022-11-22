@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Wed Nov 23 09:19:53 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/Machines/10.10.11.174-Support/results/10.10.11.174/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.174-Support/results/10.10.11.174/scans/xml/_full_tcp_nmap.xml 10.10.11.174 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/Machines/10.10.11.174-Support/results/10.10.11.174/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.174-Support/results/10.10.11.174/scans/xml/_full_tcp_nmap.xml 10.10.11.174" start="1669155593" startstr="Wed Nov 23 09:19:53 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1669155593"/>
+<taskend task="NSE" time="1669155593"/>
+<taskbegin task="NSE" time="1669155593"/>
+<taskend task="NSE" time="1669155593"/>
+<taskbegin task="NSE" time="1669155593"/>
+<taskend task="NSE" time="1669155593"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1669155593"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1669155593"/>
+<taskbegin task="Connect Scan" time="1669155593"/>
+<taskprogress task="Connect Scan" time="1669155624" percent="26.58" remaining="86" etc="1669155710"/>
+<taskprogress task="Connect Scan" time="1669155654" percent="63.44" remaining="36" etc="1669155689"/>
+<taskend task="Connect Scan" time="1669155678" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1669155678"/>
+<taskend task="Service scan" time="1669155740" extrainfo="18 services on 1 host"/>
+<taskbegin task="NSE" time="1669155740"/>
+<taskprogress task="NSE" time="1669155771" percent="99.96" remaining="1" etc="1669155771"/>
+<taskend task="NSE" time="1669155780"/>
+<taskbegin task="NSE" time="1669155780"/>
+<taskend task="NSE" time="1669155781"/>
+<taskbegin task="NSE" time="1669155781"/>
+<taskend task="NSE" time="1669155781"/>
+<host starttime="1669155593" endtime="1669155781"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.174" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65517">
+<extrareasons reason="no-response" count="65517" proto="tcp" ports="1-52,54-87,89-134,136-138,140-388,390-444,446-463,465-592,594-635,637-3267,3270-5984,5986-9388,9390-49663,49665-49667,49669-49673,49675-49683,49685-49699,49701-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2022-11-22 22:21:25Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: support.htb0., Site: Default-First-Site-Name" hostname="DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: support.htb0., Site: Default-First-Site-Name" hostname="DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49674"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49684"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49700"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2022-11-22T22:22:25&#xa;  start_date: N/A"><elem key="date">2022-11-22T22:22:25</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="0s"><elem key="mean">0</elem>
+<elem key="median">0</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+</script><script id="smb2-security-mode" output="&#xa;  311: &#xa;    Message signing enabled and required"><table key="311">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 23794/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 19493/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 45724/udp): CLEAN (Timeout)&#xa;  Check 4 (port 11620/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/></hostscript><times srtt="25248" rttvar="858" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1669155781"/>
+<taskend task="NSE" time="1669155781"/>
+<taskbegin task="NSE" time="1669155781"/>
+<taskend task="NSE" time="1669155781"/>
+<taskbegin task="NSE" time="1669155781"/>
+<taskend task="NSE" time="1669155781"/>
+<runstats><finished time="1669155781" timestr="Wed Nov 23 09:23:01 2022" summary="Nmap done at Wed Nov 23 09:23:01 2022; 1 IP address (1 host up) scanned in 188.18 seconds" elapsed="188.18" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
