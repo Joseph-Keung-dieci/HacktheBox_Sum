@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Nov 22 16:39:31 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/Machines/10.10.11.182-Photobomb/results/10.10.11.182/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.182-Photobomb/results/10.10.11.182/scans/xml/_full_tcp_nmap.xml 10.10.11.182 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/Machines/10.10.11.182-Photobomb/results/10.10.11.182/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.182-Photobomb/results/10.10.11.182/scans/xml/_full_tcp_nmap.xml 10.10.11.182" start="1669095571" startstr="Tue Nov 22 16:39:31 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1669095571"/>
+<taskend task="NSE" time="1669095571"/>
+<taskbegin task="NSE" time="1669095571"/>
+<taskend task="NSE" time="1669095571"/>
+<taskbegin task="NSE" time="1669095571"/>
+<taskend task="NSE" time="1669095571"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1669095571"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1669095571"/>
+<taskbegin task="Connect Scan" time="1669095571"/>
+<taskend task="Connect Scan" time="1669095583" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1669095583"/>
+<taskend task="Service scan" time="1669095589" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1669095589"/>
+<taskend task="NSE" time="1669095590"/>
+<taskbegin task="NSE" time="1669095590"/>
+<taskend task="NSE" time="1669095590"/>
+<taskbegin task="NSE" time="1669095590"/>
+<taskend task="NSE" time="1669095590"/>
+<host starttime="1669095571" endtime="1669095590"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.182" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="conn-refused" count="65533" proto="tcp" ports="1-21,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 e22473bbfbdf5cb520b66876748ab58d (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwlzrcH3g6+RJ9JSdH4fFJPibAIpAZXAl7vCJA+98jmlaLCsANWQXth3UsQ+TCEf9YydmNXO2QAIocVR8y1NUEYBlN2xG4/7txjoXr9QShFwd10HNbULQyrGzPaFEN2O/7R90uP6lxQIDsoKJu2Ihs/4YFit79oSsCPMDPn8XS1fX/BRRhz1BDqKlLPdRIzvbkauo6QEhOiaOG1pxqOj50JVWO3XNpnzPxB01fo1GiaE4q5laGbktQagtqhz87SX7vWBwJXXKA/IennJIBPcyD1G6YUK0k6lDow+OUdXlmoxw+n370Knl6PYxyDwuDnvkPabPhkCnSvlgGKkjxvqks9axnQYxkieDqIgOmIrMheEqF6GXO5zz6WtN62UAIKAgxRPgIW0SjRw2sWBnT9GnLag74cmhpGaIoWunklT2c94J7t+kpLAcsES6+yFp9Wzbk1vsqThAss0BkVsyxzvL0U9HvcyyDKLGFlFPbsiFH7br/PuxGbqdO9Jbrrs9nx60=&#xa;  256 04e3ac6e184e1b7effac4fe39dd21bae (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBrVE9flXamwUY+wiBc9IhaQJRE40YpDsbOGPxLWCKKjNAnSBYA9CPsdgZhoV8rtORq/4n+SO0T80x1wW3g19Ew=&#xa;  256 20e05d8cba71f08c3a1819f24011d29e (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEp8nHKD5peyVy3X3MsJCmH/HIUvJT+MONekDg5xYZ6D"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQCwlzrcH3g6+RJ9JSdH4fFJPibAIpAZXAl7vCJA+98jmlaLCsANWQXth3UsQ+TCEf9YydmNXO2QAIocVR8y1NUEYBlN2xG4/7txjoXr9QShFwd10HNbULQyrGzPaFEN2O/7R90uP6lxQIDsoKJu2Ihs/4YFit79oSsCPMDPn8XS1fX/BRRhz1BDqKlLPdRIzvbkauo6QEhOiaOG1pxqOj50JVWO3XNpnzPxB01fo1GiaE4q5laGbktQagtqhz87SX7vWBwJXXKA/IennJIBPcyD1G6YUK0k6lDow+OUdXlmoxw+n370Knl6PYxyDwuDnvkPabPhkCnSvlgGKkjxvqks9axnQYxkieDqIgOmIrMheEqF6GXO5zz6WtN62UAIKAgxRPgIW0SjRw2sWBnT9GnLag74cmhpGaIoWunklT2c94J7t+kpLAcsES6+yFp9Wzbk1vsqThAss0BkVsyxzvL0U9HvcyyDKLGFlFPbsiFH7br/PuxGbqdO9Jbrrs9nx60=</elem>
+<elem key="fingerprint">e22473bbfbdf5cb520b66876748ab58d</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBrVE9flXamwUY+wiBc9IhaQJRE40YpDsbOGPxLWCKKjNAnSBYA9CPsdgZhoV8rtORq/4n+SO0T80x1wW3g19Ew=</elem>
+<elem key="fingerprint">04e3ac6e184e1b7effac4fe39dd21bae</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEp8nHKD5peyVy3X3MsJCmH/HIUvJT+MONekDg5xYZ6D</elem>
+<elem key="fingerprint">20e05d8cba71f08c3a1819f24011d29e</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-title" output="Did not follow redirect to http://photobomb.htb/"><elem key="redirect_url">http://photobomb.htb/</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="29536" rttvar="459" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1669095590"/>
+<taskend task="NSE" time="1669095590"/>
+<taskbegin task="NSE" time="1669095590"/>
+<taskend task="NSE" time="1669095590"/>
+<taskbegin task="NSE" time="1669095590"/>
+<taskend task="NSE" time="1669095590"/>
+<runstats><finished time="1669095590" timestr="Tue Nov 22 16:39:50 2022" summary="Nmap done at Tue Nov 22 16:39:50 2022; 1 IP address (1 host up) scanned in 19.45 seconds" elapsed="19.45" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
