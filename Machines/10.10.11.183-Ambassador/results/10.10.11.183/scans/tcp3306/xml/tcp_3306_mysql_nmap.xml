@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Dec  6 14:22:03 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 3306 &quot;-&#45;script=banner,(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/Machines/10.10.11.183-Ambassador/results/10.10.11.183/scans/tcp3306/tcp_3306_mysql_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.183-Ambassador/results/10.10.11.183/scans/tcp3306/xml/tcp_3306_mysql_nmap.xml 10.10.11.183 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 3306 &quot;-&#45;script=banner,(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/Machines/10.10.11.183-Ambassador/results/10.10.11.183/scans/tcp3306/tcp_3306_mysql_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.183-Ambassador/results/10.10.11.183/scans/tcp3306/xml/tcp_3306_mysql_nmap.xml 10.10.11.183" start="1670296923" startstr="Tue Dec  6 14:22:03 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1670296923"/>
+<taskend task="NSE" time="1670296923"/>
+<taskbegin task="NSE" time="1670296923"/>
+<taskend task="NSE" time="1670296923"/>
+<taskbegin task="NSE" time="1670296923"/>
+<taskend task="NSE" time="1670296923"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1670296923"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1670296929"/>
+<taskbegin task="Connect Scan" time="1670296929"/>
+<taskend task="Connect Scan" time="1670296929" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1670296929"/>
+<taskend task="Service scan" time="1670296939" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1670296939"/>
+<taskend task="NSE" time="1670296946"/>
+<taskbegin task="NSE" time="1670296946"/>
+<taskprogress task="NSE" time="1670296977" percent="61.90" remaining="20" etc="1670296996"/>
+<taskprogress task="NSE" time="1670297007" percent="80.95" remaining="15" etc="1670297021"/>
+<taskend task="NSE" time="1670297022"/>
+<taskbegin task="NSE" time="1670297022"/>
+<taskend task="NSE" time="1670297029"/>
+<host starttime="1670296929" endtime="1670297029"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.183" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" version="8.0.30-0ubuntu0.20.04.2" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:8.0.30-0ubuntu0.20.04.2</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="banner" output="[\x00\x00\x00\x0A8.0.30-0ubuntu0.20.04.2\x00-\x00\x00\x00\x09o\&#xa;x1B}lK&amp;\x02\x00\xFF\xFF\xFF\x02\x00\xFF\xDF\x15\x00\x00\x00\x00\x00\x00&#xa;\x00\x00\x00\x00l7a]\x1FM5z)0\x06\x09\x00caching_sha2_password\x00"/><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 8.0.30-0ubuntu0.20.04.2&#xa;  Thread ID: 44&#xa;  Capabilities flags: 65535&#xa;  Some Capabilities: Support41Auth, ConnectWithDatabase, SupportsLoadDataLocal, ODBCClient, SupportsCompression, SupportsTransactions, IgnoreSpaceBeforeParenthesis, FoundRows, LongPassword, IgnoreSigpipes, SwitchToSSLAfterHandshake, InteractiveClient, Speaks41ProtocolNew, DontAllowDatabaseTableColumn, Speaks41ProtocolOld, LongColumnFlag, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments&#xa;  Status: Autocommit&#xa;  Salt: \x07Jk\x04\x1A7Eq|M\x15&amp;)HY)(&gt;8\&#xa;  Auth Plugin Name: caching_sha2_password"><elem key="Protocol">10</elem>
+<elem key="Version">8.0.30-0ubuntu0.20.04.2</elem>
+<elem key="Thread ID">44</elem>
+<elem key="Capabilities flags">65535</elem>
+<table key="Some Capabilities">
+<elem>Support41Auth</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>ODBCClient</elem>
+<elem>SupportsCompression</elem>
+<elem>SupportsTransactions</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>FoundRows</elem>
+<elem>LongPassword</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>SwitchToSSLAfterHandshake</elem>
+<elem>InteractiveClient</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>LongColumnFlag</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleStatments</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">\x07Jk\x04\x1A7Eq|M\x15&amp;)HY)(&gt;8\</elem>
+<elem key="Auth Plugin Name">caching_sha2_password</elem>
+</script></port>
+</ports>
+<times srtt="26951" rttvar="26951" to="134755"/>
+</host>
+<taskbegin task="NSE" time="1670297029"/>
+<taskend task="NSE" time="1670297029"/>
+<taskbegin task="NSE" time="1670297029"/>
+<taskend task="NSE" time="1670297029"/>
+<taskbegin task="NSE" time="1670297029"/>
+<taskend task="NSE" time="1670297029"/>
+<runstats><finished time="1670297029" timestr="Tue Dec  6 14:23:49 2022" summary="Nmap done at Tue Dec  6 14:23:49 2022; 1 IP address (1 host up) scanned in 105.82 seconds" elapsed="105.82" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

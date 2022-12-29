@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Wed Dec  7 16:04:01 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 21 &quot;-&#45;script=banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/Machines/10.10.11.186-MetaTwo/results/10.10.11.186/scans/tcp21/tcp_21_ftp_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.186-MetaTwo/results/10.10.11.186/scans/tcp21/xml/tcp_21_ftp_nmap.xml 10.10.11.186 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -p 21 &quot;-&#45;script=banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/parallels/HacktheBox/Machines/10.10.11.186-MetaTwo/results/10.10.11.186/scans/tcp21/tcp_21_ftp_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.186-MetaTwo/results/10.10.11.186/scans/tcp21/xml/tcp_21_ftp_nmap.xml 10.10.11.186" start="1670389441" startstr="Wed Dec  7 16:04:01 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="21"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1670389441"/>
+<taskend task="NSE" time="1670389441"/>
+<taskbegin task="NSE" time="1670389441"/>
+<taskend task="NSE" time="1670389441"/>
+<taskbegin task="NSE" time="1670389441"/>
+<taskend task="NSE" time="1670389441"/>
+<taskbegin task="Connect Scan" time="1670389441"/>
+<taskend task="Connect Scan" time="1670389441" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1670389441"/>
+<taskend task="Service scan" time="1670389600" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1670389600"/>
+<taskend task="NSE" time="1670389623"/>
+<taskbegin task="NSE" time="1670389623"/>
+<taskprogress task="NSE" time="1670389654" percent="43.75" remaining="40" etc="1670389694"/>
+<taskprogress task="NSE" time="1670389684" percent="62.50" remaining="37" etc="1670389721"/>
+<taskprogress task="NSE" time="1670389714" percent="87.50" remaining="14" etc="1670389727"/>
+<taskprogress task="NSE" time="1670389744" percent="93.75" remaining="9" etc="1670389752"/>
+<taskend task="NSE" time="1670389745"/>
+<taskbegin task="NSE" time="1670389745"/>
+<taskprogress task="NSE" time="1670389776" percent="0.00"/>
+<taskend task="NSE" time="1670389778"/>
+<host starttime="1670389441" endtime="1670389778"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.186" addrtype="ipv4"/>
+<hostnames>
+<hostname name="metapress.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" servicefp="SF-Port21-TCP:V=7.93%I=7%D=12/7%Time=63901ECC%P=aarch64-unknown-linux-gnu%r(GenericLines,8F,&quot;220\x20ProFTPD\x20Server\x20\(Debian\)\x20\[::ffff:10\.10\.11\.186\]\r\n500\x20Invalid\x20command:\x20try\x20being\x20more\x20creative\r\n500\x20Invalid\x20command:\x20try\x20being\x20more\x20creative\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    220 ProFTPD Server (Debian) [::ffff:10.10.11.186]&#xa;    Invalid command: try being more creative&#xa;    Invalid command: try being more creative"><elem key="GenericLines">&#xa;    220 ProFTPD Server (Debian) [::ffff:10.10.11.186]&#xa;    Invalid command: try being more creative&#xa;    Invalid command: try being more creative</elem>
+</script></port>
+</ports>
+<times srtt="30928" rttvar="30928" to="154640"/>
+</host>
+<taskbegin task="NSE" time="1670389778"/>
+<taskend task="NSE" time="1670389778"/>
+<taskbegin task="NSE" time="1670389778"/>
+<taskend task="NSE" time="1670389778"/>
+<taskbegin task="NSE" time="1670389778"/>
+<taskend task="NSE" time="1670389778"/>
+<runstats><finished time="1670389778" timestr="Wed Dec  7 16:09:38 2022" summary="Nmap done at Wed Dec  7 16:09:38 2022; 1 IP address (1 host up) scanned in 337.53 seconds" elapsed="337.53" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

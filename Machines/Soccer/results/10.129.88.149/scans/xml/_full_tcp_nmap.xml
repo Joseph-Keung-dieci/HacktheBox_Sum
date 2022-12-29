@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Dec 18 19:41:07 2022 as: nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/Machines/Soccer/results/10.129.88.149/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/Machines/Soccer/results/10.129.88.149/scans/xml/_full_tcp_nmap.xml 10.129.88.149 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -&#45;min-rate=1000 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/parallels/HacktheBox/Machines/Soccer/results/10.129.88.149/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/Machines/Soccer/results/10.129.88.149/scans/xml/_full_tcp_nmap.xml 10.129.88.149" start="1671352867" startstr="Sun Dec 18 19:41:07 2022" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1671352867"/>
+<taskend task="NSE" time="1671352867"/>
+<taskbegin task="NSE" time="1671352867"/>
+<taskend task="NSE" time="1671352867"/>
+<taskbegin task="NSE" time="1671352867"/>
+<taskend task="NSE" time="1671352867"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1671352867"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1671352867"/>
+<taskbegin task="Connect Scan" time="1671352867"/>
+<taskprogress task="Connect Scan" time="1671352898" percent="44.97" remaining="38" etc="1671352936"/>
+<taskend task="Connect Scan" time="1671352935" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1671352935"/>
+<taskend task="Service scan" time="1671353015" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1671353015"/>
+<taskend task="NSE" time="1671353022"/>
+<taskbegin task="NSE" time="1671353022"/>
+<taskend task="NSE" time="1671353023"/>
+<taskbegin task="NSE" time="1671353023"/>
+<taskend task="NSE" time="1671353023"/>
+<host starttime="1671352867" endtime="1671353023"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.88.149" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="conn-refused" count="65532" proto="tcp" ports="1-21,23-79,81-9090,9092-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 ad0d84a3fdcc98a478fef94915dae16d (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQChXu/2AxokRA9pcTIQx6HKyiO0odku5KmUpklDRNG+9sa6olMd4dSBq1d0rGtsO2rNJRLQUczml6+N5DcCasAZUShDrMnitsRvG54x8GrJyW4nIx4HOfXRTsNqImBadIJtvIww1L7H1DPzMZYJZj/oOwQHXvp85a2hMqMmoqsljtS/jO3tk7NUKA/8D5KuekSmw8m1pPEGybAZxlAYGu3KbasN66jmhf0ReHg3Vjx9e8FbHr3ksc/MimSMfRq0lIo5fJ7QAnbttM5ktuQqzvVjJmZ0+aL7ZeVewTXLmtkOxX9E5ldihtUFj8C6cQroX69LaaN/AXoEZWl/v1LWE5Qo1DEPrv7A6mIVZvWIM8/AqLpP8JWgAQevOtby5mpmhSxYXUgyii5xRAnvDWwkbwxhKcBIzVy4x5TXinVR7FrrwvKmNAG2t4lpDgmryBZ0YSgxgSAcHIBOglugehGZRHJC9C273hs44EToGCrHBY8n2flJe7OgbjEL8Il3SpfUEF0=&#xa;  256 dfd6a39f68269dfc7c6a0c29e961f00c (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIy3gWUPD+EqFcmc0ngWeRLfCr68+uiuM59j9zrtLNRcLJSTJmlHUdcq25/esgeZkyQ0mr2RZ5gozpBd5yzpdzk=&#xa;  256 5797565def793c2fcbdb35fff17c615c (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ2Pj1mZ0q8u/E8K49Gezm3jguM3d8VyAYsX0QyaN6H/"><table>
+<elem key="fingerprint">ad0d84a3fdcc98a478fef94915dae16d</elem>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQChXu/2AxokRA9pcTIQx6HKyiO0odku5KmUpklDRNG+9sa6olMd4dSBq1d0rGtsO2rNJRLQUczml6+N5DcCasAZUShDrMnitsRvG54x8GrJyW4nIx4HOfXRTsNqImBadIJtvIww1L7H1DPzMZYJZj/oOwQHXvp85a2hMqMmoqsljtS/jO3tk7NUKA/8D5KuekSmw8m1pPEGybAZxlAYGu3KbasN66jmhf0ReHg3Vjx9e8FbHr3ksc/MimSMfRq0lIo5fJ7QAnbttM5ktuQqzvVjJmZ0+aL7ZeVewTXLmtkOxX9E5ldihtUFj8C6cQroX69LaaN/AXoEZWl/v1LWE5Qo1DEPrv7A6mIVZvWIM8/AqLpP8JWgAQevOtby5mpmhSxYXUgyii5xRAnvDWwkbwxhKcBIzVy4x5TXinVR7FrrwvKmNAG2t4lpDgmryBZ0YSgxgSAcHIBOglugehGZRHJC9C273hs44EToGCrHBY8n2flJe7OgbjEL8Il3SpfUEF0=</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">dfd6a39f68269dfc7c6a0c29e961f00c</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIy3gWUPD+EqFcmc0ngWeRLfCr68+uiuM59j9zrtLNRcLJSTJmlHUdcq25/esgeZkyQ0mr2RZ5gozpBd5yzpdzk=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">5797565def793c2fcbdb35fff17c615c</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJ2Pj1mZ0q8u/E8K49Gezm3jguM3d8VyAYsX0QyaN6H/</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-title" output="Did not follow redirect to http://soccer.htb/"><elem key="redirect_url">http://soccer.htb/</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="9091"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="xmltec-xmlmail" servicefp="SF-Port9091-TCP:V=7.93%I=9%D=12/18%Time=639ED26E%P=aarch64-unknown-linux-gnu%r(informix,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(drda,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(GetRequest,168,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Security-Policy:\x20default-src\x20&apos;none&apos;\r\nX-Content-Type-Options:\x20nosniff\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20139\r\nDate:\x20Sun,\x2018\x20Dec\x202022\x2008:42:22\x20GMT\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot\x20GET\x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(HTTPOptions,16C,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Security-Policy:\x20default-src\x20&apos;none&apos;\r\nX-Content-Type-Options:\x20nosniff\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20143\r\nDate:\x20Sun,\x2018\x20Dec\x202022\x2008:42:22\x20GMT\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot\x20OPTIONS\x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(RTSPRequest,16C,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Security-Policy:\x20default-src\x20&apos;none&apos;\r\nX-Content-Type-Options:\x20nosniff\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20143\r\nDate:\x20Sun,\x2018\x20Dec\x202022\x2008:42:23\x20GMT\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot\x20OPTIONS\x20/&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(RPCCheck,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSStatusRequestTCP,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(Hello,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(Help,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, Hello, Help, RPCCheck, drda, informix: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;  GetRequest: &#xa;    HTTP/1.1 404 Not Found&#xa;    Content-Security-Policy: default-src &apos;none&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 139&#xa;    Date: Sun, 18 Dec 2022 08:42:22 GMT&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;Error&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;pre&gt;Cannot GET /&lt;/pre&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  HTTPOptions: &#xa;    HTTP/1.1 404 Not Found&#xa;    Content-Security-Policy: default-src &apos;none&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 143&#xa;    Date: Sun, 18 Dec 2022 08:42:22 GMT&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;Error&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;pre&gt;Cannot OPTIONS /&lt;/pre&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  RTSPRequest: &#xa;    HTTP/1.1 404 Not Found&#xa;    Content-Security-Policy: default-src &apos;none&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 143&#xa;    Date: Sun, 18 Dec 2022 08:42:23 GMT&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;Error&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;pre&gt;Cannot OPTIONS /&lt;/pre&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, Hello, Help, RPCCheck, drda, informix">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 404 Not Found&#xa;    Content-Security-Policy: default-src &apos;none&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 139&#xa;    Date: Sun, 18 Dec 2022 08:42:22 GMT&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;Error&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;pre&gt;Cannot GET /&lt;/pre&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 404 Not Found&#xa;    Content-Security-Policy: default-src &apos;none&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 143&#xa;    Date: Sun, 18 Dec 2022 08:42:22 GMT&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;Error&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;pre&gt;Cannot OPTIONS /&lt;/pre&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 404 Not Found&#xa;    Content-Security-Policy: default-src &apos;none&apos;&#xa;    X-Content-Type-Options: nosniff&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 143&#xa;    Date: Sun, 18 Dec 2022 08:42:23 GMT&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;Error&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;pre&gt;Cannot OPTIONS /&lt;/pre&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script></port>
+</ports>
+<times srtt="242376" rttvar="2473" to="252268"/>
+</host>
+<taskbegin task="NSE" time="1671353023"/>
+<taskend task="NSE" time="1671353023"/>
+<taskbegin task="NSE" time="1671353023"/>
+<taskend task="NSE" time="1671353023"/>
+<taskbegin task="NSE" time="1671353023"/>
+<taskend task="NSE" time="1671353023"/>
+<runstats><finished time="1671353023" timestr="Sun Dec 18 19:43:43 2022" summary="Nmap done at Sun Dec 18 19:43:43 2022; 1 IP address (1 host up) scanned in 156.23 seconds" elapsed="156.23" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

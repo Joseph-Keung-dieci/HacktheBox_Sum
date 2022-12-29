@@ -1,0 +1,4 @@
+http://10.10.11.177:80/index.php            (Status: 200) [Size: 1131]
+http://10.10.11.177:80/.html                (Status: 403) [Size: 277]
+http://10.10.11.177:80/.php                 (Status: 403) [Size: 277]
+http://10.10.11.177:80/dev                  (Status: 301) [Size: 310] [--> http://10.10.11.177/dev/]

@@ -1,0 +1,36 @@
+```bash
+nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -p- -oN "/home/parallels/HacktheBox/Machines/10.10.11.189-Precious/results/10.10.11.189/scans/_full_tcp_nmap.txt" -oX "/home/parallels/HacktheBox/Machines/10.10.11.189-Precious/results/10.10.11.189/scans/xml/_full_tcp_nmap.xml" 10.10.11.189
+```
+
+[/home/parallels/HacktheBox/Machines/10.10.11.189-Precious/results/10.10.11.189/scans/_full_tcp_nmap.txt](file:///home/parallels/HacktheBox/Machines/10.10.11.189-Precious/results/10.10.11.189/scans/_full_tcp_nmap.txt):
+
+```
+# Nmap 7.93 scan initiated Fri Dec  2 16:41:57 2022 as: nmap -vv --reason -Pn -T4 --min-rate=1000 -sV -sC --version-all -A --osscan-guess -p- -oN /home/parallels/HacktheBox/Machines/10.10.11.189-Precious/results/10.10.11.189/scans/_full_tcp_nmap.txt -oX /home/parallels/HacktheBox/Machines/10.10.11.189-Precious/results/10.10.11.189/scans/xml/_full_tcp_nmap.xml 10.10.11.189
+Increasing send delay for 10.10.11.189 from 0 to 5 due to 248 out of 619 dropped probes since last increase.
+Increasing send delay for 10.10.11.189 from 5 to 10 due to 89 out of 222 dropped probes since last increase.
+Warning: 10.10.11.189 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.11.189
+Host is up, received user-set (0.078s latency).
+Scanned at 2022-12-02 16:42:07 AEDT for 184s
+Not shown: 51528 closed tcp ports (conn-refused), 14005 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 845e13a8e31e20661d235550f63047d2 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEAPxqUubE88njHItE+mjeWJXOLu5reIBmQHCYh2ETYO5zatgel+LjcYdgaa4KLFyw8CfDbRL9swlmGTaf4iUbao4jD73HV9/Vrnby7zP04OH3U/wVbAKbPJrjnva/czuuV6uNz4SVA3qk0bp6wOrxQFzCn5OvY3FTcceH1jrjrJmUKpGZJBZZO6cp0HkZWs/eQi8F7anVoMDKiiuP0VX28q/yR1AFB4vR5ej8iV/X73z3GOs3ZckQMhOiBmu1FF77c7VW1zqln480/AbvHJDULtRdZ5xrYH1nFynnPi6+VU/PIfVMpHbYu7t0mEFeI5HxMPNUvtYRRDC14jEtH6RpZxd7PhwYiBctiybZbonM5UP0lP85OuMMPcSMll65+8hzMMY2aejjHTYqgzd7M6HxcEMrJW7n7s5eCJqMoUXkL8RSBEQSmMUV8iWzHW0XkVUfYT5Ko6Xsnb+DiiLvFNUlFwO6hWz2WG8rlZ3voQ/gv8BLVCU1ziaVGerd61PODck=
+|   256 a2ef7b9665ce4161c467ee4e96c7c892 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFScv6lLa14Uczimjt1W7qyH6OvXIyJGrznL1JXzgVFdABwi/oWWxUzEvwP5OMki1SW9QKX7kKVznWgFNOp815Y=
+|   256 33053dcd7ab798458239e7ae3c91a658 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH+JGiTFGOgn/iJUoLhZeybUvKeADIlm0fHnP/oZ66Qb
+80/tcp open  http    syn-ack nginx 1.18.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: nginx/1.18.0
+|_http-title: Did not follow redirect to http://precious.htb/
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  2 16:45:11 2022 -- 1 IP address (1 host up) scanned in 194.22 seconds
+
+```
